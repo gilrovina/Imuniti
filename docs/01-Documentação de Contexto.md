@@ -1,27 +1,26 @@
 # Introdução
+Diante dos desafios enfrentados no dia a dia por pais, responsáveis, adultos e idosos, como a perda da caderneta de vacinação e a falta de informações sobre as datas corretas para a aplicação das vacinas, a gestão eficaz dos dados vacinais torna-se essencial. Um controle adequado permite que as datas, prazos e doses sejam organizados de forma precisa, garantindo a proteção contínua da saúde de todos. 
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O problema abordado por este projeto é a falta de informações precisas e acessíveis sobre o calendário vacinal. Muitas pessoas, como mães, pais, gestantes e idosos, enfrentam dificuldades para manter o controle das vacinas em dia, resultando em atrasos, perda de doses devido a erros nas datas, esquecimento e, o mais comum, a perda da caderneta de vacinação. Essa perda pode ocorrer por diversos motivos, como mudanças de residência, falta de cuidado, ou até eventos inesperados, como desastres naturais, incluindo enchentes. 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+“Uma pesquisa do Instituto Locomotiva com 2 mil mães mostra que 66% já atrasaram ou deixaram de vacinar seus filhos, citando motivos como falta de tempo (56%), distância dos locais de vacinação (35%), e dificuldades para lembrar as datas (56%). Desinformação sobre o calendário vacinal é apontada como principal obstáculo por 45%, e 68% relataram confusão sobre o tema. Além disso, 88% das mães acreditam que a vacinação nas escolas facilitaria o acesso, e 85% consideram que isso aumentaria a cobertura vacinal no país.” 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Os principais objetivos deste projeto incluem a criação de um aplicativo que auxilie no gerenciamento do cartão de vacinação pessoal, bem como das cadernetas de filhos, idosos e outros dependentes. O propósito é garantir que os usuários estejam sempre informados sobre os dados vacinais, prazos e informações essenciais sobre as vacinas. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Dentre os objetivos específicos, destacam-se: 
+
+• Centralizar a organização do cartão de vacina em um único lugar de fácil acesso;
+
+• Fornecer lembretes sobre vacinas próximas e atrasadas, ajudando a evitar esquecimentos; 
+
+• Acompanhar as doses vacinais obrigatórias de crianças e adolescentes, garantindo que o calendário vacinal esteja em dia; 
+
+• Permitir a criação de relatórios detalhados das vacinas, quando necessário, para consultas ou comprovações.
 
 ## Justificativa
 
