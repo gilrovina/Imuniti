@@ -30,19 +30,6 @@ As personas são representações fictícias dos usuários ideais da aplicação
 
 ![image](https://github.com/user-attachments/assets/99b892ab-96cf-4145-9a43-ccaaf4dfe320)
 
-
-
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
-
 ## Histórias de Usuários
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
@@ -77,15 +64,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Antônio Vidal  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
 |Antônio Vidal     | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -94,9 +72,20 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| A aplicação deve permitir que o usuário faça o cadastro. | ALTA | 
+|RF-002| A aplicação deve permitir que o usuário inclua informações básicas como sexo, idade, entre outros.    | ALTA |
+|RF-003| A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. | ALTA |
+|RF-004| A aplicação deve permitir que o usuário crie perfis de outros familiares.    | ALTA |
+|RF-005| A aplicação deve permitir que o usuário gerencie perfis dos familiares.    | ALTA |
+|RF-006| A aplicação deve permitir que o usuário registre as vacinas tomadas e os detalhes como, nome, data, local, responsável e outros. | ALTA |
+|RF-007| A aplicação deve permitir que o usuário personalize o cartão de vacina conforme necessidade específicas anexando vacinas adicionais. | ALTA |
+|RF-008| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
+|RF-009| A aplicação deve permitir que o usuário modifique o regristro de vacinas nos perfis disponíveis.    | MÉDIA |
+|RF-010| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
+|RF-011| A aplicação deve mostrar ao usuário de forma dinâmica a situação das vacinas, sendo verde - aplicada; amarelo - próximo do prazo; cinza - futuras.    | MÉDIA |
+|RF-012| A aplicação deve enviar notificações e/ou lembretes ao usuários de vacinas próximas ou doses de reforço.    | BAIXA |
+|RF-013| A aplicação deve permitir que o usuário acrescente informações ou anotações importantes em cada card de vacina, por exemplo efeitos colaterais. | BAIXA |
+
 
 ### Requisitos não Funcionais
 
@@ -108,20 +97,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-004| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet; |  MEDIA | 
 |RNF-005| A aplicação deve garantir um bom nível de contraste entre os elementos da tela. |  MEDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
