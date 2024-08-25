@@ -11,11 +11,11 @@ Projeto Web desenvolvido para o controle de caderneta vacinal de crianças, adol
 ## Integrantes
 
 * Alberto Mário Rodrigues de Souza
-* Carolina Santos Félix 
+* Carolina Santos Félix
+* Felipe Nicolau Ferreira
 * Gilson Rodrigo Rovina Gonçalves
-* Felipe Nicolau Ferreira 
-* Lucas Siqueira Ribeiro 
-* Ryan Ramires de Araújo 
+* Lucas Siqueira Ribeiro
+* Ryan Ramires de Araújo
 
 ## Orientador
 
