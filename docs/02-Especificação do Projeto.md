@@ -34,14 +34,14 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Maria Gonzaga  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|Maria Gonzaga  | Garantir que meus filhos estejam com as vacinas em dia            | Manter a saúde deles protegida e evitar esquecimento                |
 |Maria Gonzaga       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Antônio  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|João Antônio  | Gerenciar e monitorar de perto a vacinação de meu familiar idoso           | Assegurar que ele esteja protegido contra doenças, evitando esquecimentos e atrasos de vacinas importantes               |
 |João Antônio       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 
@@ -53,13 +53,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Clara Barboza  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|Clara Barboza  | Acompanhar as vacinas recomendadas durante a gestação           | Garantir a minha saúde e a do bebê, evitando riscos durante a gravidez.                |
 |Clara Barboza      | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Antônio Vidal  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|Antônio Vidal  | Manter-me atualizado com as vacinas recomendadas para minha faixa etária e condições de saúde           | Garantir minha proteção contra doenças e viver com mais segurança e qualidade de vida               |
 |Antônio Vidal     | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 ## Requisitos
