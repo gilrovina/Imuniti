@@ -64,12 +64,6 @@ doenças.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir
-quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um
-pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+Nosso aplicativo é projetado para atender a diversas necessidades relacionadas ao gerenciamento de vacinas, oferecendo uma solução simples e acessível para que todos possam manter sua agenda de vacinas em dia e cuidar melhor da própria saúde e da saúde de daqueles que amam. 
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Com funcionalidades que facilitam o acompanhamento de vacinas para diferentes perfis, desde pais e responsáveis que desejam garantir que seus filhos estejam protegidos, até gestantes que precisam monitorar as vacinas recomendadas durante a gravidez, nosso aplicativo se adapta para fornecer lembretes personalizados e informações detalhadas. Assim, garantimos que cada usuário tenha acesso a uma gestão de saúde mais organizada, segura e eficiente, promovendo bem-estar e proteção contínua para todos.  
