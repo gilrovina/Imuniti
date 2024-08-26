@@ -41,13 +41,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Antônio  | Gerenciar e monitorar de perto a vacinação de meu familiar idoso           | Assegurar que ele esteja protegido contra doenças, evitando esquecimentos e atrasos de vacinas importantes               |
+|João Antônio  | Gerenciar e monitorar de perto a vacinação de meus familiares idosos           | Assegurar que ele esteja protegido contra doenças, evitando esquecimentos e atrasos de vacinas importantes               |
 |João Antônio       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Rodrigo Menezes  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
+|Rodrigo Menezes  | Utilizar uma solução eficiente para gerenciar minhas vacinas, com lembretes automáticos de reforços e vacinas futuras.           | Manter minhas vacinas em dia de maneira prática e organizada               |
 |Rodrigo Menezes      | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
 
 
