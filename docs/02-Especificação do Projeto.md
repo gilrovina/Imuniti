@@ -34,33 +34,33 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Maria Gonzaga  | Garantir que meus filhos estejam com as vacinas em dia            | Manter a saúde deles protegida e evitar esquecimento                |
-|Maria Gonzaga       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Maria Gonzaga  |Criar perfis para meus filhos na aplicação            | Gerenciar as informações e vacinas de cada um separadamente.                |
+|Maria Gonzaga       | Receber notificações de vacinas próximas                 | Garantir que as vacinas dos meus filhos sejam administradas dentro do prazo. |
 
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Antônio  | Gerenciar e monitorar de perto a vacinação de meus familiares idosos           | Assegurar que ele esteja protegido contra doenças, evitando esquecimentos e atrasos de vacinas importantes               |
-|João Antônio       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|João Antônio  | Incluir informações básicas e detalhes das vacinas dos meus pais           | Manter um registro completo e atualizado das vacinas que eles já tomaram.               |
+|João Antônio       | Visualizar a situação das vacinas dos meus pais                 | Garantir que eles estejam sempre com as vacinas em dia, utilizando a visualização dinâmica de status. |
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Rodrigo Menezes  | Utilizar uma solução eficiente para gerenciar minhas vacinas, com lembretes automáticos de reforços e vacinas futuras.           | Manter minhas vacinas em dia de maneira prática e organizada               |
-|Rodrigo Menezes      | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Rodrigo Menezes  | Personalizar meu cartão de vacina e adicionar vacinas específicas ao meu histórico           | Garantir que todas as vacinas relevantes para meu estilo de vida estejam registradas.               |
+|Rodrigo Menezes      | Modificar registros de vacinas conforme necessário                 | Manter meu histórico de vacinação sempre atualizado e preciso. |
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Clara Barboza  | Acompanhar as vacinas recomendadas durante a gestação           | Garantir a minha saúde e a do bebê, evitando riscos durante a gravidez.                |
-|Clara Barboza      | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Clara Barboza  | Visualizar o calendário vacinal específico para gestantes           | Garantir que eu esteja seguindo corretamente todas as recomendações médicas durante a gravidez.                |
+|Clara Barboza      | Adicionar anotações importantes sobre cada vacina que tomo                 | Monitorar qualquer efeito colateral e informações importantes durante a gravidez. |
 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Antônio Vidal  | Manter-me atualizado com as vacinas recomendadas para minha faixa etária e condições de saúde           | Garantir minha proteção contra doenças e viver com mais segurança e qualidade de vida               |
-|Antônio Vidal     | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Antônio Vidal  | Registrar todas as vacinas que tomo e os detalhes específicos, como data e local           | Manter um histórico detalhado das minhas vacinas.               |
+|Antônio Vidal     | Recuperar minha senha facilmente caso eu a esqueça                 | Garantir que eu continue a acessar a aplicação sem complicações. |
 
 ## Requisitos
 
