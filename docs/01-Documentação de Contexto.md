@@ -46,8 +46,9 @@ digital. Tal solução garantiria maior segurança, acessibilidade e organizaç�
 mais eficiente de suas vacinas e de seus dependentes, alinhando-se às necessidades da sociedade moderna.
 
 Além disso, o Brasil enfrenta uma crescente problemática: a queda na cobertura vacinal nacional. Conforme a Agência
-Brasil, em 2021, o país registrou a menor cobertura vacinal dos últimos 20 anos (AGÊNCIA BRASIL, 2023). Esse cenário se
-agrava pela falsa percepção de que algumas doenças estão erradicadas e pela disseminação de desinformação sobre vacinas.
+Brasil, “de 2001 a 2015, a média nacional de cobertura vacinal se manteve sempre acima dos 70%, mas, em 2016, diminuiu
+para 59,9% e vem caindo desde 2019, atingindo os 52,1% em 2021” (AGÊNCIA BRASIL, 2023). Esse cenário se agrava pela
+falsa percepção de que algumas doenças estão erradicadas e pela disseminação de desinformação sobre vacinas.
 
 O desenvolvimento de uma aplicação que permita a digitalização do histórico vacinal de maneira prática e organizada
 proporcionaria maior acessibilidade e centralização das informações de saúde do usuário e de seus dependentes. Com uma
