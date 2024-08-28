@@ -45,8 +45,9 @@ mais digitalizada, torna-se essencial a criação de uma ferramenta que viabiliz
 digital. Tal solução garantiria maior segurança, acessibilidade e organização, proporcionando ao usuário um controle
 mais eficiente de suas vacinas e de seus dependentes, alinhando-se às necessidades da sociedade moderna.
 
-Além disso, o Brasil enfrenta uma crescente problemática: a queda na cobertura vacinal nacional. Esse cenário se agrava
-pela falsa percepção de que algumas doenças estão erradicadas e pela disseminação de desinformação sobre vacinas.
+Além disso, o Brasil enfrenta uma crescente problemática: a queda na cobertura vacinal nacional. Conforme a Agência
+Brasil, em 2021, o país registrou a menor cobertura vacinal dos últimos 20 anos (AGÊNCIA BRASIL, 2023). Esse cenário se
+agrava pela falsa percepção de que algumas doenças estão erradicadas e pela disseminação de desinformação sobre vacinas.
 
 O desenvolvimento de uma aplicação que permita a digitalização do histórico vacinal de maneira prática e organizada
 proporcionaria maior acessibilidade e centralização das informações de saúde do usuário e de seus dependentes. Com uma
@@ -64,6 +65,12 @@ doenças.
 
 ## Público-Alvo
 
-Nosso aplicativo é projetado para atender a diversas necessidades relacionadas ao gerenciamento de vacinas, oferecendo uma solução simples e acessível para que todos possam manter sua agenda de vacinas em dia e cuidar melhor da própria saúde e da saúde de daqueles que amam. 
+Nosso aplicativo é projetado para atender a diversas necessidades relacionadas ao gerenciamento de vacinas, oferecendo
+uma solução simples e acessível para que todos possam manter sua agenda de vacinas em dia e cuidar melhor da própria
+saúde e da saúde de daqueles que amam.
 
-Com funcionalidades que facilitam o acompanhamento de vacinas para diferentes perfis, desde pais e responsáveis que desejam garantir que seus filhos estejam protegidos, até gestantes que precisam monitorar as vacinas recomendadas durante a gravidez, nosso aplicativo se adapta para fornecer lembretes personalizados e informações detalhadas. Assim, garantimos que cada usuário tenha acesso a uma gestão de saúde mais organizada, segura e eficiente, promovendo bem-estar e proteção contínua para todos.  
+Com funcionalidades que facilitam o acompanhamento de vacinas para diferentes perfis, desde pais e responsáveis que
+desejam garantir que seus filhos estejam protegidos, até gestantes que precisam monitorar as vacinas recomendadas
+durante a gravidez, nosso aplicativo se adapta para fornecer lembretes personalizados e informações detalhadas. Assim,
+garantimos que cada usuário tenha acesso a uma gestão de saúde mais organizada, segura e eficiente, promovendo bem-estar
+e proteção contínua para todos.  
