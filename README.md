@@ -1,10 +1,16 @@
-# imuniti
+# Imuniti
 
 `Análise e Desenvolvimento de Sistemas - PUC Minas`
 
 `Desenvolvimento de uma Aplicação Interativa`
 
 `2° Semestre/2024`
+
+<div align= "center">  
+  
+![Imuniti Logo](https://github.com/user-attachments/assets/b6127f38-d99f-4a43-9634-f503c0c49f82)
+
+</div>
 
 Projeto Web desenvolvido para o controle de caderneta vacinal de crianças, adolescentes, adultos, gestantes e idosos.
 
