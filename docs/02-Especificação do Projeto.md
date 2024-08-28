@@ -10,23 +10,28 @@ As personas são representações fictícias dos usuários ideais da aplicação
 
 ### Persona 1: Maria Gonzaga
 
-![image](https://github.com/user-attachments/assets/3af47a60-bbbb-41e9-a7e6-f20993a0b33e)
+![image](https://github.com/user-attachments/assets/3818d4af-239f-4f63-9402-288f51981c5f)
+
 
 ## Persona 2: João Antônio
 
-![image](https://github.com/user-attachments/assets/b589792b-6249-4a23-9473-a2fd4787d2dd)
+![image](https://github.com/user-attachments/assets/68ed21cd-0f5c-47ae-b9ec-9c186561826c)
+
 
 ## Persona 3: Rodrigo Menezes
 
-![image](https://github.com/user-attachments/assets/b676495b-c14a-4086-8d69-f6d458877ab2)
+![image](https://github.com/user-attachments/assets/c838d160-e818-4f16-8337-7a130f09d3d2)
+
 
 ## Persona 4: Clara Barboza
 
-![image](https://github.com/user-attachments/assets/ea322e13-73da-41f8-9c97-d8eafaf7be1e)
+![image](https://github.com/user-attachments/assets/fd126987-da6e-41e3-9fea-f91ae5a1ee6a)
 
-## Persona 5: Antônio Vidal
 
-![image](https://github.com/user-attachments/assets/99b892ab-96cf-4145-9a43-ccaaf4dfe320)
+## Persona 5: Beatriz Oliveira
+
+![image](https://github.com/user-attachments/assets/7c930325-0e7b-4d47-8f50-1824b00f7009)
+
 
 ## Histórias de Usuários
 
@@ -42,8 +47,8 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Rodrigo Menezes      | Ajustar e atualizar meu histórico de vacinas quando necessário | Manter meu controle sempre certo e alinhado com minha realidade. |
 | Clara Barboza        | Ter uma visão clara das vacinas necessárias para mim e meu bebê | Sentir que estou protegendo a saúde do meu bebê, seguindo todas as recomendações. |
 | Clara Barboza        | Anotar qualquer detalhe importante sobre as vacinas que tomo | Acompanhar como cada vacina me afeta, especialmente durante a gravidez. |
-| Antônio Vidal        | Não esquecer nenhuma vacina e ter tudo registrado | Manter meu histórico completo e poder cuidar da minha saúde sem complicações. |
-| Antônio Vidal        | Conseguir acessar a aplicação facilmente, mesmo se esquecer a senha | Continuar utilizando a ferramenta sem ficar bloqueado por problemas de acesso. |
+| Beatriz Oliveira        | Usar uma aplicação acessível para gerenciar minhas vacinas sem dificuldades de navegação  | Garantir que, apesar da minha mobilidade reduzida, eu consiga manter meu histórico de vacinação atualizado e organizado de forma independente. |
+| Beatriz Oliveira        | Receber lembretes automáticos de vacinas  | Não precisar me preocupar com o acompanhamento constante das datas, facilitando a gestão da minha saúde. |
 
 
 ## Requisitos
