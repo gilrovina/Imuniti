@@ -59,7 +59,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. | ALTA |
 |RF-004| A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.    | ALTA |
 |RF-005| A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local e responsável pela aplicação. | ALTA |
-|RF-006| A aplicação deve permitir que o usuário personalize o cartão de vacinas conforme necessidade específica, podendo anexar vacinas adicionais. | ALTA |
+|RF-006| A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais. | ALTA |
 |RF-007| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
 |RF-008| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
 |RF-009| A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.    | MÉDIA |
