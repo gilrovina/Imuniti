@@ -87,11 +87,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva, garantindo uma visualização adequada em dispositivos de diferentes tamanhos e formatos; | ALTA | 
-|RNF-002| A aplicação deve ser projetada de forma a ser acessível nos principais navegadores, incluindo Google Chrome, Mozilla Firefox, Microsoft Edge, Opera e Safari; |  ALTA | 
-|RNF-003| A aplicação deve garantir segurança e privacidade das informações dos usuários; | ALTA | 
-|RNF-004| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet; |  MEDIA | 
-|RNF-005| A aplicação deve garantir um bom nível de contraste entre os elementos da tela. |  MEDIA | 
+|RNF-001| A aplicação deve ser responsiva, garantindo uma visualização adequada em dispositivos de diferentes tamanhos e formatos. | ALTA | 
+|RNF-002| A aplicação deve ser projetada de forma a ser acessível nos principais navegadores, incluindo Google Chrome, Mozilla Firefox, Microsoft Edge, Opera e Safari. |  ALTA | 
+|RNF-003| A aplicação deve garantir segurança e privacidade das informações dos usuários. | ALTA | 
+|RNF-004| A aplicação deve ter seu back-end desenvolvido utilizando a linguagem de programação C#. | ALTA | 
+|RNF-005| A aplicação deve ter seu banco de dados implementado utilizando SQL Server. | ALTA | 
+|RNF-006| A aplicação deve ter seu front-end desenvolvido utilizando HTML e CSS, sendo permitido o uso do framework Bootstrap. |  ALTA | 
+|RNF-007| A aplicação deve apresentar mensagens de erro claras, oferecendo orientações para a correção dos problemas. |  ALTA | 
+|RNF-008| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet. |  MEDIA | 
+|RNF-009| A aplicação deve garantir um bom nível de contraste entre os elementos da tela. |  MEDIA | 
 
 
 ## Restrições
@@ -100,16 +104,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre; |
-|02| Deve ser desenvolvido módulo de backend;        |
+|01| O projeto deverá ser entregue até o final do semestre. |
+|02| O projeto deve incluir o desenvolvimento de um módulo de back-end.        |
 |03| A equipe não pode subcontratar o desenvolvimento do projeto. |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
