@@ -32,35 +32,19 @@ As personas são representações fictícias dos usuários ideais da aplicação
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Maria Gonzaga  |Criar perfis para meus filhos na aplicação            | Gerenciar as informações e vacinas de cada um separadamente.                |
-|Maria Gonzaga       | Receber notificações de vacinas próximas                 | Garantir que as vacinas dos meus filhos sejam administradas dentro do prazo. |
+| EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR` |
+|----------------------|------------------------------------|-----------------------------------------|
+| Maria Gonzaga        | Acompanhar as vacinas dos meus filhos sem me preocupar em lembrar de todas as datas | Não esquecer nenhuma vacina importante, mesmo com a rotina corrida. |
+| Maria Gonzaga        | Receber lembretes claros e diretos sobre as vacinas | Garantir que meus filhos fiquem protegidos, sem o risco de atrasos. |
+| João Antônio         | Manter todas as vacinas dos meus pais organizadas em um único lugar | Não ter que me preocupar com o controle das vacinas, especialmente em momentos de saúde frágil. |
+| João Antônio         | Saber rapidamente se meus pais estão com as vacinas em dia | Sentir que estou cuidando bem deles, sem o risco de perder prazos importantes. |
+| Rodrigo Menezes      | Ter tudo sobre minhas vacinas à mão, de maneira personalizada | Garantir que minhas vacinas estejam todas registradas, de acordo com o que eu realmente preciso. |
+| Rodrigo Menezes      | Ajustar e atualizar meu histórico de vacinas quando necessário | Manter meu controle sempre certo e alinhado com minha realidade. |
+| Clara Barboza        | Ter uma visão clara das vacinas necessárias para mim e meu bebê | Sentir que estou protegendo a saúde do meu bebê, seguindo todas as recomendações. |
+| Clara Barboza        | Anotar qualquer detalhe importante sobre as vacinas que tomo | Acompanhar como cada vacina me afeta, especialmente durante a gravidez. |
+| Antônio Vidal        | Não esquecer nenhuma vacina e ter tudo registrado | Manter meu histórico completo e poder cuidar da minha saúde sem complicações. |
+| Antônio Vidal        | Conseguir acessar a aplicação facilmente, mesmo se esquecer a senha | Continuar utilizando a ferramenta sem ficar bloqueado por problemas de acesso. |
 
-
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|João Antônio  | Incluir informações básicas e detalhes das vacinas dos meus pais           | Manter um registro completo e atualizado das vacinas que eles já tomaram.               |
-|João Antônio       | Visualizar a situação das vacinas dos meus pais                 | Garantir que eles estejam sempre com as vacinas em dia, utilizando a visualização dinâmica de status. |
-
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Rodrigo Menezes  | Personalizar meu cartão de vacina e adicionar vacinas específicas ao meu histórico           | Garantir que todas as vacinas relevantes para meu estilo de vida estejam registradas.               |
-|Rodrigo Menezes      | Modificar registros de vacinas conforme necessário                 | Manter meu histórico de vacinação sempre atualizado e preciso. |
-
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Clara Barboza  | Visualizar o calendário vacinal específico para gestantes           | Garantir que eu esteja seguindo corretamente todas as recomendações médicas durante a gravidez.                |
-|Clara Barboza      | Adicionar anotações importantes sobre cada vacina que tomo                 | Monitorar qualquer efeito colateral e informações importantes durante a gravidez. |
-
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Antônio Vidal  | Registrar todas as vacinas que tomo e os detalhes específicos, como data e local           | Manter um histórico detalhado das minhas vacinas.               |
-|Antônio Vidal     | Recuperar minha senha facilmente caso eu a esqueça                 | Garantir que eu continue a acessar a aplicação sem complicações. |
 
 ## Requisitos
 
