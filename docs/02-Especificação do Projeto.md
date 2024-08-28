@@ -70,19 +70,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário faça o cadastro. | ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua informações básicas como sexo, idade, entre outros.    | ALTA |
+|RF-001| A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. | ALTA | 
+|RF-002| A aplicação deve permitir que o usuário gerencie suas informações básicas, como nome completo, idade, sexo, data de nascimento e endereço.    | ALTA |
 |RF-003| A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. | ALTA |
-|RF-004| A aplicação deve permitir que o usuário crie perfis de outros familiares.    | ALTA |
-|RF-005| A aplicação deve permitir que o usuário gerencie perfis dos familiares.    | ALTA |
-|RF-006| A aplicação deve permitir que o usuário registre as vacinas tomadas e os detalhes como, nome, data, local, responsável e outros. | ALTA |
-|RF-007| A aplicação deve permitir que o usuário personalize o cartão de vacina conforme necessidade específicas anexando vacinas adicionais. | ALTA |
-|RF-008| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
-|RF-009| A aplicação deve permitir que o usuário modifique o regristro de vacinas nos perfis disponíveis.    | MÉDIA |
-|RF-010| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
-|RF-011| A aplicação deve mostrar ao usuário de forma dinâmica a situação das vacinas, sendo verde - aplicada; amarelo - próximo do prazo; cinza - futuras.    | MÉDIA |
-|RF-012| A aplicação deve enviar notificações e/ou lembretes ao usuários de vacinas próximas ou doses de reforço.    | BAIXA |
-|RF-013| A aplicação deve permitir que o usuário acrescente informações ou anotações importantes em cada card de vacina, por exemplo efeitos colaterais. | BAIXA |
+|RF-004| A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.    | ALTA |
+|RF-005| A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local e responsável pela aplicação. | ALTA |
+|RF-006| A aplicação deve permitir que o usuário personalize o cartão de vacinas conforme necessidade específica, podendo anexar vacinas adicionais. | ALTA |
+|RF-007| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
+|RF-008| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
+|RF-009| A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.    | MÉDIA |
+|RF-010| A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência.    | BAIXA |
+|RF-011| A aplicação deve permitir que o usuário registre informações ou anotações importantes em cada card de vacina, como possíveis efeitos colaterais. | BAIXA |
 
 
 ### Requisitos não Funcionais
