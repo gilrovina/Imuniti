@@ -8,7 +8,7 @@
 
 <div align= "center">  
 <figure> 
-  <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/main/docs/img/Imuniti%20Logo.png?token=GHSAT0AAAAAACVZBMKWG5QVHHD43RHIFH6OZWQXYEA">
+  <img src="/docs/img/Imuniti Logo.png">
 </figure>
 </div>
 
