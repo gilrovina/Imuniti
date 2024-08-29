@@ -66,12 +66,6 @@ doenças.
 
 ## Público-Alvo
 
-Nosso aplicativo é projetado para atender a diversas necessidades relacionadas ao gerenciamento de vacinas, oferecendo
-uma solução simples e acessível para que todos possam manter sua agenda de vacinas em dia e cuidar melhor da própria
-saúde e da saúde de daqueles que amam.
+O aplicativo é projetado para atender a diversas necessidades relacionadas ao gerenciamento de vacinas, oferecendo uma solução simples e acessível para que todos possam manter sua agenda de vacinas em dia e cuidar melhor da própria saúde e da saúde daqueles que amam.
 
-Com funcionalidades que facilitam o acompanhamento de vacinas para diferentes perfis, desde pais e responsáveis que
-desejam garantir que seus filhos estejam protegidos, até gestantes que precisam monitorar as vacinas recomendadas
-durante a gravidez, nosso aplicativo se adapta para fornecer lembretes personalizados e informações detalhadas. Assim,
-garantimos que cada usuário tenha acesso a uma gestão de saúde mais organizada, segura e eficiente, promovendo bem-estar
-e proteção contínua para todos.  
+Com funcionalidades que facilitam o acompanhamento de vacinas para diferentes perfis, desde pais e responsáveis que desejam garantir que seus filhos estejam protegidos, até gestantes que precisam monitorar as vacinas recomendadas durante a gravidez, o aplicativo se adapta para fornecer lembretes personalizados e informações detalhadas. Dessa forma, cada usuário tem acesso a uma gestão de saúde mais organizada, segura e eficiente, promovendo bem-estar e proteção contínua para todos.
