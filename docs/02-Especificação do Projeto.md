@@ -68,7 +68,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-008| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas.    | MÉDIA |
 |RF-009| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
 |RF-010| A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.    | MÉDIA |
-|RF-011| A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência, utilizando o método notificações push.    | BAIXA |
+|RF-011| A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência.    | BAIXA |
 
 
 
