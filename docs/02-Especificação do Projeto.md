@@ -59,17 +59,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. | ALTA | 
-|RF-002| A aplicação deve permitir que o usuário gerencie suas informações básicas, como nome completo, idade, sexo, data de nascimento e endereço.    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. | ALTA |
-|RF-004| A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.    | ALTA |
-|RF-005| A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local e responsável pela aplicação. | ALTA |
-|RF-006| A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais. | ALTA |
-|RF-007| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
-|RF-008| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
-|RF-009| A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.    | MÉDIA |
-|RF-010| A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência.    | BAIXA |
-|RF-011| A aplicação deve permitir que o usuário registre informações ou anotações importantes em cada card de vacina, como possíveis efeitos colaterais. | BAIXA |
+|RF-001|  A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço. | ALTA | 
+|RF-002| A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. | ALTA |
+|RF-003| A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.    | ALTA |
+|RF-004| A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais. | ALTA |
+|RF-005| A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais. | ALTA |
+|RF-006| A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço e distância. | MÉDIA |
+|RF-007| A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF. | MÉDIA |
+|RF-008| A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade, gênero e histórico de vacinas.    | MÉDIA |
+|RF-009| A aplicação deve permitir que o usuário consiga recuperar sua senha.    | MÉDIA |
+|RF-010| A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.    | MÉDIA |
+|RF-011| A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência, utilizando o método notificações push.    | BAIXA |
+
 
 
 ### Requisitos não Funcionais
