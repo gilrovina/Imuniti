@@ -9,27 +9,35 @@ As personas são representações fictícias dos usuários ideais da aplicação
 
 ### Persona 1: Maria Gonzaga
 
-![image](https://github.com/user-attachments/assets/3818d4af-239f-4f63-9402-288f51981c5f)
+<figure> 
+  <img src="/docs/img/MariaGonzaga.jpg">
+</figure>
 
 
 ## Persona 2: João Antônio
 
-![image](https://github.com/user-attachments/assets/68ed21cd-0f5c-47ae-b9ec-9c186561826c)
+<figure> 
+  <img src="/docs/img/JoãoAntônio.jpg">
+</figure>
 
 
 ## Persona 3: Rodrigo Menezes
 
-![image](https://github.com/user-attachments/assets/c838d160-e818-4f16-8337-7a130f09d3d2)
-
+<figure> 
+  <img src="/docs/img/RodrigoMenezes.jpg">
+</figure>
 
 ## Persona 4: Clara Barboza
 
-![image](https://github.com/user-attachments/assets/fd126987-da6e-41e3-9fea-f91ae5a1ee6a)
-
+<figure> 
+  <img src="/docs/img/ClaraBarboza.jpg">
+</figure>
 
 ## Persona 5: Beatriz Oliveira
 
-![image](https://github.com/user-attachments/assets/7c930325-0e7b-4d47-8f50-1824b00f7009)
+<figure> 
+  <img src="/docs/img/BeatrizOliveira.jpg">
+</figure>
 
 
 ## Histórias de Usuários
