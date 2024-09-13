@@ -37,41 +37,72 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ## Gerenciamento de Projeto
 
+A equipe utiliza metodologias ágeis, tendo escolhido o Kanban como base para definição do processo de desenvolvimento.
+
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe está organizada da seguinte maneira:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Scrum Master:
+* Gilson Rodrigo Rovina Gonçalves
+---
+
+Product Owner:
+* Carolina Santos Félix
+---
+
+Equipe de Desenvolvimento:
+* Alberto Mario Rodrigues de Souza
+* Carolina Santos Félix
+* Felipe Nicolau Ferreira
+* Gilson Rodrigo Rovina Gonçalves
+* Lucas Siqueira Ribeiro
+* Ryan Ramires de Araújo
+---
+
+Equipe de Design:
+* Alberto Mario Rodrigues de Sozua
+* Carolina Santos Félix
+* Gilson Rodrigo Rovina Gonçalves
+---
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub Projects estruturado com as seguintes listas:  
+
+**Product Backlog**: Esta é a fase inicial onde as novas tarefas são identificadas.
+
+**Sprint Backlog**: As tarefas identificadas são adicionadas ao backlog para serem priorizadas e planejadas.
+
+**Ready**: As tarefas no sprint backlog que estão prontas para serem trabalhadas são movidas para esta fase.
+
+**In Progress**: As tarefas que estão atualmente sendo trabalhadas pelos membros da equipe.
+
+**In Review**: Após a conclusão do trabalho, as tarefas são movidas para esta fase para revisão e feedback.
+
+**Done**: As tarefas que foram revisadas e aprovadas são consideradas concluídas.
+
+O quadro Kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da URL do GitHub Project disponível na guia [Ferramentas] e é apresentado, no estado atual, na Figura `backlog-gestao-de-vacinas`.
+
+![backlog-gestao-de-vacinas](https://github.com/user-attachments/assets/da0a428a-8e91-49f9-b8d9-20c7ebd64ba1)
+
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+Relação de Ambientes de Trabalho
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+
+|Ambiente | Plataforma |Link de Acesso |
+|---|---|---|
+|Repositório de código fonte |GitHub| [Controle Patrimonial](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas)|
+|Documentos do projeto |Discord|[PUCMG-EIXO2-EQUIPE1-2024](https://discord.gg/SSJEgS9W)|
+|Projeto de Interface e  Wireframes|Figma|[Repositório](https://www.figma.com/)|
+|Gerenciamento do Projeto |GitHub Projects|[Backlog-Gestao-de-Vacinas](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1154)|
+|Editor de código |Visual Studio Code|[Visual Studio Code](https://code.visualstudio.com/)|   |
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
 diagramas utilizamos essa ferramenta por melhor captar as
 necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
