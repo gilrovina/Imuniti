@@ -10,16 +10,22 @@ Por exemplo:
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar em "Crie sua conta" <br> - Preencher os campos obrigatórios (e-mail, nome completo, senha, confirmação de senha) <br> - Clicar em "Registrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
+|Requisito Associado | RF-002	- A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
+|  	|  	|
+| Caso de Teste 	| CT-03 – Efetuar login	|
+|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares. |
+| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar perfis. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar Perfil"  |
+|Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
 
  
 > **Links Úteis**:
