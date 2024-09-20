@@ -22,15 +22,56 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Os wireframes oferecem uma representação simplificada do design da interface e do relacionamento entre suas páginas, permitindo o aprimoramento da proposta de solução. Neste projeto, iremos utilizá-los para apoiar a validação dos requisitos e, se necessário, efetuar ajustes neles, visando minimizar o impacto na codificação da aplicação.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Os wireframes podem ser acessados a partir do projeto do figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imuniti?m=auto&t=F0m3qbomc9C6hoJb-1)
+
+### 1. Index
+<figure> 
+  <img src="/docs/img/Wireframe_Index.png">
+</figure>
+
+### 2. Cadastro
+<figure> 
+  <img src="/docs/img/Wireframe_Cadastro.png">
+</figure>
+
+### 3. Login
+<figure> 
+  <img src="/docs/img/Wireframe_Login.png">
+</figure>
+
+### 4. Recuperar senha
+<figure> 
+  <img src="/docs/img/Wireframe_Recuperar_Senha.png">
+</figure>
+
+### 5. Home
+<figure> 
+  <img src="/docs/img/Wireframe_Home.png">
+</figure>
+
+### 6. Gerenciar cadastro
+<figure> 
+  <img src="/docs/img/Wireframe_Gerenciar_Cadastro.png">
+</figure>
+
+### 7. Cadastrar membro
+<figure> 
+  <img src="/docs/img/Wireframe_Cadastro_Membro.png">
+</figure>
+
+### 8. Visualizar perfil / caderneta de vacinação
+<figure> 
+  <img src="/docs/img/Wireframe_Perfil.png">
+</figure>
+
+### 9. Visualizar perfil / caderneta de vacinação -> Modal Card Vacina
+<figure> 
+  <img src="/docs/img/Wireframe_Perfil_Modal_Card_Vacina.png">
+</figure>
+
+### 10. Imprimir
+<figure> 
+  <img src="/docs/img/Wireframe_Imprimir.png">
+</figure>
