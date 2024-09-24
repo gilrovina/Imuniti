@@ -39,32 +39,37 @@ Os wireframes podem ser acessados a partir do projeto do figma: [Link de acesso]
   <img src="/docs/img/Wireframe_Recuperar_Senha.png">
 </figure>
 
-### 5. Home
+### 5. Recuperar senha - Inserir nova senha
+<figure> 
+  <img src="/docs/img/Wireframe_Recuperar_Senha_Nova_Senha.png">
+</figure>
+
+### 6. Home
 <figure> 
   <img src="/docs/img/Wireframe_Home.png">
 </figure>
 
-### 6. Gerenciar cadastro
+### 7 Gerenciar cadastro
 <figure> 
   <img src="/docs/img/Wireframe_Gerenciar_Cadastro.png">
 </figure>
 
-### 7. Cadastrar membro
+### 8. Cadastrar membro
 <figure> 
   <img src="/docs/img/Wireframe_Cadastro_Membro.png">
 </figure>
 
-### 8. Visualizar perfil / caderneta de vacinação
+### 9. Visualizar perfil / caderneta de vacinação
 <figure> 
   <img src="/docs/img/Wireframe_Perfil.png">
 </figure>
 
-### 9. Visualizar perfil / caderneta de vacinação -> Modal Card Vacina
+### 10. Visualizar perfil / caderneta de vacinação -> Modal Card Vacina
 <figure> 
   <img src="/docs/img/Wireframe_Perfil_Modal_Card_Vacina.png">
 </figure>
 
-### 10. Imprimir
+### 11. Imprimir
 <figure> 
   <img src="/docs/img/Wireframe_Imprimir.png">
 </figure>
