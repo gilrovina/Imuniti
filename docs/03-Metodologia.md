@@ -20,13 +20,9 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
-- `Bug`: Para todos os problemas que causam um comportamento inesperado no software
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 - `in progress`: Para issues que estão em andamento e sendo trabalhadas
-- `ready for review`: Para issues que estão prontas para revisão por outros membros da equipe
-- `blocked`: Para issues que estão bloqueadas por alguma dependência ou impedimento
-- `wontfix`: Para issues que não serão corrigidas no momento atual
 
 O projeto segue a seguinte convenção para as categorias de commits:
 
