@@ -20,18 +20,27 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para
 etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
+- `Bug`: Para todos os problemas que causam um comportamento inesperado no software
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
+- `in progress`: Para issues que estão em andamento e sendo trabalhadas
+- `ready for review`: Para issues que estão prontas para revisão por outros membros da equipe
+- `blocked`: Para issues que estão bloqueadas por alguma dependência ou impedimento
+- `wontfix`: Para issues que não serão corrigidas no momento atual
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+O projeto segue a seguinte convenção para as categorias de commits:
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+- `feat`: Novas funcionalidades ou recursos adicionados ao software.
+- `docs`: Alterações na documentação do projeto.
+- `bugfix`: Correções de bugs ou problemas no software.
+- `refactor`: Refatorações de código, sem alteração de comportamento visível para o usuário.
+- `style`: Alterações na formatação do código, como espaçamento, indentação, etc.
+- `test`: Adição ou modificação de testes unitários, testes de integração, ou testes de aceitação.
+- `chore`: Tarefas de manutenção ou outras atividades que não afetam diretamente o funcionamento do software.
+
+Para a gerência de merges o projeto segue a seguinte ordem:
+
+- `Gerência de Merges`: As alterações no projeto são integradas por meio de pull requests revisadas por pares. Após a revisão e aprovação, as alterações são mescladas na branch principal do projeto, seguindo práticas recomendadas de merge para garantir a qualidade e integridade do código.
 
 ## Gerenciamento de Projeto
 
