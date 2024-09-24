@@ -12,12 +12,12 @@ social.
 ## 2. Objetivo do Teste de Usabilidade:
 
 Avaliar a facilidade de uso, a fluidez da navegação e o nível de satisfação dos usuários em relação à intuitividade da
-aplicação durante o processo de registro vacinal, tanto para o usuário principal quanto para seus dependentes.
+aplicação durante o processo de registro vacinal, tanto para o usuário principal quanto para seus membros.
 
 ## 3. Escopo do Teste de Usabilidade:
 
-* Cadastro de novo usuário e, caso desejado, de seus dependentes.
-* Registro, atualização e deleção de vacinas.
+* Cadastro de novo usuário e, caso desejado, de seus membros.
+* Registro, atualização e exclusão de vacinas.
 * Consulta ao histórico de vacinação dos usuários.
 * Usabilidade da aplicação em dispositivos móveis e estacionários.
 
@@ -42,7 +42,7 @@ questionário ao final do teste.
 
 O teste será submetido a um grupo de 5 a 10 usuários com perfis variados:
 
-* Usurários com experiência mínima, moderada e avançada em referência a utilização de ferramentas digitais.
+* Usuários com experiência mínima, moderada e avançada em referência a utilização de ferramentas digitais.
 * Realização de testes com indivíduos de diferentes faixas etárias.
 
 ## 8. Critérios de Avaliação de Sucesso:
@@ -56,20 +56,20 @@ o cadastro de vacinas de forma intuítiva e se indicaria o uso da plataforma a t
 
 * Criar uma conta na aplicação
 * Realizar Login
-* Cadastrar dependentes
-* Gerenciar dados cadastrais gerais do usuário e seus dependentes
+* Cadastrar membros
+* Gerenciar dados cadastrais gerais do usuário e seus membros
 * Cadastrar, atualizar e deletar registros vacinais
 * Visualizar histórico vacinal
-* Receber e gerenciar notificações
+* Receber e visualizar notificações
 * Consultar UBS mais próxima para vacinação
 
 ## 10. Análise dos Resultados
 
-Serão avaliados registros de tela e avaliações dos usuários afim de implementar melhorias na aplicação.
+Serão observados registros de tela e avaliações dos usuários a fim de implementar melhorias na aplicação.
 
 ## 11. Cronograma
 
 | **Planejamento dos Testes** | **Realização dos Testes** | **Análise dos Resultados** |
 |-----------------------------|---------------------------|----------------------------|
-| XX/XX/XXXX à XX/XX/XXXX     | XX/XX/XXXX à XX/XX/XXXX   | XX/XX/XXXX à XX/XX/XXXX    |
+| 02/09/2024 à 29/09/2024     | 30/09/2024 à 24/11/2024   | 25/11/2024 à 08/12/2024    |
 
