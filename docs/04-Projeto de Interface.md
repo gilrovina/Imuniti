@@ -36,7 +36,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 2. Cadastro
 
-#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
+#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o auto cadastro e gerencie seus dados, incluindo informações básicas como e-mail e senha.
 
 <figure> 
   <img src="/docs/img/Wireframe_Cadastro.png">
@@ -76,7 +76,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 7 Gerenciar cadastro
 
-#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
+#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o auto cadastro e gerencie seus dados, incluindo informações básicas como e-mail e senha.
 
 <figure> 
   <img src="/docs/img/Wireframe_Gerenciar_Cadastro.png">
