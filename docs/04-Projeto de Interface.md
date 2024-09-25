@@ -28,7 +28,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 1. Index
 
-#### Requisito atendido: RF-006 - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço.
+#### Requisito atendido: *RF-006* - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço.
 
 <figure> 
   <img src="/docs/img/Wireframe_Index.png">
@@ -36,7 +36,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 2. Cadastro
 
-#### RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
+#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
 
 <figure> 
   <img src="/docs/img/Wireframe_Cadastro.png">
@@ -44,7 +44,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 3. Login
 
-#### RF-002 - A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas.
+#### Requisito atendido: *RF-002* - A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas.
 
 <figure> 
   <img src="/docs/img/Wireframe_Login.png">
@@ -52,7 +52,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 4. Recuperar senha
 
-#### RF-009 - A aplicação deve permitir que o usuário consiga recuperar sua senha.
+#### Requisito atendido: *RF-009* - A aplicação deve permitir que o usuário consiga recuperar sua senha.
 
 <figure> 
   <img src="/docs/img/Wireframe_Recuperar_Senha.png">
@@ -60,7 +60,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 5. Recuperar senha - Inserir nova senha
 
-#### RF-009 - A aplicação deve permitir que o usuário consiga recuperar sua senha.
+#### Requisito atendido: *RF-009* - A aplicação deve permitir que o usuário consiga recuperar sua senha.
 
 <figure> 
   <img src="/docs/img/Wireframe_Recuperar_Senha_Nova_Senha.png">
@@ -68,7 +68,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 6. Home
 
-#### RF-006 - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço.
+#### Requisito atendido: *RF-006* - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço.
 
 <figure> 
   <img src="/docs/img/Wireframe_Home.png">
@@ -76,7 +76,7 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 7 Gerenciar cadastro
 
-#### RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
+#### Requisito atendido: *RF-001* - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço.
 
 <figure> 
   <img src="/docs/img/Wireframe_Gerenciar_Cadastro.png">
@@ -84,7 +84,8 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 8. Cadastrar membro
 
-#### RF-003 - A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.
+#### Requisito atendido: *RF-003* - A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares.
+
 
 <figure> 
   <img src="/docs/img/Wireframe_Cadastro_Membro.png">
@@ -92,11 +93,9 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 9. Visualizar perfil / caderneta de vacinação
 
-#### RF-004 - A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais.
+#### Requisito atendido: *RF-005* - A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais.
 
-#### RF-005 - A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais.
-
-#### RF-010 - A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.
+#### Requisito atendido: *RF-010* - A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras.
 
 <figure> 
   <img src="/docs/img/Wireframe_Perfil.png">
@@ -104,7 +103,9 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 10. Visualizar perfil / caderneta de vacinação -> Modal Card Vacina
 
-#### RF-008 - A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas.
+#### Requisito atendido: *RF-008* - A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas.
+
+#### Requisito atendido: *RF-004* - A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais.
 
 <figure> 
   <img src="/docs/img/Wireframe_Perfil_Modal_Card_Vacina.png">
@@ -112,8 +113,8 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 11. Imprimir
 
-#### RF-007 - 
-A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF.
+#### Requisito atendido: *RF-007* - A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF.
+
 <figure> 
   <img src="/docs/img/Wireframe_Imprimir.png">
 </figure>
