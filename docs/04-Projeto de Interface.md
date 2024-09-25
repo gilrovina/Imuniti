@@ -68,6 +68,8 @@ figma: [Link de acesso](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imun
 
 ### 6. Home
 
+#### RF-006 - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço.
+
 <figure> 
   <img src="/docs/img/Wireframe_Home.png">
 </figure>
