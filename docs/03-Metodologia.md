@@ -97,7 +97,9 @@ seguintes listas:
 O quadro Kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da URL do
 GitHub Projects disponível na aba [Ferramentas] e é apresentado, no estado atual, na Figura `backlog-gestao-de-vacinas`.
 
-![backlog-gestao-de-vacinas](https://github.com/user-attachments/assets/da0a428a-8e91-49f9-b8d9-20c7ebd64ba1)
+<figure> 
+  <img src="/docs/img/Quadro_kanban.png">
+</figure>
 
 ### Ferramentas
 
@@ -108,11 +110,11 @@ propósito é apresentada na tabela que se segue.
 
 | Ambiente                           | Plataforma         | Link de Acesso                                                                                                 |
 |------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------|
-| Repositório de código fonte        | GitHub             | [Controle Patrimonial](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas) |
-| Documentos do projeto              | Discord            | [PUCMG-EIXO2-EQUIPE1-2024](https://discord.gg/SSJEgS9W)                                                        |
-| Projeto de Interface e  Wireframes | Figma              | [Repositório](https://www.figma.com/)                                                                          |
-| Gerenciamento do Projeto           | GitHub Projects    | [Backlog-Gestao-de-Vacinas](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1154)                      |
-| Editor de código                   | Visual Studio Code | [Visual Studio Code](https://code.visualstudio.com/)                                                           |   |
+| Repositório de código fonte        | GitHub             | [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas) |
+| Documentos do projeto              | Discord            | [Link](https://discord.gg/SSJEgS9W)                                                        |
+| Projeto de Interface e  Wireframes | Figma              | [Link](https://www.figma.com/)                                                                          |
+| Gerenciamento do Projeto           | GitHub Projects    | [Link](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1154)                      |
+| Editor de código                   | Visual Studio Code | [Link](https://code.visualstudio.com/)                                                           |   |
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
