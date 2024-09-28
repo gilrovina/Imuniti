@@ -13,34 +13,30 @@ A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
-O projeto segue a seguinte convenção para o nome de branches:
+O projeto adota a seguinte convenção para a nomenclatura das branches:
 
-- `main`: versão estável já testada do software
-- `dev`: versão de desenvolvimento e teste do software
+- `main`: versão estável e testada do software
+- `dev`: versão em desenvolvimento e destinada a testes
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+Para o gerenciamento de issues, utilizamos as seguintes etiquetas:
 
 - `documentation`: melhorias ou acréscimos à documentação
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-- `in progress`: Para issues que estão em andamento e sendo trabalhadas
+- `feature`: introdução de novas funcionalidades
+- `enhancement`: aprimoramentos necessários em funcionalidades existentes
+- `in progress`: issues que estão em andamento e sendo trabalhadas
+- `bug`: erros ou problemas no software que precisam ser corrigidos
+- `help wanted`: necessidade de assistência ou colaboração adicional para resolver a issue
 
 O projeto segue a seguinte convenção para as categorias de commits:
 
-- `feat`: Novas funcionalidades ou recursos adicionados ao software.
-- `docs`: Alterações na documentação do projeto.
-- `fix`: Correções de bugs ou problemas no software.
-- `refactor`: Refatorações de código, sem alteração de funcionalidade, apenas de estrutura e legibilidade do código.
-- `style`: Alterações na formatação do código, como espaçamento, indentação, etc.
-- `test`: Adição ou modificação de testes unitários, testes de integração, ou testes de aceitação.
-- `chore`: Tarefas de manutenção ou outras atividades que não afetam diretamente o código de produção, sendo as ações direcionadas a atualizações de dependências utilizadas.
+- `feat`: adição de novas funcionalidades
+- `fix`: correção de bugs ou problemas identificados
+- `docs`: alterações na documentação do projeto
+- `refactor`: melhorias no código que não alteram funcionalidades
 
 Para a gerência de merges o projeto segue a seguinte ordem:
 
-- `Gerência de Merges`: As alterações no projeto são integradas por meio de pull requests revisadas por pares. Após a
-  revisão e aprovação, as alterações são mescladas na branch principal do projeto, seguindo práticas recomendadas de
-  merge para garantir a qualidade e integridade do código.
+- `Gerência de Merges`: As alterações são integradas por meio de pull requests revisadas por pares. Após a revisão e aprovação, as mudanças são mescladas na branch principal (main), seguindo as melhores práticas de merge para garantir a qualidade e a integridade do código.
 
 ## Gerenciamento de Projeto
 
