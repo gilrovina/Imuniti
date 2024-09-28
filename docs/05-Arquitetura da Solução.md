@@ -20,7 +20,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
-![ProjetoBancoDados](https://github.com/user-attachments/assets/7ffa9176-1e84-42a4-8ef2-b5bf3e2c4c6c)
+
+![ProjetoBancoDados](https://github.com/user-attachments/assets/2569a2c3-1c50-44cf-a2be-256e99ca8a6e)
 
 
 ## Tecnologias Utilizadas
