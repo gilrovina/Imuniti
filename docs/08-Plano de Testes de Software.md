@@ -66,11 +66,6 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Clicar no membro desejado <br> - Visualizar caderneta, e observar se as tags (verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras) estão condizentes |
 |Critério de Êxito | - Usuário consegue visualizar os status das vacinas corretaemnte, através de tags coloridas |
 |  	|  	|
-| Caso de Teste 	| CT-11 – Enviar notificações	|
-|Requisito Associado | RF-011	- A aplicação deve enviar notificações e/ou lembretes aos usuários sobre vacinas próximas ou doses de reforço com até uma semana de antecedência. |
-| Objetivo do Teste 	| Verificar se o usuário recebe notificações e/ou lembretes sobre o calendário vacinal |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar Perfil"  |
-|Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
 
 
  
