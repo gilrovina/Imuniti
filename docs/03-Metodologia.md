@@ -108,13 +108,13 @@ Relação de Ambientes de Trabalho
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo
 propósito é apresentada na tabela que se segue.
 
-| Ambiente                           | Plataforma         | Link de Acesso                                                                                                 |
-|------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------|
-| Repositório de código fonte        | GitHub             | [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas) |
-| Documentos do projeto              | Discord            | [Link](https://discord.gg/SSJEgS9W)                                                        |
-| Projeto de Interface e  Wireframes | Figma              | [Link](https://www.figma.com/)                                                                          |
-| Gerenciamento do Projeto           | GitHub Projects    | [Link](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1154)                      |
-| Editor de código                   | Visual Studio Code | [Link](https://code.visualstudio.com/)                                                           |   |
+| Ambiente                           | Plataforma         | Link de Acesso                                                                                                     |
+|------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| Repositório de código fonte        | GitHub             | [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/blob/main/README.md) |
+| Documentos do projeto              | GitHub             | [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas)                     |
+| Projeto de Interface e  Wireframes | Figma              | [Link](https://www.figma.com/design/84aAhC1Nlt1wAR1uK46fce/Imuniti?m=auto&t=F0m3qbomc9C6hoJb-1)                    |
+| Gerenciamento do Projeto           | GitHub Projects    | [Link](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1154)                                               |
+| Editor de código                   | Visual Studio Code | [Link](https://code.visualstudio.com/)                                                                             |
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
