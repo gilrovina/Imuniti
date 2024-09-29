@@ -1,11 +1,6 @@
 # Metodologia
 
-<span style="color: red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de
-Especificação</a></span>
-
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho
-utilizados pela equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do
-código-fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Escolhemos a metodologia ágil Kanban para o nosso projeto por sua capacidade de oferecer flexibilidade e eficiência. Com o uso de um quadro Kanban, conseguimos visualizar o fluxo de trabalho e gerenciar as tarefas de forma dinâmica. Isso nos permite responder rapidamente a mudanças e priorizar atividades conforme necessário. A abordagem do Kanban facilita a comunicação entre os membros da equipe, melhora a colaboração e ajuda a identificar e resolver obstáculos no processo. Assim, o Kanban se mostra ideal para atender às necessidades do nosso projeto, proporcionando um ambiente adaptável e focado na melhoria contínua..
 
 ## Controle de Versão
 
