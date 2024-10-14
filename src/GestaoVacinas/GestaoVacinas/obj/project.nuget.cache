@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+WwQeHmdpck=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lsrdot\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
