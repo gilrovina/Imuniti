@@ -11,6 +11,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Configurar para usar e-mail como nome de usuário
+    options.User.RequireUniqueEmail = true;
+});
+
+
 builder.Services.AddIdentity<Users, IdentityRole>(options =>
     {
         // Mudar de acordo com a necessidade que vamos ter no projeto após a próxima reunião

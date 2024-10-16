@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\lsrdot\Documents\PUC\SegSemestre\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\src\GestaoVacinas\GestaoVacinas
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/lsrdot/Documents/PUC/SegSemestre/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/src/GestaoVacinas/GestaoVacinas/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lsrdot/Documents/PUC/SegSemestre/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/src/GestaoVacinas/GestaoVacinas/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lsrdot/Documents/PUC/SegSemestre/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/src/GestaoVacinas/GestaoVacinas/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lsrdot/Documents/PUC/SegSemestre/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/src/GestaoVacinas/GestaoVacinas/Views/Account/VerifyEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lsrdot/Documents/PUC/SegSemestre/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/src/GestaoVacinas/GestaoVacinas/Views/Home/Index.cshtml]
