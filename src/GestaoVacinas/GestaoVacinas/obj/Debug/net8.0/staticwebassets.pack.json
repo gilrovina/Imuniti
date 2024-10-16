@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GestaoVacinas.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\wwwroot\\css\\account.css",
+      "PackagePath": "staticwebassets\\css\\account.css"
+    },
+    {
       "Id": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

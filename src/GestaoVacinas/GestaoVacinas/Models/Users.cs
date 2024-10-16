@@ -2,8 +2,9 @@
 
 namespace GestaoVacinas.Models;
 
-    public class Usuario : IdentityUser
+    public class Users : IdentityUser
     {
         
     }
 
+   

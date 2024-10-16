@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-builder.Services.AddIdentity<Usuario, IdentityRole>(options =>
+builder.Services.AddIdentity<Users, IdentityRole>(options =>
     {
         // Mudar de acordo com a necessidade que vamos ter no projeto após a próxima reunião
         options.Password.RequireNonAlphanumeric = false;

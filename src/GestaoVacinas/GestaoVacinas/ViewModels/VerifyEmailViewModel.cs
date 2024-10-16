@@ -2,7 +2,7 @@
 
 namespace GestaoVacinas.ViewModels
 {
-    public class VerificarEmailModel
+    public class VerifyEmailViewModel
     {
         [Required(ErrorMessage = "É obrigatório informar um Email")]
         [EmailAddress(ErrorMessage = "Email inválido")]

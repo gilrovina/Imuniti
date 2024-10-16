@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q/41r2dov1WGJGq3y9a+8Sgdx6m3rQgqDRY/fAkbJ/w=",
+  "Hash": "0m+vkQYIhIC9nvp4+ie6/CBKXdBMrxm0K8DACz6X6p0=",
   "Source": "GestaoVacinas",
   "BasePath": "_content/GestaoVacinas",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\GestaoVacinas.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\wwwroot\\css\\account.css",
+      "SourceId": "GestaoVacinas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\wwwroot\\",
+      "BasePath": "_content/GestaoVacinas",
+      "RelativePath": "css/account.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\account.css"
     },
     {
       "Identity": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\wwwroot\\css\\site.css",
