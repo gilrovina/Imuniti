@@ -1,12 +1,33 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+## Protótipo de alta fidelidade
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+### Home
+Interface principal do sistema. Referência para o Index.
+<figure> 
+  <img src="/docs/img/Prototipo_Alta_Fidelidade_Home.png">
+</figure>
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+### Cadastrar membro
+Interface de formulário. Referência para Cadastro, Login, Recuperar senha, Recuperar senha - Inserir nova senha e Gerenciar cadastro.
+<figure> 
+  <img src="/docs/img/Prototipo_Alta_Fidelidade_Cadastro_Membro.png">
+</figure>
+
+### Visualizar membro / caderneta de vacinação
+Interface do membro selecionado com visualização da caderneta de vacinas.
+<figure> 
+  <img src="/docs/img/Prototipo_Alta_Fidelidade_Perfil.png">
+</figure>
+
+### Visualizar membro / caderneta de vacinação -> Modal Card Vacina
+Modal do card da vacina selecionada sobre a interface do membro selecionado com visualização da caderneta de vacinas.
+<figure> 
+  <img src="/docs/img/Prototipo_Alta_Fidelidade_Perfil_Modal_Card_Vacina.png">
+</figure>
+
+### Imprimir
+Interface de impressão.
+<figure> 
+  <img src="/docs/img/Prototipo_Alta_Fidelidade_Imprimir.png">
+</figure>
