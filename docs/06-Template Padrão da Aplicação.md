@@ -1,5 +1,19 @@
 # Template Padrão da Aplicação
 
+## Paleta de cores
+
+### Cores Primárias
+As cores principais foram escolhidas para transmitir confiança e segurança, ideais para o setor de saúde. O azul e o verde reforçam essa sensação, além de trazerem uma atmosfera de bem-estar.
+<figure> 
+  <img src="/docs/img/Cores_primarias.png">
+</figure>
+
+### Cores Secundárias
+As cores secundárias trazem harmonia e equilíbrio, complementando as cores principais e garantindo que a navegação seja clara e agradável para o usuário.
+<figure> 
+  <img src="/docs/img/Cores_secundarias.png">
+</figure>
+
 ## Tipografia
 
 A fonte Questrial foi usada no logotipo da Imuniti por seu estilo limpo e moderno, que combina com a proposta da marca. Para o site, escolhemos Open Sans pela sua ótima legibilidade, garantindo que o conteúdo seja fácil de ler em qualquer dispositivo.
