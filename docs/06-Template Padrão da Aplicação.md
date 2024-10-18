@@ -1,5 +1,12 @@
 # Template Padrão da Aplicação
 
+## Logo
+<figure> 
+  <img src="/docs/img/Logo_Apresentacao.png">
+</figure>
+O nome Imuniti vem da junção de "imunização" e "TI", refletindo o encontro entre saúde e tecnologia de forma prática. O logotipo, com a cruz estilizada, remete ao cuidado com a saúde e segue um padrão internacional de reconhecimento. As cores azul e verde foram escolhidas para transmitir confiança e bem-estar. Tudo foi projetado para ser prático e flexível, garantindo uma identidade visual forte em qualquer plataforma.
+O logotipo é exibido em sua versão padrão, e ícone colorido, além de versões monocromáticas, que asseguram flexibilidade e consistência em diferentes contextos e mídias.
+
 ## Protótipo de alta fidelidade
 
 ### Home
