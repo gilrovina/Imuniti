@@ -1,6 +1,11 @@
 # Template Padrão da Aplicação
 
+## Tipografia
+
+A fonte Questrial foi usada no logotipo da Imuniti por seu estilo limpo e moderno, que combina com a proposta da marca. Para o site, escolhemos Open Sans pela sua ótima legibilidade, garantindo que o conteúdo seja fácil de ler em qualquer dispositivo.
+
 ## Logo
+
 <figure> 
   <img src="/docs/img/Logo_Apresentacao.png">
 </figure>
