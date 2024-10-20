@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoVacinas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e15137555f7061520db8f36b8876f5903a5f107")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7107e55d1be95d53be69b5189d5e0933749d5c41")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoVacinas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoVacinas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

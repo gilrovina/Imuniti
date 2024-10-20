@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj": {}
+    "C:\\1 PUC\\imuniti\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj": {
+    "C:\\1 PUC\\imuniti\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj",
+        "projectUniqueName": "C:\\1 PUC\\imuniti\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj",
         "projectName": "GestaoVacinas",
-        "projectPath": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj",
-        "packagesPath": "C:\\Users\\lsrdot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lsrdot\\Documents\\PUC\\SegSemestre\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\obj\\",
+        "projectPath": "C:\\1 PUC\\imuniti\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\GestaoVacinas.csproj",
+        "packagesPath": "C:\\Users\\Carolina\\.nuget\\packages\\",
+        "outputPath": "C:\\1 PUC\\imuniti\\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\\src\\GestaoVacinas\\GestaoVacinas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lsrdot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Carolina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,6 +67,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             }
           },
           "imports": [
@@ -88,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
