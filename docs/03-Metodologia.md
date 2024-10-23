@@ -1,6 +1,6 @@
 # Metodologia
 
-Escolhemos a metodologia ágil Kanban para o nosso projeto por sua capacidade de oferecer flexibilidade e eficiência. Com o uso de um quadro Kanban, conseguimos visualizar o fluxo de trabalho e gerenciar as tarefas de forma dinâmica. Isso nos permite responder rapidamente a mudanças e priorizar atividades conforme necessário. A abordagem do Kanban facilita a comunicação entre os membros da equipe, melhora a colaboração e ajuda a identificar e resolver obstáculos no processo. Assim, o Kanban se mostra ideal para atender às necessidades do nosso projeto, proporcionando um ambiente adaptável e focado na melhoria contínua..
+Escolhemos a metodologia ágil Scrum para o nosso projeto por sua capacidade de oferecer flexibilidade e eficiência. Com o uso do Scrum, conseguimos organizar o fluxo de trabalho em sprints e gerenciar as tarefas de forma iterativa. Isso nos permite responder rapidamente a mudanças e priorizar atividades conforme necessário. A abordagem do Scrum facilita a comunicação entre os membros da equipe, melhora a colaboração e nos ajuda a identificar e resolver obstáculos no processo. Assim, o Scrum se mostra ideal para atender às necessidades do nosso projeto, proporcionando um ambiente adaptável e focado na melhoria contínua.
 
 ## Controle de Versão
 
