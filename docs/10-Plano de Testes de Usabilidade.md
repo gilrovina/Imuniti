@@ -1,6 +1,5 @@
 # Plano de Testes de Usabilidade
 
-***
 
 ## 1. Objetivo principal da aplicação:
 
@@ -16,8 +15,9 @@ aplicação durante o processo de registro vacinal, tanto para o usuário princi
 
 ## 3. Escopo do Teste de Usabilidade:
 
-* Cadastro de novo usuário e, caso desejado, de seus membros.
-* Registro, atualização e exclusão de vacinas.
+* Cadastro, login e recuperação de senha do usuário da aplicação
+* Cadastro dos membros.
+* Registro, atualização e exclusão de dados referentes as vacinas vinculadas aos membros.
 * Consulta ao histórico de vacinação dos usuários.
 * Usabilidade da aplicação em dispositivos móveis e estacionários.
 
@@ -56,6 +56,7 @@ o cadastro de vacinas de forma intuítiva e se indicaria o uso da plataforma a t
 
 * Criar uma conta na aplicação
 * Realizar Login
+* Recuperar Senha
 * Cadastrar membros
 * Gerenciar dados cadastrais gerais do usuário e seus membros
 * Cadastrar, atualizar e deletar registros vacinais
@@ -65,7 +66,11 @@ o cadastro de vacinas de forma intuítiva e se indicaria o uso da plataforma a t
 
 ## 10. Análise dos Resultados
 
-Serão observados registros de tela e avaliações dos usuários a fim de implementar melhorias na aplicação.
+Observaremos registros de tela e avaliações dos usuários a fim de implementar melhorias na aplicação. As métricas
+utilizadas para avaliação dos cenários de uso serão:
+* Tempo gasto a, partir do registro do usuário, para realização do cadastro de membros e informações vacinais
+* Os erros reportados durante a utilização do software
+* Avaliação subjetiva relativa à experiência de uso dos usuários.
 
 ## 11. Cronograma
 
