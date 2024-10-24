@@ -2,3 +2,9 @@
 /src/GestaoVacinas/GestaoVacinas/bin/
 /src/GestaoVacinas/GestaoVacinas/obj/
 
+# Ignorar arquivos gerados pelo build
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
