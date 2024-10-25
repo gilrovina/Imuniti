@@ -16,6 +16,8 @@ namespace GestaoVacinas.Models
         public required string NomeCompleto { get; set; }
 
         [Required(ErrorMessage = "A data de nascimento é obrigatória.")]
+        [DataType(DataType.Date)]
+
         public required DateTime DataNascimento { get; set; }
 
         [Required(ErrorMessage = "O CPF é obrigatório.")]

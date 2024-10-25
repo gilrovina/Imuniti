@@ -3,7 +3,7 @@
 @{
 	ViewData["Title"] = "Create";
 }
-
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 <!-- Container principal para o conteúdo inicial -->
 <div class="container mt-5">
 	<div class="row align-items-center">
@@ -11,8 +11,8 @@
 			<img src="~/images/cadastro-membro-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
 		</div>
 		<div class="col-md-6 text-md-start text-center mt-5">
-			<h1 class="mb-3 text-primary">Cadastre um novo membro</h1>
-			<h3 class="text-muted mb-4 mt-4">Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</h3>
+			<h1 class="mb-3 text-primary">Cadastre um novo<br /> membro</h1>
+			<h3 class="text-muted mb-4 mt-4">Facilitamos o controle de suas vacinas para que você cuide<br/> do que mais importa: sua saúde.</h3>
 		</div>
 	</div>
 </div>
@@ -32,22 +32,22 @@
 								<span asp-validation-for="Apelido" class="text-danger"></span>
 							</div>
 							<div class="form-group mb-3">
-								<label asp-for="NomeCompleto" class="control-label"></label>
+								<label asp-for="NomeCompleto" class="control-label">Nome completo</label>
 								<input asp-for="NomeCompleto" class="form-control border-primary" placeholder="Digite o nome completo" />
 								<span asp-validation-for="NomeCompleto" class="text-danger"></span>
 							</div>
 							<div class="form-group mb-3">
-								<label asp-for="DataNascimento" class="control-label"></label>
+								<label asp-for="DataNascimento" class="control-label">Data de nascimento</label>
 								<input asp-for="DataNascimento" class="form-control border-primary" placeholder="DD/MM/AAAA" />
 								<span asp-validation-for="DataNascimento" class="text-danger"></span>
 							</div>
 							<div class="form-group mb-3">
-								<label asp-for="Cpf" class="control-label"></label>
+								<label asp-for="Cpf" class="control-label">CPF</label>
 								<input asp-for="Cpf" class="form-control border-primary" placeholder="XXX.XXX.XXX-XX" />
 								<span asp-validation-for="Cpf" class="text-danger"></span>
 							</div>
 							<div class="form-group mb-4">
-								<label asp-for="Cns" class="control-label"></label>
+								<label asp-for="Cns" class="control-label">Cartão Nacional de Saúde (CNS)</label>
 								<input asp-for="Cns" class="form-control border-primary" placeholder="XXXXXXXXXXXXXXX" />
 								<span asp-validation-for="Cns" class="text-danger"></span>
 							</div>
@@ -68,6 +68,10 @@
 
 @section Styles {
 	<style>
+		/* Estilo para fonte*/
+		*{
+			font-family: 'Open Sans', sans-serif;
+		}
 		/* Estilos para expandir o full-width-bg */
 		.full-width-bg {
 			background-color: #f5f7f8;
@@ -85,6 +89,29 @@
 		/* Remover o padding padrão do body para evitar barras de rolagem horizontais */
 		body {
 			overflow-x: hidden;
+		}
+		/* Botão de cadastrar membro */
+		.text-center input {
+			border-radius: 100px;
+			background-color: #587EFD;
+			color: white;
+			height: 54px;
+		/* Frases de efeito */
+		}
+		.col-md-6 h1 {
+			font-weight: bold;
+			font-size: 45px;
+			color: #587EFD !important;
+		}
+		.col-md-6 h3 {
+			font-size: 16px;
+			color: #031432 !important;
+		}
+
+		.form-group input{
+			border-radius: 7px;
+			height: 34px;
+			border: 2px solid #587EFD !important;
 		}
 	</style>
 }
