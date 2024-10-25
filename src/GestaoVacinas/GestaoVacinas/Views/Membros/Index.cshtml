@@ -3,8 +3,26 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-<h1>Cadastre um novo membro</h1>
+
+<style>
+    * {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 45px;
+        color: #587EFD;
+    }
+    .table {
+        text-align: center;
+    }
+
+</style>
+
+<h1>Membros Cadastrados</h1>
 <table class="table">
     <thead>
         <tr>
@@ -27,32 +45,31 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apelido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomeCompleto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cpf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cns)
-            </td>
-            <td>
-             <p>
-             <a asp-action="Create" class="btn btn-success">Cadastrar membro</a>
-             </p>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apelido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataNascimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cns)
+                </td>
+                <td>
+
+                    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Visualizar</a> |
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Deletar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
