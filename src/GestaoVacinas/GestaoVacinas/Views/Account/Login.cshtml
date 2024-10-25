@@ -6,29 +6,81 @@
     Layout = "~/Views/Shared/_AccountLayout.cshtml";
 }
 
+<!-- Link para a fonte Open Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Estilo Inline para aplicar as mudanças solicitadas -->
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif; /* Define a fonte Open Sans */
+    }
+
+    .btn-success {
+        background-color: #34D6A0; /* Cor personalizada para o botão Login */
+        border-color: #34D6A0;
+    }
+
+    .btn-success:hover {
+        background-color: #28b389; /* Cor mais escura ao passar o mouse */
+    }
+
+    .form-control {
+        border: 2px solid #587EFD; /* Bordas com cor #587EFD */
+        border-radius: 4px;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 5px rgba(88, 126, 253, 0.5); /* Efeito ao focar no campo */
+        border-color: #587EFD;
+    }
+
+    footer {
+        background-color: #D3E8FB;
+        padding: 3px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #999;
+        width: 100%; /* Altera a largura para ocupar toda a tela */
+        margin: 0; /* Remove o margin para evitar o espaçamento */
+        position: relative;
+    }
+
+    /* Estilo da logo no canto superior esquerdo */
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100px;
+    }
+</style>
+
+<!-- Adicionando a logo -->
+<img src="~/images/Imuniti Logo.svg" alt="Logo" class="logo" />
+
 <div class="account-container">
     <div class="account-box">
         <h2 class="text-center mb-4">Login</h2>
         <form asp-action="Login" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
+
             <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
+                <label asp-for="Email" class="form-label">Email</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            
+
             <div class="mb-3">
-                <label asp-for="Senha" class="form-label"></label>
-                <input asp-for="Senha" class="form-control" />
+                <label asp-for="Senha" class="form-label">Senha</label>
+                <input asp-for="Senha" class="form-control" type="password" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
+
             <div class="float-end">
                 <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none">
                     Esqueci minha senha
                 </a>
-
             </div>
+
             <div class="form-check mb-3">
                 <label class="form-check-label">
                     <input asp-for="RememberMe" class="form-check-input" />
@@ -36,11 +88,12 @@
                 </label>
             </div>
 
-            <input type="submit" value="Login" class="btn btn-success w-100 p2" />
+            <input type="submit" value="Login" class="btn btn-success w-100 p-2" />
+
             <p class="text-center mt-2">
                 Não possui uma conta? <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Cadastre-se</a>
             </p>
-            
+
             <div class="text-center">
                 <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
             </div>
@@ -48,7 +101,12 @@
     </div>
 </div>
 
+<!-- Rodapé -->
+<footer>
+    &copy; 2024 GestãoVacinas. All rights reserved.
+</footer>
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }
+

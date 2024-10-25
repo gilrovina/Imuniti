@@ -1,34 +1,71 @@
 ﻿@using GestaoVacinas.ViewModels;
-@model VerifyEmailViewModel;
+@model VerifyEmailViewModel
 
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Verificar Email";
     Layout = "~/Views/Shared/_AccountLayout.cshtml";
 }
 
-<div class="account-container">
-    <div class="account-box">
-        <h2 class="text-center mb-4">Verificar Email</h2>
-        <form asp-action="VerifyEmail" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Email</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <style>
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
+        footer {
+            background-color: #D3E8FB;
+            padding: 3px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            width: 100%; /* Altera a largura para ocupar toda a tela */
+            margin: 0; /* Remove o margin para evitar o espaçamento */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/Imuniti Logo.svg" alt="Logo Imuniti" class="logo">
+    </header>
 
+    <div class="account-container">
+        <div class="account-box">
+            <h2 class="text-center mb-4">Verificar Email</h2>
+            <form asp-action="VerifyEmail" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <input type="submit" value="Verificar" class="btn btn-success w-100 p2" />
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" style="border: 1px solid #587EFD;" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <input type="submit" value="Verificar" class="btn btn-success w-100 p2" style="background-color: #34D6A0; border-color: #34D6A0;" />
+            </form>
 
             <div class="text-center">
                 <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
             </div>
-        </form>
+        </div>
     </div>
-</div>
 
+    <footer>
+        &copy; 2024 GestãoVacinas. All rights reserved.
+    </footer>
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
-}
+    @section Scripts {
+        @await Html.PartialAsync("_ValidationScriptsPartial")
+    }
+</body>
+</html>
