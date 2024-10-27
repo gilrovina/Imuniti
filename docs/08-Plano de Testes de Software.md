@@ -7,9 +7,9 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados, incluindo informações básicas como nome completo, idade, sexo, data de nascimento e endereço. |
+|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar em "Crie sua conta" <br> - Preencher os campos obrigatórios (e-mail, nome completo, senha, confirmação de senha) <br> - Clicar em "Registrar" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar em "Crie sua conta" <br> - Preencher os campos obrigatórios (e-mail, senha, confirmação de senha) <br> - Clicar em "Cadastrar" |
 |Critério de Êxito | - O cadastro foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-02 – Efetuar login	|
@@ -18,10 +18,10 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-03 – Criar e gerenciar perfis	|
-|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares. |
-| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar perfis. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar Perfil"  |
+| Caso de Teste 	| CT-03 – Criar e gerenciar membros	|
+|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie membros. |
+| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar membros. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar membro"  |
 |Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
 |  	|  	|
 | Caso de Teste 	| CT-04 – Registrar, gerenciar, alterar e excluir registros de vacinas	|

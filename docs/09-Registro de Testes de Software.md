@@ -6,17 +6,28 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EZ1xxqSfvhZAkYuU5vKACqkBslXuP2WHmMDI5sE2Xsr3Lg) |
 
-| **Caso de Teste** 	| **CT-02 – Realizar login** 	|
+| **Caso de Teste** 	| **CT-02 – Efetuar login** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|	Requisito Associado 	| RF-002 - A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EazXHPpem6NNlf7QVl4uzsEB7NohE8sxX6GqC12Z95oFQQ) |
+
+| **Caso de Teste** 	| **CT-03 – Criar e gerenciar membros** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-003 - A aplicação deve permitir que o usuário crie e gerencie membros. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EWeG688QeU9DjEXOgEm8OlQBHvdT6GMActCYISKpfla-QQ) |
+
+| **Caso de Teste** 	| **CT-09 – Recuperar Senha** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009 - A aplicação deve permitir que o usuário consiga recuperar sua senha. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EdnrzFwYP4FIvg3j7rxmsCAB3dItdLz-9hsdIImgKzg4tA) |
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Os casos de teste apresentaram boa funcionalidade. Embora o sistema ainda esteja em desenvolvimento, a equipe está trabalhando constantemente para finalizar a entrega conforme o planejado. Algumas funcionalidades, como o desenvolvimento da barra de navegação (navbar), a implementação de mensagens de feedback e a finalização do layout, estão em progresso e serão incorporadas em breve para melhorar ainda mais a aplicação.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+### Conclusão
+
+Durante a execução dos testes de software, a aplicação mostrou-se estável, sem apresentar erros nas funcionalidades disponíveis. Embora o desenvolvimento ainda não esteja totalmente concluído, as funcionalidades implementadas estão operando corretamente. A equipe permanece dedicada ao aprimoramento contínuo da aplicação, planejando implementar as melhorias identificadas para elevar o desempenho da solução no mercado.
