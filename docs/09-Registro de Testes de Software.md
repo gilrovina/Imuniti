@@ -9,10 +9,10 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. |
 |Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EZ1xxqSfvhZAkYuU5vKACqkBslXuP2WHmMDI5sE2Xsr3Lg) |
 
-| **Caso de Teste** 	| **CT-02 – Realizar login** 	|
+| **Caso de Teste** 	| **CT-02 – Efetuar login** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|	Requisito Associado 	| RF-002 - A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EazXHPpem6NNlf7QVl4uzsEB7NohE8sxX6GqC12Z95oFQQ) |
 
 ## Avaliação
 
