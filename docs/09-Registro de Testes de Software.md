@@ -6,8 +6,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EZ1xxqSfvhZAkYuU5vKACqkBslXuP2WHmMDI5sE2Xsr3Lg) |
 
 | **Caso de Teste** 	| **CT-02 – Realizar login** 	|
 |:---:	|:---:	|
