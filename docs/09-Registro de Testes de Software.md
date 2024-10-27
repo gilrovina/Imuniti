@@ -14,6 +14,11 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |	Requisito Associado 	| RF-002 - A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. |
 |Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EazXHPpem6NNlf7QVl4uzsEB7NohE8sxX6GqC12Z95oFQQ) |
 
+| **Caso de Teste** 	| **CT-03 – Criar e gerenciar membros** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-003 - A aplicação deve permitir que o usuário crie e gerencie membros. |
+|Registro de evidência | [Link](https://sgapucminasbr-my.sharepoint.com/personal/1525692_sga_pucminas_br/_layouts/15/guestaccess.aspx?share=EWeG688QeU9DjEXOgEm8OlQBHvdT6GMActCYISKpfla-QQ) |
+
 | **Caso de Teste** 	| **CT-09 – Recuperar Senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 - A aplicação deve permitir que o usuário consiga recuperar sua senha. |
