@@ -18,10 +18,10 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-03 – Criar e gerenciar perfis	|
-|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie perfis de outros familiares. |
-| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar perfis. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar Perfil"  |
+| Caso de Teste 	| CT-03 – Criar e gerenciar membros	|
+|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie membros. |
+| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar membros. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar membro"  |
 |Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
 |  	|  	|
 | Caso de Teste 	| CT-04 – Registrar, gerenciar, alterar e excluir registros de vacinas	|
