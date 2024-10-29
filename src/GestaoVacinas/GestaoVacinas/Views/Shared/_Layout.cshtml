@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GestaoVacinas.styles.css" asp-append-version="true" />
+    <!-- Renderiza a seção "Styles" para permitir que páginas específicas incluam estilos adicionais.
+     Se não houver estilos definidos na página, essa seção é ignorada. -->
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
@@ -27,6 +30,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Membros" asp-action="Create">Cadastrar membro</a>
                         </li>
                     </ul>
                 </div>
