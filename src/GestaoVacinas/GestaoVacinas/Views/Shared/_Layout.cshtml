@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GestaoVacinas.styles.css" asp-append-version="true" />
+    <!-- Renderiza a seção "Styles" para permitir que páginas específicas incluam estilos adicionais.
+     Se não houver estilos definidos na página, essa seção é ignorada. -->
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
@@ -17,10 +20,28 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+<<<<<<< HEAD
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
 
                         <partial name="_LoginPartial"></partial>
+=======
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <!-- O "justify-content-end" foi movido para a div da navbar-collapse -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Membros" asp-action="Create">Cadastrar membro</a>
+                        </li>
+>>>>>>> 64e3de552f879593daa062b3d6166644d3f99bc6
                     </ul>
                 </div>
             </div>
