@@ -3,37 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Title"] - GestaoVacinas</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GestaoVacinas.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IMUNITI</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="images/Imuniti Logo.svg" class="nav-logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <!-- O "justify-content-end" foi movido para a div da navbar-collapse -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Cadastrar</a>
-                        </li>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        <partial name="_LoginPartial"></partial>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -41,8 +33,8 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - GestaoVacinas
+        <div class="container align-content-center text-center">
+            &copy; 2024 - Imuniti, All rights reserved
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -51,10 +43,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
-
-
-
-
-
-

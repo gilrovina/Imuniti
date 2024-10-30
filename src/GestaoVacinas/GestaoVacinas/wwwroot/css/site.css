@@ -20,3 +20,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+:root {
+    /*Cores Primárias*/
+    --ciano: #34d6a0;
+    --verde-claro: #7dda58;
+    --verde-escuro: #28b451;
+    --azul: #587efd;
+    --azul-claro: #d3e8fb;
+    /*Cores Secundárias*/
+    --preto: #000000;
+    --cinza: #f5f7f8;
+    --branco: #FFFFFF;
+    --azul-marinho: #031432;
+    --vermelho: #d73838
+}
+
+.nav-logo {
+    width: 200px;
+    margin: 0 0 20px 30px;
+}
