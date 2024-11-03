@@ -4,26 +4,25 @@
 <ul class="navbar-nav ms-auto">
     @if (SignInManager.IsSignedIn(User))
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark ">Cadastrar Membro</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark ">Gerenciar Cadastro</a>
-        </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark ">Cadastrar Membro</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark ">Gerenciar Cadastro</a>
+    </li>
 
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Sair</a>
-        </li>
-        
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Sair</a>
+    </li>
+
     }
     else
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Cadastre-se</a>
-        </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Cadastre-se</a>
+    </li>
     }
-
 </ul>
