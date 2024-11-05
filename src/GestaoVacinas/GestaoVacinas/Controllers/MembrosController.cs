@@ -2,6 +2,7 @@
 using GestaoVacinas.Models;
 using GestaoVacinas.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestaoVacinas.Controllers
 {
@@ -39,5 +40,65 @@ namespace GestaoVacinas.Controllers
 
             return View(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> List()
+        {
+            var membros = await context.Membros.ToListAsync();
+
+
+            return View(membros);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var membro = await context.Membros.FindAsync(id);
+            
+            if (membro is null)
+            {
+                return NotFound();
+            }
+
+
+            return View(membro);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Membros viewModel)
+        {
+            var membro = await context.Membros.FindAsync(viewModel.Id);
+            if (membro is not null)
+            {
+                membro.Apelido = viewModel.Apelido;
+                membro.NomeCompleto = viewModel.NomeCompleto;
+                membro.DataNascimento = viewModel.DataNascimento;
+                membro.Cpf = viewModel.Cpf;
+                membro.Cns = viewModel.Cns;
+
+                await context.SaveChangesAsync();
+            }
+
+            return RedirectToAction("List", "Membros");
+
+        }
+
+        public async Task<IActionResult> Delete(Membros viewModel)
+        {
+            var membro = await context.Membros
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.Id == viewModel.Id);
+
+            if (membro is not null)
+            {
+                context.Membros.Attach(viewModel); // Anexa o viewModel ao contexto
+                context.Membros.Remove(viewModel); // Remove o viewModel
+                await context.SaveChangesAsync();
+            }
+
+            return RedirectToAction("List", "Membros");
+        }
+
     }
 }
