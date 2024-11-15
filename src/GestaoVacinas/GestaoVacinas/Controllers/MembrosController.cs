@@ -37,8 +37,16 @@ namespace GestaoVacinas.Controllers
             await context.Membros.AddAsync(membro);
             await context.SaveChangesAsync();
 
+            var caderneta = new Caderneta {
+                MembroId = membro.Id
+            };
 
-            return View(model);
+			await context.Cadernetas.AddAsync(caderneta);
+			await context.SaveChangesAsync();
+
+			return RedirectToAction("List");
+
+			return View(model);
         }
 
         [HttpGet]

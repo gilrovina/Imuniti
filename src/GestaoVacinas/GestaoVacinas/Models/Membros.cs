@@ -36,4 +36,6 @@ public class Membros
     [Display(Name = "Cartão Nacional de Saúde")]
     [StringLength(15, MinimumLength = 15, ErrorMessage = "O CNS deve ter 15 dígitos.")]
     public string? Cns { get; set; }
+
+	public virtual Caderneta Caderneta { get; set; }
 }

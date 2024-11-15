@@ -4,6 +4,7 @@ using GestaoVacinas.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestaoVacinas.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241112210716_UpdateRelacionamentosCadernetaDetalhes")]
+    partial class UpdateRelacionamentosCadernetaDetalhes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,21 +24,6 @@ namespace GestaoVacinas.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("CadernetaVacina", b =>
-                {
-                    b.Property<int>("CadernetaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("VacinaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CadernetaId", "VacinaId");
-
-                    b.HasIndex("VacinaId");
-
-                    b.ToTable("CadernetaVacina");
-                });
 
             modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
                 {
@@ -368,21 +356,6 @@ namespace GestaoVacinas.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("CadernetaVacina", b =>
-                {
-                    b.HasOne("GestaoVacinas.Models.Caderneta", null)
-                        .WithMany()
-                        .HasForeignKey("CadernetaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GestaoVacinas.Models.Vacina", null)
-                        .WithMany()
-                        .HasForeignKey("VacinaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
