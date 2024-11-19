@@ -9,16 +9,23 @@ ViewData["Title"] = "Home Page";
             <img src="images/Imagem principal.jpg" class="img-fluid" alt="Ilustração sobre vacinação">
         </div>
 
-        <div class="col-md-6 margem-coluna">
-            <h2>A melhor solução para gerenciar suas vacinas em poucos cliques!</h2>
-            <h5>Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</h5>
-            <button class="btn btn-primary">Selecionar Membro</button>
+        <div class="col-md-6 margem-coluna text-center">
+            <h2 class="titulo-main">A melhor solução para gerenciar suas vacinas em poucos cliques!</h2>
+            <p class="texto-main">Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</p>
+            <button class="btn btn-primary btn-cadastro">Selecionar Membro</button>
         </div>
     </div>
 </div>
 
-<div class="container-fluid vh-100 d-flex">
-    <div id="map" style="width: 100%; height: 400px;"></div>
+<div class="container-fluid vh-80 d-flex">
+    
+    <div class="row w-100">
+        <h2 class="text-center titulo-main" style="margin-top: 30px;">Encontre a Unidade Básica de Saúde mais próxima de você!</h2>
+        <div id="map" style="width: 100%; height: 400px; margin-bottom: 50px"></div>
+
+    </div>
+    
+    
 
     <script>
         var latitude = null;
@@ -52,6 +59,6 @@ ViewData["Title"] = "Home Page";
         }
     </script>
 
-   
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0kFBU0EAn-JiVMFU8_L640QXjSK_sWk&callback=initMap" async defer></script>
 </div>

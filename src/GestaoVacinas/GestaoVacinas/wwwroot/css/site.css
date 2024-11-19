@@ -50,7 +50,7 @@ body {
 
 .nav-link {
     font-family: Open Sans, sans-serif !important;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: var(--azul-marinho) !important;
@@ -61,6 +61,39 @@ body {
     margin: 50px 0 50px 0;
 }
 
+.titulo-main {
+    color: var(--azul);
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: justify;
+    
+}
+
+.texto-main {
+    color: var(--azul-marinho);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+.btn-cadastro {
+    background-color: var(--ciano);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(65, 132, 247, 0.24);
+    border: 5px solid var(--ciano);
+    border-radius: 100px;
+    padding: 16px 28px 16px 28px;
+    gap: 10px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Open Sans, sans-serif !important;
+    margin-bottom: 200px;
+;
+    
+}
 
 .text-dark {
     color: var(--azul-marinho) !important;
