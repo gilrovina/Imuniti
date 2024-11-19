@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+    font-family: Open Sans, sans-serif; !important;
 }
 
 @media (min-width: 768px) {
@@ -22,13 +23,13 @@ body {
 }
 
 :root {
-    /*Cores Primárias*/
+    /*Cores Primï¿½rias*/
     --ciano: #34d6a0;
     --verde-claro: #7dda58;
     --verde-escuro: #28b451;
     --azul: #587efd;
     --azul-claro: #d3e8fb;
-    /*Cores Secundárias*/
+    /*Cores Secundï¿½rias*/
     --preto: #000000;
     --cinza: #f5f7f8;
     --branco: #FFFFFF;
@@ -39,4 +40,19 @@ body {
 .nav-logo {
     width: 200px;
     margin: 0 0 20px 30px;
+}
+
+.navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    font-family: Open Sans, sans-serif !important;
+    font-weight: 400;
+}
+
+.footer {
+    border-top: none !important;
+    box-shadow: none !important;
 }
