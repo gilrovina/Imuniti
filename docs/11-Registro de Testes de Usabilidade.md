@@ -17,7 +17,7 @@ funcionalidade sob o escopo da experimentação. Foram descartadas respostas rel
 | RNF-001 | A aplicação deve ser responsiva, garantindo uma visualização adequada em dispositivos de diferentes tamanhos e formatos. |
 | RNF-006 | A aplicação deve ter seu front-end desenvolvido utilizando HTML e CSS, sendo permitido o uso do framework Bootstrap.     | 
 
-**Participante:** Cyntia Martins.
+## **Participante 1:**.
 
 ### Perfil geral:
 
