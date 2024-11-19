@@ -43,6 +43,10 @@ Delimitação de notas para avaliação: 1 (muito fácil) à 5 (muito difícil).
   login no site após o cadastro.
 * O que acha que pode ser melhorado: acho que o layout do site não está completo.
 
+## Avaliação
+
+Discorra sobre os resultados do teste de usabilidade. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+
 
 
 
