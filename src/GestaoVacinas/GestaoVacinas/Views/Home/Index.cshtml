@@ -1,6 +1,57 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
-    
+<div class="container-fluid vh-100 d-flex align-items-center">
+    <div class="row w-100">
+        <div class="col-md-6 margem-coluna">
+            <!-- Adiciona margem à direita -->
+            <img src="images/Imagem principal.jpg" class="img-fluid" alt="Ilustração sobre vacinação">
+        </div>
 
+        <div class="col-md-6 margem-coluna">
+            <h2>A melhor solução para gerenciar suas vacinas em poucos cliques!</h2>
+            <h5>Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</h5>
+            <button class="btn btn-primary">Selecionar Membro</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid vh-100 d-flex">
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script>
+        var latitude = null;
+        var longitude = null;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                latitude = position.coords.latitude;
+                longitude = position.coords.longitude;
+
+                initMap();
+            });
+        }
+
+        function initMap() {
+            if (latitude !== null && longitude !== null) {
+                var location = { lat: latitude, lng: longitude };
+                console.log("Latitude: " + location.lat);
+                console.log("Longitude: " + location.lng);
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: location
+                });
+
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        }
+    </script>
+
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0kFBU0EAn-JiVMFU8_L640QXjSK_sWk&callback=initMap" async defer></script>
+</div>
