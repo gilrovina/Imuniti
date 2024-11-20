@@ -44,9 +44,9 @@
             transition: background-color 0.3s ease;
         }
 
-        .btn-success:hover {
-            background-color: #28b789; /* Cor ao passar o mouse */
-        }
+            .btn-success:hover {
+                background-color: #28b789; /* Cor ao passar o mouse */
+            }
 
         /* Centraliza a logo fora da caixa de login */
         .logo {
@@ -65,7 +65,8 @@
             color: #999;
             width: 100%;
             margin: 0;
-            position: relative;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
@@ -76,32 +77,36 @@
 
     <div class="account-container">
         <div class="account-box">
-            <h2 class="text-center mb-4">Cadastre-se</h2>
+            <h2 class="text-center mb-4" style="color: #587EFD;font-weight: bold;">Cadastre-se</h2>
+            <p class="text-center mt-2">
+                Crie sua conta e desbloqueie um mundo de <br>possibilidades.
+            </p>
             <form asp-action="Register" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="mb-3">
                     <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" />
+                    <input asp-for="Email" class="form-control" placeholder="nome@email.com" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="Senha" class="form-label"></label>
-                    <input asp-for="Senha" class="form-control" />
+                    <input asp-for="Senha" class="form-control" placeholder="senha" />
                     <span asp-validation-for="Senha" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="ConfirmarSenha" class="form-label"></label>
-                    <input asp-for="ConfirmarSenha" class="form-control" />
+                    <input asp-for="ConfirmarSenha" class="form-control" placeholder="senha" />
                     <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
                 </div>
 
-                <input type="submit" value="Fazer cadastro" class="btn btn-success w-100 p2" />
-
+                <div class="text-center mb-4">
+                    <input type="submit" value="Cadastrar" class="btn btn-success p2" style="width: 50%;" />
+                </div>
                 <p class="text-center mt-2">
-                    Já possui cadastro? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Faça Login</a>
+                    Já tem uma conta? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Entrar</a>
                 </p>
 
                 <div class="text-center">
@@ -120,4 +125,3 @@
     }
 </body>
 </html>
-

@@ -22,6 +22,88 @@ namespace GestaoVacinas.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CadernetaVacina", b =>
+                {
+                    b.Property<int>("CadernetaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VacinaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CadernetaId", "VacinaId");
+
+                    b.HasIndex("VacinaId");
+
+                    b.ToTable("CadernetaVacina");
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MembroId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MembroId")
+                        .IsUnique();
+
+                    b.ToTable("Cadernetas");
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.DetalhesVacina", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CadernetaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Cnes")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("DataAplicacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataValidade")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Lote")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("NomeVacinador")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Observacoes")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VacinaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CadernetaId");
+
+                    b.HasIndex("VacinaId");
+
+                    b.ToTable("DetalhesVacinas");
+                });
+
             modelBuilder.Entity("GestaoVacinas.Models.Membros", b =>
                 {
                     b.Property<int>("Id")
@@ -32,7 +114,8 @@ namespace GestaoVacinas.Migrations
 
                     b.Property<string>("Apelido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Cns")
                         .HasMaxLength(15)
@@ -43,12 +126,14 @@ namespace GestaoVacinas.Migrations
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
-                    b.Property<DateTime>("DataNascimento")
+                    b.Property<DateTime?>("DataNascimento")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NomeCompleto")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -118,6 +203,38 @@ namespace GestaoVacinas.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Vacina", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("DataRecomendada")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("IdadeEmMeses")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsVacinaPadrao")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vacinas");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -253,6 +370,51 @@ namespace GestaoVacinas.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("CadernetaVacina", b =>
+                {
+                    b.HasOne("GestaoVacinas.Models.Caderneta", null)
+                        .WithMany()
+                        .HasForeignKey("CadernetaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GestaoVacinas.Models.Vacina", null)
+                        .WithMany()
+                        .HasForeignKey("VacinaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
+                {
+                    b.HasOne("GestaoVacinas.Models.Membros", "Membro")
+                        .WithOne("Caderneta")
+                        .HasForeignKey("GestaoVacinas.Models.Caderneta", "MembroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Membro");
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.DetalhesVacina", b =>
+                {
+                    b.HasOne("GestaoVacinas.Models.Caderneta", "Caderneta")
+                        .WithMany("DetalhesVacinas")
+                        .HasForeignKey("CadernetaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GestaoVacinas.Models.Vacina", "Vacina")
+                        .WithMany("Detalhes")
+                        .HasForeignKey("VacinaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Caderneta");
+
+                    b.Navigation("Vacina");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -302,6 +464,22 @@ namespace GestaoVacinas.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
+                {
+                    b.Navigation("DetalhesVacinas");
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Membros", b =>
+                {
+                    b.Navigation("Caderneta")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("GestaoVacinas.Models.Vacina", b =>
+                {
+                    b.Navigation("Detalhes");
                 });
 #pragma warning restore 612, 618
         }

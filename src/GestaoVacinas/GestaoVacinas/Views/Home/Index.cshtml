@@ -1,123 +1,64 @@
 ﻿@{
-    ViewData["Title"] = "Imuniti";
+ViewData["Title"] = "Home Page";
 }
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imuniti</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/styles.css">
 
-    <!-- Estilos personalizados para a segunda página -->
-    <style>
-        /* Fonte e overflow */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            overflow-x: hidden;
-        }
+<div class="container-fluid vh-100 d-flex align-items-center">
+    <div class="row w-100">
+        <div class="col-md-6 margem-coluna">
+            <!-- Adiciona margem à direita -->
+            <img src="images/Imagem principal.jpg" class="img-fluid" alt="Ilustração sobre vacinação">
+        </div>
 
-        /* Estilo do rodapé */
-        footer {
-            background-color: #D3E8FB;
-            padding: 3px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #999;
-            width: 100%;
-            margin: 0;
-            position: relative;
-        }
-
-        .logo {
-            width: 120px;
-        }
-
-        /* Estilos para expandir o full-width-bg */
-        .full-width-bg {
-            background-color: #f5f7f8;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            width: 100vw;
-        }
-
-        /* Estilo da seção de localização */
-        .location-section {
-            background-color: #f5f7f8;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Botão da página inicial */
-        .btn-primary {
-            background-color: #587EFD;
-            border: none;
-            color: white;
-            height: 54px;
-            border-radius: 100px;
-            font-weight: bold;
-        }
-
-        /* Estilo do título e subtítulo */
-        .text-section h1 {
-            font-size: 45px;
-            font-weight: bold;
-            color: #587EFD;
-        }
-
-        .text-section p {
-            font-size: 16px;
-            color: #031432;
-        }
-
-        /* Estilo do formulário de busca de UBS */
-        #map {
-            width: 100%;
-            height: 300px;
-            background-color: #eaeaea;
-            border-radius: 7px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="/images/Imuniti Logo.svg" alt="Logo Imuniti" class="logo">
-    </header>
-
-    <div class="container">
-        <div class="flex-container">
-            <img src="/images/Imagem principal.jpg" alt="Imagem principal" class="main-image">
-            <div class="text-section">
-                <h1 class="mb-3 text-primary">A melhor solução para gerenciar suas vacinas em poucos cliques!</h1>
-                <p class="text-secondary mb-4 mt-4">Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</p>
-                <div class="btn-wrapper">
-                    <button class="btn btn-primary">Selecionar membro</button>
-                </div>
-            </div>
+        <div class="col-md-6 margem-coluna text-center">
+            <h2 class="titulo-main">A melhor solução para gerenciar suas vacinas em poucos cliques!</h2>
+            <p class="texto-main">Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</p>
+            <button class="btn btn-primary btn-cadastro">Selecionar Membro</button>
         </div>
     </div>
+</div>
 
-    <div class="full-width-bg mt-5 location-section">
-        <h2 class="text-primary">Encontre a UBS mais próxima</h2>
-        <div id="map"></div>
+<div class="container-fluid vh-80 d-flex">
+    
+    <div class="row w-100">
+        <h2 class="text-center titulo-main" style="margin-top: 30px;">Encontre a Unidade Básica de Saúde mais próxima de você!</h2>
+        <div id="map" style="width: 100%; height: 400px; margin-bottom: 50px"></div>
+
     </div>
+    
+    
 
-    <footer>
-        &copy; 2024 GestãoVacinas. All rights reserved.
-    </footer>
-</body>
-</html>
+    <script>
+        var latitude = null;
+        var longitude = null;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                latitude = position.coords.latitude;
+                longitude = position.coords.longitude;
+
+                initMap();
+            });
+        }
+
+        function initMap() {
+            if (latitude !== null && longitude !== null) {
+                var location = { lat: latitude, lng: longitude };
+                console.log("Latitude: " + location.lat);
+                console.log("Longitude: " + location.lng);
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: location
+                });
+
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        }
+    </script>
 
 
-
-
-
-
-
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0kFBU0EAn-JiVMFU8_L640QXjSK_sWk&callback=initMap" async defer></script>
+</div>
