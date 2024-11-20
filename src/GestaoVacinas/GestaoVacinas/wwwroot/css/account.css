@@ -1,4 +1,11 @@
-﻿.account-container {
+﻿/* Importação da fonte Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.account-container {
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -6,15 +13,16 @@
     justify-content: center;
     min-height: 100vh;
     padding: 2rem 0;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif; /* Garantir a fonte aqui também */
 }
 
 .account-box {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0,0,0,.3);
     max-width: 500px;
     width: 100%;
-    opacity: .9;
-
+    opacity: 0.9;
+    font-family: 'Open Sans', sans-serif; /* Aplicar fonte no conteúdo da caixa */
 }

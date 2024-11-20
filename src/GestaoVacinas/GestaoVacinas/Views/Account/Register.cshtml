@@ -6,45 +6,122 @@
     Layout = "~/Views/Shared/_AccountLayout.cshtml";
 }
 
-<div class="account-container">
-    <div class="account-box">
-        <h2 class="text-center mb-4">Cadastre-se</h2>
-        <form asp-action="Register" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - GestãoVacinas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Estilo Inline -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
 
+        /* Estilos para os campos de formulário */
+        .form-control {
+            border: 2px solid #587EFD; /* Contorno dos campos */
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
+        .form-label {
+            font-weight: bold;
+        }
 
-            <div class="mb-3">
-                <label asp-for="Senha" class="form-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
+        /* Estilo do botão de cadastro */
+        .btn-success {
+            background-color: #34D6A0; /* Cor personalizada do botão */
+            border-color: #34D6A0;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-            <div class="mb-3">
-                <label asp-for="ConfirmarSenha" class="form-label"></label>
-                <input asp-for="ConfirmarSenha" class="form-control" />
-                <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
-            </div>
+            .btn-success:hover {
+                background-color: #28b789; /* Cor ao passar o mouse */
+            }
 
-            <input type="submit" value="Fazer cadastro" class="btn btn-success w-100 p2" />
+        /* Centraliza a logo fora da caixa de login */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px; /* Tamanho da logo */
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #D3E8FB;
+            padding: 3px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/Imuniti Logo.svg" alt="Logo GestãoVacinas" class="logo">
+    </header>
+
+    <div class="account-container">
+        <div class="account-box">
+            <h2 class="text-center mb-4" style="color: #587EFD;font-weight: bold;">Cadastre-se</h2>
             <p class="text-center mt-2">
-                Já possui cadastro? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Faça Login</a>
+                Crie sua conta e desbloqueie um mundo de <br>possibilidades.
             </p>
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
-            </div>
-        </form>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" placeholder="nome@email.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Senha" class="form-label"></label>
+                    <input asp-for="Senha" class="form-control" placeholder="senha" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ConfirmarSenha" class="form-label"></label>
+                    <input asp-for="ConfirmarSenha" class="form-control" placeholder="senha" />
+                    <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
+                </div>
+
+                <div class="text-center mb-4">
+                    <input type="submit" value="Cadastrar" class="btn btn-success p2" style="width: 50%;" />
+                </div>
+                <p class="text-center mt-2">
+                    Já tem uma conta? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Entrar</a>
+                </p>
+
+                <div class="text-center">
+                    <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
+    <footer>
+        &copy; 2024 GestãoVacinas. All rights reserved.
+    </footer>
 
-@section Scripts {
-    @await Html.PartialAsync("_ValidationScriptsPartial")
-}
+    @section Scripts {
+        @await Html.PartialAsync("_ValidationScriptsPartial")
+    }
+</body>
+</html>
