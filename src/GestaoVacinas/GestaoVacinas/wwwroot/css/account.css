@@ -5,6 +5,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilo da logo no canto superior esquerdo */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+}
+
 .account-container {
     background-size: cover;
     background-position: center;
@@ -24,4 +32,17 @@ body {
     width: 100%;
     opacity: 0.9;
     font-family: 'Open Sans', sans-serif; /* Aplicar fonte no conteúdo da caixa */
+}
+
+/*Configurações do rodapé*/
+footer {
+    background-color: #D3E8FB;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #031432;
+    width: 100%; /* Altera a largura para ocupar toda a tela */
+    margin: 0; /* Remove o margin para evitar o espaçamento */
+    position: fixed;
+    bottom: 0;
 }

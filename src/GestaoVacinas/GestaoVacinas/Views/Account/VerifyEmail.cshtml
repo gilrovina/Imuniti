@@ -14,28 +14,6 @@
     <title>Verificar Email</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/styles.css">
-    <style>
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 120px;
-        }
-
-
-        footer {
-            background-color: #D3E8FB;
-            padding: 3px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #999;
-            width: 100%; /* Altera a largura para ocupar toda a tela */
-            margin: 0; /* Remove o margin para evitar o espaçamento */
-            position: fixed;
-            bottom: 0;
-        }
-    </style>
 </head>
 
         <!-- Adicionando a logo -->
@@ -46,7 +24,7 @@
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
-                <img src="~/images/cadmembro-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
+                <img src="~/images/senha-img.svg" alt="Verificar Email" class="img-fluid senha-img">
             </div>
             <div class="col-md-6 text-md-start text-center mt-5">
                 <h1 class="mb-3 fw-bold" style="color: #587EFD;">Esqueceu sua senha?</h1>
@@ -63,7 +41,7 @@
 
                 <div class="mb-3">
                     <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" style="border: 1px solid #587EFD;" placeholder="nome@email.com" />
+                    <input asp-for="Email" class="form-control border border-primary" placeholder="nome@email.com" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 
