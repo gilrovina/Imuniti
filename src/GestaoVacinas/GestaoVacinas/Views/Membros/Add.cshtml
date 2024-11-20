@@ -20,8 +20,10 @@
                 <h3 class="mb-4 fs-6">Facilitamos o controle de suas vacinas para que você cuide<br />do que mais importa: sua saúde.</h3>
             </div>
         </div>
-    </div>
+    </div><br />
     <form method="post">
+        <!-- Container box cinza -->
+        <div class="box mt-5>"
         <!-- Container para centralizar o formulário -->
         <div class="container mt-5">
             <div class="row justify-content-center">
@@ -58,7 +60,7 @@
         });
     </script>
     <div class="d-flex justify-content-center mt-3">
-        <a href="@Url.Action("Home", "Account")" class="btn btn-primary rounded-4" style="background-color: #587EFD; border-radius: 100px; width: 207px;">Cadastrar membro</a><br /> <!-- Trocar o redirecionamento para home quando tiver -->
+        <a href="@Url.Action("List", "Membros")" class="btn btn-primary rounded-4" style="background-color: #587EFD; border-radius: 100px; width: 207px;">Cadastrar membro</a><br /> <!-- Trocar o redirecionamento para home quando tiver -->
     </div>
     <div class="d-flex justify-content-center mt-3">
         <a asp-controller="Home" asp-action="Index" class="text-black text-decoration-underline">Voltar</a> <!-- Trocar o redirecionamento para home quando tiver -->
