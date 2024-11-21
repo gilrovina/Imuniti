@@ -29,6 +29,7 @@ body {
     --verde-escuro: #28b451;
     --azul: #587efd;
     --azul-claro: #d3e8fb;
+    
     /*Cores Secund�rias*/
     --preto: #000000;
     --cinza: #f5f7f8;
@@ -55,6 +56,26 @@ body {
     line-height: 22px;
     color: var(--azul-marinho) !important;
     text-decoration: none;
+}
+
+.link-hover {
+    color: var(--azul-marinho) !important;
+    text-decoration: none !important;
+    transition: color .3s ease;
+}
+
+.link-hover:hover {
+    color: var(--ciano) !important;
+}
+
+.link-hover-danger {
+    color: var(--azul-marinho) !important;
+    text-decoration: none !important;
+    transition: color .3s ease;
+}
+
+.link-hover-danger:hover {
+    color: var(--vermelho) !important;
 }
 
 .margem-coluna {
@@ -103,13 +124,14 @@ body {
     background-color: #f5f7f8;
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
-    left: 50%; /* Preencher toda a largura */
+    left: 50%; 
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     width: 100vw;
     justify-content: center;
 }
+
 
 
 .footer {
