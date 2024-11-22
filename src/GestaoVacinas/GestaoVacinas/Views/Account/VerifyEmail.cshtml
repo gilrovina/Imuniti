@@ -3,7 +3,7 @@
 
 @{
     ViewData["Title"] = "Verificar Email";
-    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -15,9 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/styles.css">
 </head>
-
-        <!-- Adicionando a logo -->
-        <img src="~/images/logo.svg" alt="Logo" class="logo" />
 
 <body>
     <!-- Container principal para imagem e frase -->
@@ -33,32 +30,33 @@
         </div>
     </div>
     <br />
-    <!-- Container para centralizar o formulário -->
-    <div class="account-container">
-        <div class="account-box">
-            <form asp-action="VerifyEmail" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <!-- Container do box cinza -->
+    <div class="box mt-5">
+        <!-- Container para centralizar o formulário -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form asp-action="VerifyEmail" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <div class="mb-3">
-                    <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control border border-primary" placeholder="nome@email.com" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" class="form-control border border-primary" placeholder="nome@email.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="text-center mb-4">
+                            <input type="submit" value="Recuperar senha" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;" />
+                        </div>
+                    </form>
+
+                    <div class="text-center">
+                        <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
+                    </div>
                 </div>
-
-                <div class="text-center mb-4">
-                    <input type="submit" value="Recuperar senha" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;" />
-                </div>
-            </form>
-
-            <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
             </div>
         </div>
     </div>
-
-    <footer>
-        &copy; 2024 GestãoVacinas. All rights reserved.
-    </footer>
 
     @section Scripts {
         @await Html.PartialAsync("_ValidationScriptsPartial")
