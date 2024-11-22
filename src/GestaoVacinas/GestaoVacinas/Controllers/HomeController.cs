@@ -18,12 +18,10 @@ namespace GestaoVacinas.Controllers
         }
 
         public async Task<IActionResult> Index() {
-            // Carrega a lista de membros com suas cadernetas
             var membros = await _context.Membros
-                .Include(m => m.Caderneta) // Inclui a caderneta associada ao membro
+                .Include(m => m.Caderneta)
                 .ToListAsync();
 
-            // Passa a lista de membros para a View
             ViewBag.Membros = membros;
 
             return View();
