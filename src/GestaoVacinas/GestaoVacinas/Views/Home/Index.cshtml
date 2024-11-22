@@ -7,11 +7,9 @@ ViewData["Title"] = "Home Page";
 
  @if (SignInManager.IsSignedIn(User)) 
  {
-    <!-- Conteúdo para usuários autenticados -->
     <div class="container-fluid vh-100 d-flex align-items-center">
         <div class="row w-100">
             <div class="col-md-6 margem-coluna">
-                <!-- Adiciona margem à direita -->
                 <img src="images/Imagem principal.jpg" class="img-fluid" alt="Ilustração sobre vacinação">
             </div>
 
@@ -24,7 +22,6 @@ ViewData["Title"] = "Home Page";
         </div>
 }
 else {
-    <!-- Conteúdo para usuários não logados -->
        <div class="container mt-5">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center">
@@ -38,7 +35,7 @@ else {
                 </div>
             </div>
     </div><br/>
-    <!-- Conteiner de cards -->
+    
         <div class="container">
           <div class="row">
             <div class="col-md-4 mb-4">
@@ -71,7 +68,7 @@ else {
           </div>
         </div>
 }
-<!-- Conteiner mapa -->
+
 <div class="container-fluid vh-80 d-flex">
     
     <div class="row w-100">
@@ -82,38 +79,6 @@ else {
     
     
 
-    <script>
-        var latitude = null;
-        var longitude = null;
-
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                latitude = position.coords.latitude;
-                longitude = position.coords.longitude;
-
-                initMap();
-            });
-        }
-
-        function initMap() {
-            if (latitude !== null && longitude !== null) {
-                var location = { lat: latitude, lng: longitude };
-                console.log("Latitude: " + location.lat);
-                console.log("Longitude: " + location.lng);
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 10,
-                    center: location
-                });
-
-                var marker = new google.maps.Marker({
-                    position: location,
-                    map: map
-                });
-            }
-        }
-    </script>
-
-
+    <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0kFBU0EAn-JiVMFU8_L640QXjSK_sWk&callback=initMap" async defer></script>
 </div>
