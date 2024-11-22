@@ -133,14 +133,32 @@ namespace GestaoVacinas.Controllers {
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id) {
-            var caderneta = await _context.Cadernetas.FindAsync(id);
-            if (caderneta != null) {
-                _context.Cadernetas.Remove(caderneta);
+            var caderneta = await _context.Cadernetas
+        .Include(c => c.Membro)
+        .Include(c => c.DetalhesVacinas)
+        .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (caderneta == null) {
+                TempData["Error"] = "Caderneta não encontrada.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            var detalhesVacinas = caderneta.DetalhesVacinas.ToList();
+            _context.DetalhesVacinas.RemoveRange(detalhesVacinas);
+
+            _context.Cadernetas.Remove(caderneta);
+
+            if (caderneta.Membro != null) {
+                _context.Membros.Remove(caderneta.Membro);
             }
 
             await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Este membro e sua caderneta de vacinas foram excluídos com sucesso.";
             return RedirectToAction(nameof(Index));
         }
+
+        // Método AdicionarVacinaComplementar
         public async Task<IActionResult> AdicionarVacinaComplementar(int id, int vacinaId) {
 
             var caderneta = await _context.Cadernetas.FindAsync(id);
@@ -170,16 +188,15 @@ namespace GestaoVacinas.Controllers {
                 return RedirectToAction("Details", new { id = modelo.CadernetaId });
             }
 
-            var vacina = await _context.Vacinas.FindAsync(modelo.VacinaId);
-            var caderneta = await _context.Cadernetas.FindAsync(modelo.CadernetaId);
+            var vacina = await _context.Vacinas.FirstOrDefaultAsync(v => v.Id == modelo.VacinaId);
+            var caderneta = await _context.Cadernetas.FirstOrDefaultAsync(c => c.Id == modelo.CadernetaId);
 
             if (vacina == null || caderneta == null) {
                 Console.WriteLine("Vacina ou Caderneta não encontrada.");
                 return RedirectToAction("Details", new { id = modelo.CadernetaId });
             }
 
-            var detalhesVacina = await _context.DetalhesVacinas
-                .FirstOrDefaultAsync(d => d.VacinaId == modelo.VacinaId && d.CadernetaId == modelo.CadernetaId);
+            var detalhesVacina = await _context.DetalhesVacinas.FirstOrDefaultAsync(d => d.Id == modelo.Id);
 
             if (detalhesVacina != null) {
                 detalhesVacina.DataAplicacao = modelo.DataAplicacao;

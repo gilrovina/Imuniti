@@ -34,7 +34,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasIndex("VacinaId");
 
-                    b.ToTable("CadernetaVacina");
+                    b.ToTable("CadernetaVacina", (string)null);
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
@@ -53,7 +53,7 @@ namespace GestaoVacinas.Migrations
                     b.HasIndex("MembroId")
                         .IsUnique();
 
-                    b.ToTable("Cadernetas");
+                    b.ToTable("Cadernetas", (string)null);
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.DetalhesVacina", b =>
@@ -101,7 +101,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasIndex("VacinaId");
 
-                    b.ToTable("DetalhesVacinas");
+                    b.ToTable("DetalhesVacinas", (string)null);
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Membros", b =>
@@ -137,7 +137,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Membros");
+                    b.ToTable("Membros", (string)null);
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Users", b =>
@@ -234,7 +234,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Vacinas");
+                    b.ToTable("Vacinas", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

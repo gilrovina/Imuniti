@@ -41,12 +41,27 @@ namespace GestaoVacinas.Controllers
                 MembroId = membro.Id
             };
 
-			await context.Cadernetas.AddAsync(caderneta);
-			await context.SaveChangesAsync();
+            await context.Cadernetas.AddAsync(caderneta);
+            await context.SaveChangesAsync();
 
-			return RedirectToAction("List");
+            var vacinasPadrao = await context.Vacinas
+                .Where(v => v.IsVacinaPadrao)
+              .ToListAsync();
 
-			return View(model);
+            var detalhesVacinas = vacinasPadrao.Select(vacina => new DetalhesVacina {
+                CadernetaId = caderneta.Id,
+                VacinaId = vacina.Id
+            }).ToList();
+            await context.DetalhesVacinas.AddRangeAsync(detalhesVacinas);
+            foreach(var detalheVacina in detalhesVacinas) {
+                Console.WriteLine(detalheVacina);
+            }
+
+            await context.SaveChangesAsync();
+
+            return RedirectToAction("List");
+
+			//return View(model);
         }
 
         [HttpGet]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace GestaoVacinas.Models {
 
@@ -11,10 +12,14 @@ namespace GestaoVacinas.Models {
 
         [Required]
         public int VacinaId { get; set; }
+
+        [ValidateNever]
         public virtual Vacina Vacina { get; set; }
 
         [Required]
         public int CadernetaId { get; set; }
+
+        [ValidateNever]
         public virtual Caderneta Caderneta { get; set; }
 
         [Display(Name = "Data de aplicação")]

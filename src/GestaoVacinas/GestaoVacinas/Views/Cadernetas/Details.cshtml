@@ -44,7 +44,7 @@
 								</div>
 								<div class="modal-body">
                                     <div class="mb-3">
-                                        <p><strong>Status:</strong></p>
+                                        <p><strong>Teste:</strong></p>
                                         <p><strong>Nome da Vacina:</strong> @vacina.Nome</p>
                                         <p><strong>Data Recomendada:</strong> @vacina.DataRecomendada?.ToString("dd/MM/yyyy")</p>
                                         <p><strong>Descrição:</strong> @vacina.Descricao</p>
@@ -162,6 +162,7 @@
                             <p><strong>Descrição:</strong> @detalhe.Vacina.Descricao</p>
 
                                     <form asp-action="SalvarDetalhesVacina" asp-controller="Cadernetas" method="post">
+                                        <input type="hidden" name="Id" value="@detalhe.Id" />
                                         <input type="hidden" name="VacinaId" value="@detalhe.VacinaId" />
                                         <input type="hidden" name="CadernetaId" value="@detalhe.CadernetaId" />
 
@@ -202,7 +203,13 @@ else
 {
     <p>Nenhuma vacina complementar encontrada.</p>
 }
-    </div>
+    <div>
+            <form asp-action="Delete" method="post" onsubmit="return confirm('Tem certeza que deseja excluir esta caderneta e todos os dados relacionados?');">
+                <input type="hidden" name="id" value="@Model.Id" />
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-danger">Excluir Caderneta</button>
+            </form>
+	</div>
 
 	<div>
 		<a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
