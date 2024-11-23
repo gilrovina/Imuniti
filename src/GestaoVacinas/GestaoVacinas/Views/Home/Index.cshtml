@@ -7,22 +7,22 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <div class="container-fluid vh-100 d-flex align-items-center">
-        <div class="row w-100">
-            <div class="col-md-6 margem-coluna">
-                <img src="images/home-img.svg" class="img-fluid" alt="Ilustração sobre vacinação">
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center mt-5">
+                <img src="~/images/home-img.svg" alt="Ilustração index" class="img-fluid">
             </div>
-
-            <div class="col-md-6 margem-coluna text-center">
-                <h2 class="titulo-main">A melhor solução para gerenciar suas vacinas em poucos cliques!</h2>
-                <p class="texto-main">Facilitamos o controle de suas vacinas para que você cuide do que mais importa: sua saúde.</p>
+            <div class="col-md-6 text-left">
+                <h1 class="mb-3 fw-bold" style="color: #587EFD;">A melhor solução para<br /> gerenciar suas vacinas<br /> em poucos cliques!</h1><br />
+                <p class="mb-4 fs-6">Facilitamos o controle de suas vacinas para que você cuide<br /> do que mais importa: sua saúde</p><br />
                 <button type="button" class="btn btn-primary btn-cadastro" data-bs-toggle="modal" data-bs-target="#selecionarMembroModal">
                     Selecionar Membro
                 </button>
             </div>
         </div>
     </div>
-
+    <br />
+                
     <div class="modal fade" id="selecionarMembroModal" tabindex="-1" aria-labelledby="selecionarMembroModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -103,7 +103,7 @@ else
 <div class="container-fluid vh-80 d-flex">
 
     <div class="row w-100">
-        <h2 class="text-center titulo-main" style="margin-top: 30px;">Encontre a Unidade Básica de Saúde mais próxima de você!</h2>
+        <h3 class="text-center titulo-main" style="margin-top: 30px;">Encontre a Unidade Básica de Saúde mais próxima de você!</h3>
         <div id="map" style="width: 100%; height: 400px; margin-bottom: 50px"></div>
 
     </div>
