@@ -101,6 +101,13 @@ namespace GestaoVacinas.Controllers
                 membro.Cns = viewModel.Cns;
 
                 await context.SaveChangesAsync();
+
+                var caderneta = await context.Cadernetas
+                    .FirstOrDefaultAsync(c => c.MembroId == membro.Id);
+
+                if (caderneta != null) {
+                    return RedirectToAction("Details", "Cadernetas", new { id = caderneta.Id });
+                }
             }
 
             return RedirectToAction("List", "Membros");
