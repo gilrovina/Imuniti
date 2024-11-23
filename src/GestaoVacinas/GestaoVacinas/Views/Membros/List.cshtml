@@ -58,14 +58,6 @@
                                     Editar
                                 </a>
                             </li>
-                            <li>
-                                <!-- Deletar Membro -->
-                                <a class="dropdown-item text-danger"
-                                   href="javascript:void(0);"
-                                   onclick="confirmDelete(@membro.Id)">
-                                    Deletar
-                                </a>
-                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -95,17 +87,5 @@
         </div>
     </div>
 
-    <script>
-        function confirmDelete(membroId) {
-            // Ação do botão de confirmação exclusão
-            var deleteUrl = '/Membros/Delete/' + membroId;
-            document.getElementById('confirmDeleteButton').setAttribute('href', deleteUrl);
-
-            // Exibe o modal
-            var myModal = new bootstrap.Modal(document.getElementById('deleteModal'));
-            myModal.show();
-        }
-    </script>
-
-    </body>
-    </html>
+   </body>
+</html>

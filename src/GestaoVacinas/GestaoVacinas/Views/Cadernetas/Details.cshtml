@@ -1,25 +1,36 @@
 ﻿@model GestaoVacinas.Models.Caderneta
 
 @{
-	ViewData["Title"] = "Details";
+	ViewData["Title"] = "Caderneta";
 }
 
-<div>
-	<h1>@Model.Membro.Apelido</h1>
-	<div class="col-md-6 mb-4">
-		<div class="card h-100 border-primary">
-			<div class="card-body">
-				<p><strong>Nome:</strong> @Model.Membro.NomeCompleto</p>
-				<p><strong>Data de nascimento:</strong> @Model.Membro.DataNascimento?.ToString("dd/MM/yyyy")</p>
-				<p><strong>CPF:</strong> @Model.Membro.Cpf</p>
-				<p><strong>CNS:</strong> @Model.Membro.Cns</p>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;"><br /><br />
+	<div>
+		<h1 class="mb-3 fw-bold" style="color: #587EFD;">@Model.Membro.Apelido</h1>
+		<div class="d-flex flex-wrap justify-content-start">
+			<div class="col-lg-6 col-md-12 mb-4">
+				<div class="card border-primary" style="height: auto; max-width: 100%; padding: 0; border-width: 2px; border-radius: 8px; background-color: #F5F7F8;">
+					<div class="card-body">
+						<p style="margin-bottom: 0px;">Nome: @Model.Membro.NomeCompleto</p>
+						<p style="margin-bottom: 0px;">Data de nascimento: @Model.Membro.DataNascimento?.ToString("dd/MM/yyyy")</p>
+						<p style="margin-bottom: 0px;">CPF: @Model.Membro.Cpf</p>
+						<p style="margin-bottom: 0px;">CNS: @Model.Membro.Cns</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+				<img src="~/images/caderneta-img.svg" alt="Cadastro de Membro" class="img-fluid" style="max-width: 70%; height: auto; margin-top: -80px; margin-left: -50px;">
 			</div>
 		</div>
 	</div>
 
-	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarMembroModal">
-		Editar membro
-	</button>
+	<button type="button" class="btn btn-primary rounded-4 shadow" style="background-color: #587EFD; border-radius: 100px; max-width: 100%; width: 207px; height: 54px; border: none; margin-right: 20px; margin-top: -80px;" data-bs-toggle="modal" data-bs-target="#editarMembroModal">Editar membro</button>
 
 	<div class="modal fade" id="editarMembroModal" tabindex="-1" aria-labelledby="editarMembroModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -34,36 +45,38 @@
 						<input type="hidden" name="Id" value="@Model.Membro.Id" />
 						<div class="mb-3">
 							<label for="Apelido" class="form-label">Apelido</label>
-							<input type="text" name="Apelido" value="@Model.Membro.Apelido" class="form-control" />
+							<input type="text" class="form-control border-primary" name="Apelido" value="@Model.Membro.Apelido" />
 						</div>
 						<div class="mb-3">
 							<label for="NomeCompleto" class="form-label">Nome Completo</label>
-							<input type="text" name="NomeCompleto" value="@Model.Membro.NomeCompleto" class="form-control" />
+							<input type="text" class="form-control border-primary" name="NomeCompleto" value="@Model.Membro.NomeCompleto" />
 						</div>
 						<div class="mb-3">
 							<label for="DataNascimento" class="form-label">Data de Nascimento</label>
-							<input type="date" name="DataNascimento" value="@Model.Membro.DataNascimento?.ToString("yyyy-MM-dd")" class="form-control" />
+							<input type="date" class="form-control border-primary" name="DataNascimento" value="@Model.Membro.DataNascimento?.ToString("yyyy-MM-dd")" />
 						</div>
 						<div class="mb-3">
 							<label for="Cpf" class="form-label">CPF</label>
-							<input type="text" name="Cpf" value="@Model.Membro.Cpf" class="form-control" />
+							<input type="text" class="form-control border-primary" name="Cpf" value="@Model.Membro.Cpf" />
 						</div>
 						<div class="mb-3">
 							<label for="Cns" class="form-label">CNS</label>
-							<input type="text" name="Cns" value="@Model.Membro.Cns" class="form-control" />
+							<input type="text" class="form-control border-primary" name="Cns" value="@Model.Membro.Cns" />
 						</div>
-						<button type="submit" class="btn btn-success">Salvar alterações</button>
+						<button type="submit" class="btn btn-success rounded-4" style="background-color: #34D6A0; border-radius: 100px; border: none;">Salvar alterações</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<button type="submit" class="btn btn-primary rounded-4 shadow" style="background-color: #587EFD; border-radius: 100px; max-width: 100%; width: 207px; height: 54px; border: none; margin-right: 20px; margin-top: -80px;">Imprimir caderneta</button><br /><br />
 
+	<div class="text-center">
+		<br />
+		<h4 class="mb-3 fw-bold" style="color: #587EFD;">Caderneta de vacinas digital</h4>
+	</div>
 
-	<button type="submit" class="btn btn-primary">Imprimir caderneta</button>
-
-	<h2>Caderneta de vacinas digital</h2>
 	<div>
 		@functions {
 			public string ObterDataExibicao(GestaoVacinas.Models.DetalhesVacina detalheVacina) {
@@ -90,12 +103,12 @@
 					};
 
 					<div class="col-md-4 mb-4">
-						<div class="card h-100">
-							<div class="card-body text-center">
-								<span class="badge @badgeClass">@detalheVacina.Status</span>
+						<div class="card h-100" style="border-radius: 20px;">
+							<div class="card-body text-center" >
+								<span class="badge @badgeClass">@detalheVacina.Status</span><br /><br />
 								<p class="card-title"><strong>@detalheVacina.Vacina.Nome</strong></p>
 								<p class="card-text">@Html.Raw(ObterDataExibicao(detalheVacina))</p>
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalhesModal-@detalheVacina.Id">
+								<button type="button" class="btn btn-primary" style="background-color: #587EFD; width: 258px; height: 37px; border-radius: 100px;" data-bs-toggle="modal" data-bs-target="#detalhesModal-@detalheVacina.Id">
 									Mais detalhes
 								</button>
 							</div>
@@ -110,46 +123,46 @@
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-									<div class="mb-3">
-										<span class="badge @badgeClass">@detalheVacina.Status</span>
-										<p><strong>Nome da Vacina:</strong> @detalheVacina.Vacina.Nome</p>
-										<p><strong>Data Recomendada:</strong> @detalheVacina.DataRecomendada?.ToString("dd/MM/yyyy")</p>
-										<p><strong>Descrição:</strong> @detalheVacina.Vacina.Descricao</p>
+									<div class="mb-3 text-center">
+										<span class="badge @badgeClass">@detalheVacina.Status</span><br /><br />
+										<p>Nome da Vacina: @detalheVacina.Vacina.Nome</p>
+										<p>Data Recomendada: @detalheVacina.DataRecomendada?.ToString("dd/MM/yyyy")</p>
+										<p>Descrição: @detalheVacina.Vacina.Descricao</p>
 									</div>
 									<form asp-action="SalvarDetalhesVacina" asp-controller="Cadernetas" method="post">
 										<input type="hidden" name="Id" value="@detalheVacina.Id" />
 										<input type="hidden" name="VacinaId" value="@detalheVacina.VacinaId" />
-										<input type="hidden" name="CadernetaId" value="@detalheVacina.CadernetaId" />
+										<input type="hidden" name="CadernetaId" value="@detalheVacina.CadernetaId" /><br />
 
 										<div class="mb-3">
 											<label for="DataAplicacao" class="form-label">Data de aplicação</label>
-											<input type="date" name="DataAplicacao" value="@detalheVacina.DataAplicacao?.ToString("yyyy-MM-dd")" class="form-control" />
+											<input type="date" class="form-control border-primary" name="DataAplicacao" value="@detalheVacina.DataAplicacao?.ToString("yyyy-MM-dd")" />
 										</div>
 										<div class="mb-3">
 											<label for="NomeVacinador" class="form-label">Nome do vacinador</label>
-											<input type="text" name="NomeVacinador" value="@detalheVacina.NomeVacinador" class="form-control" />
+											<input type="text" class="form-control border-primary" name="NomeVacinador" value="@detalheVacina.NomeVacinador" />
 										</div>
 										<div class="mb-3">
 											<label for="Lote" class="form-label">Lote</label>
-											<input type="text" name="Lote" value="@detalheVacina.Lote" class="form-control" />
+											<input type="text" class="form-control border-primary" name="Lote" value="@detalheVacina.Lote" />
 										</div>
 										<div class="mb-3">
 											<label for="DataValidade" class="form-label">Data de validade</label>
-											<input type="date" name="DataValidade" value="@detalheVacina.DataValidade?.ToString("yyyy-MM-dd")" class="form-control" />
+											<input type="date" class="form-control border-primary"  name="DataValidade" value="@detalheVacina.DataValidade?.ToString("yyyy-MM-dd")" />
 										</div>
 										<div class="mb-3">
 											<label for="Cnes" class="form-label">CNES</label>
-											<input type="text" name="Cnes" value="@detalheVacina.Cnes" class="form-control" />
+											<input type="text" class="form-control border-primary" name="Cnes" value="@detalheVacina.Cnes" />
 										</div>
 										<div class="mb-3">
 											<label for="Observacoes" class="form-label">Observações</label>
-											<textarea name="Observacoes" class="form-control">@detalheVacina.Observacoes</textarea>
+											<textarea name="Observacoes" class="form-control border-primary">@detalheVacina.Observacoes</textarea>
 										</div>
-										<button type="submit" class="btn btn-primary">Salvar</button>
+										<button type="submit" class="btn btn-primary shadow" style="background-color: #34D6A0; border-radius: 100px; border: none; width: 100px;">Salvar</button>
 									</form>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+									<button type="button" class="btn btn-danger rounded-4 shadow" style="border-radius: 100px; border: none; width: 100px;" data-bs-dismiss="modal">Fechar</button>
 								</div>
 							</div>
 						</div>
@@ -159,11 +172,11 @@
 		} else {
 			<p>Nenhuma vacina padrão encontrada.</p>
 		}
+		</div><br />
+	
+	<div class="text-center">
+		<button type="button" class="btn btn-success rounded-4 w-40 shadow" style="background-color: #34D6A0; border-radius: 100px; border: none; height: 54px;" data-bs-toggle="modal" data-bs-target="#adicionarVacinaModal">Adicionar vacina complementar</button>
 	</div>
-
-	<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#adicionarVacinaModal">
-		Adicionar vacina complementar
-	</button>
 
 	<div class="modal fade" id="adicionarVacinaModal" tabindex="-1" aria-labelledby="adicionarVacinaModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -177,19 +190,21 @@
 						<input type="hidden" name="id" value="@Model.Id" />
 						<div class="form-group">
 							<label for="vacinaId">Selecione a Vacina:</label>
-							<select name="vacinaId" class="form-control" asp-items="@(new SelectList(ViewBag.VacinasDisponiveis, "Id", "Nome"))">
+							<select name="vacinaId" class="form-control border-primary" asp-items="@(new SelectList(ViewBag.VacinasDisponiveis, "Id", "Nome"))">
 								<option value="">-- Selecione uma Vacina --</option>
 							</select>
 						</div>
-						<button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+						<button type="submit" class="btn btn-primary mt-3 shadow" style="background-color: #34D6A0; border-radius: 100px; border: none;">Adicionar</button>
 					</form>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><br />
 
-	<h2>Vacinas complementares</h2>
-	<div>
+	<div class="text-center">
+	<h4 class="mb-3 fw-bold" style="color: #587EFD;">Vacinas complementares</h4>
+	</div>
+	
 		@if (ViewBag.DetalhesVacinasComplementares != null && ((IEnumerable<GestaoVacinas.Models.DetalhesVacina>)ViewBag.DetalhesVacinasComplementares).Any()) {
 			<div class="row">
 				@foreach (var detalhe in (IEnumerable<GestaoVacinas.Models.DetalhesVacina>)ViewBag.DetalhesVacinasComplementares) {
@@ -205,9 +220,9 @@
 					};
 
 					<div class="col-md-4 mb-4">
-						<div class="card h-100">
+						<div class="card h-100" style="border-radius: 20px;">
 							<div class="card-body text-center">
-								<span class="badge @badgeClass">@status</span>
+								<span class="badge @badgeClass">@status</span><br /><br />
 								<p class="card-title"><strong>@detalhe.Vacina.Nome</strong></p>
 								@if (detalhe.DataAplicacao.HasValue) {
 									<p class="card-text">Data de aplicação: @detalhe.DataAplicacao?.ToString("dd/MM/yyyy")</p>
@@ -216,7 +231,7 @@
 								} else {
 									<p class="card-text text-muted">Data recomendada: indisponível</p>
 								}
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detalhesModal-@detalhe.Id">
+								<button type="button" class="btn btn-primary" style="background-color: #587EFD; width: 258px; height: 37px; border-radius: 100px;" data-bs-toggle="modal" data-bs-target="#detalhesModal-@detalhe.Id">
 									Mais detalhes
 								</button>
 							</div>
@@ -231,10 +246,12 @@
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-									<span class="badge @badgeClass">@detalhe.Status</span>
-									<p><strong>Nome da Vacina:</strong> @detalhe.Vacina.Nome</p>
-									<p><strong>Data Recomendada:</strong> @detalhe.DataRecomendada?.ToString("dd/MM/yyyy")</p>
-									<p><strong>Descrição:</strong> @detalhe.Vacina.Descricao</p>
+									<div class="text-center">
+									<span class="badge @badgeClass">@detalhe.Status</span><br /><br />
+									<p>Nome da Vacina: @detalhe.Vacina.Nome</p>
+									<p>Data Recomendada: @detalhe.DataRecomendada?.ToString("dd/MM/yyyy")</p>
+									<p>Descrição: @detalhe.Vacina.Descricao</p><br />
+									</div>
 
 									<form asp-action="SalvarDetalhesVacina" asp-controller="Cadernetas" method="post">
 										<input type="hidden" name="Id" value="@detalhe.Id" />
@@ -243,30 +260,34 @@
 
 										<div class="mb-3">
 											<label for="DataAplicacao" class="form-label">Data de aplicação</label>
-											<input type="date" name="DataAplicacao" value="@detalhe.DataAplicacao?.ToString("yyyy-MM-dd")" class="form-control" />
+											<input type="date" class="form-control border-primary" name="DataAplicacao" value="@detalhe.DataAplicacao?.ToString("yyyy-MM-dd")" />
 										</div>
 										<div class="mb-3">
 											<label for="NomeVacinador" class="form-label">Nome do vacinador</label>
-											<input type="text" name="NomeVacinador" value="@detalhe.NomeVacinador" class="form-control" />
+											<input type="text" class="form-control border-primary" name="NomeVacinador" value="@detalhe.NomeVacinador" />
 										</div>
 										<div class="mb-3">
 											<label for="Lote" class="form-label">Lote</label>
-											<input type="text" name="Lote" value="@detalhe.Lote" class="form-control" />
+											<input type="text" class="form-control border-primary" name="Lote" value="@detalhe.Lote" />
 										</div>
 										<div class="mb-3">
 											<label for="DataValidade" class="form-label">Data de validade</label>
-											<input type="date" name="DataValidade" value="@detalhe.DataValidade?.ToString("yyyy-MM-dd")" class="form-control" />
+											<input type="date" class="form-control border-primary"  name="DataValidade" value="@detalhe.DataValidade?.ToString("yyyy-MM-dd")" />
 										</div>
 										<div class="mb-3">
 											<label for="Cnes" class="form-label">CNES</label>
-											<input type="text" name="Cnes" value="@detalhe.Cnes" class="form-control" />
+											<input type="text" class="form-control border-primary"  name="Cnes" value="@detalhe.Cnes" />
 										</div>
 										<div class="mb-3">
 											<label for="Observacoes" class="form-label">Observações</label>
-											<textarea name="Observacoes" class="form-control">@detalhe.Observacoes</textarea>
+											<textarea name="Observacoes" class="form-control border-primary">@detalhe.Observacoes</textarea>
 										</div>
-										<button type="submit" class="btn btn-primary">Salvar</button>
+										<button type="submit" class="btn btn-primary shadow" style="background-color: #34D6A0; border-radius: 100px; border: none; width: 100px;">Salvar</button>
 									</form>
+									</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger rounded-4 shadow" style="border-radius: 100px; border: none; width: 100px;" data-bs-dismiss="modal">Fechar</button>
 								</div>
 							</div>
 						</div>
@@ -276,14 +297,19 @@
 		} else {
 			<p>Nenhuma vacina complementar encontrada.</p>
 		}
+		<div class="text-center">
+			<br />
 		<div>
 			<form asp-action="Delete" method="post" onsubmit="return confirm('Tem certeza? Isso excluirá a caderneta, o membro e todos os dados relacionados permanentemente.');">
 				<input type="hidden" name="id" value="@Model.Id" />
 				@Html.AntiForgeryToken()
-				<button type="submit" class="btn btn-danger">Excluir caderneta</button>
+				<button type="submit" class="btn btn-danger rounded-4 shadow" style="border-radius: 100px; width: 207px; height: 54px;">Excluir caderneta</button>
 			</form>
-		</div>
+		</div><br />
 
 		<div>
-			<a asp-action="Index" asp-controller="Home">Voltar</a>
+			<a asp-action="Index" asp-controller="Home" style="text-decoration: none; color: black;">Voltar</a>
 		</div>
+		</div>
+	</body>
+</html>

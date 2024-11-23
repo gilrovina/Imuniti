@@ -131,7 +131,8 @@ body {
     justify-content: center;
 }
 
-.table {
+
+    .table {
     border-collapse: separate;
     border-spacing: 0;
     margin: 25px 0;
@@ -190,6 +191,15 @@ body {
 .dropdown-menu {
     min-width: 150px;
 }
+
+.bg-success, .bg-warning, .bg-danger, .bg-secondary {
+    border-radius: 100px; /* Arredondar os cantos */
+    width: 141px;
+    height: 27px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
 
 .footer {
     border-top: none !important;
