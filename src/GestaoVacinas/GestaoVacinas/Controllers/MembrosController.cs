@@ -48,14 +48,25 @@ namespace GestaoVacinas.Controllers
                 .Where(v => v.IsVacinaPadrao)
               .ToListAsync();
 
-            var detalhesVacinas = vacinasPadrao.Select(vacina => new DetalhesVacina {
-                CadernetaId = caderneta.Id,
-                VacinaId = vacina.Id
+            var detalhesVacinas = vacinasPadrao.Select(vacina =>
+            {
+                var detalheVacina = new DetalhesVacina {
+                    CadernetaId = caderneta.Id,
+                    VacinaId = vacina.Id
+                };
+
+                if (membro.DataNascimento.HasValue) {
+                    var dataNascimento = membro.DataNascimento.Value;
+
+                    if (vacina.IsVacinaPadrao && vacina.IdadeEmMeses.HasValue) {
+                        detalheVacina.DataRecomendada = dataNascimento.AddMonths(vacina.IdadeEmMeses.Value);
+                    }
+                };
+
+                return detalheVacina;
             }).ToList();
+
             await context.DetalhesVacinas.AddRangeAsync(detalhesVacinas);
-            foreach(var detalheVacina in detalhesVacinas) {
-                Console.WriteLine(detalheVacina);
-            }
 
             await context.SaveChangesAsync();
 

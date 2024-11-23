@@ -33,9 +33,18 @@ namespace GestaoVacinas.Controllers {
                 .Include(c => c.Vacinas)
                     .ThenInclude(v => v.Detalhes)
                 .FirstOrDefaultAsync(m => m.Id == id);
+            
             if (caderneta == null) {
                 return NotFound();
             }
+
+            var detalhes = await _context.DetalhesVacinas.Where(d => d.CadernetaId == caderneta.Id).ToListAsync();
+
+            foreach (var detalhe in detalhes) {
+                detalhe.AtualizarStatus();
+            }
+
+            await _context.SaveChangesAsync();
 
             ViewBag.VacinasPadrao = await _context.Vacinas
                 .Where(v => v.IsVacinaPadrao)
@@ -45,6 +54,11 @@ namespace GestaoVacinas.Controllers {
             ViewBag.VacinasDisponiveis = await _context.Vacinas
                 .Where(v => !v.IsVacinaPadrao)
                 .Include(v => v.Detalhes)
+                .ToListAsync();
+
+            ViewBag.DetalhesVacinasPadrao = await _context.DetalhesVacinas
+                .Include(d => d.Vacina)
+                .Where(d => d.CadernetaId == id && d.Vacina.IsVacinaPadrao)
                 .ToListAsync();
 
             ViewBag.DetalhesVacinasComplementares = await _context.DetalhesVacinas
@@ -196,6 +210,8 @@ namespace GestaoVacinas.Controllers {
                 return RedirectToAction("Details", new { id = modelo.CadernetaId });
             }
 
+            modelo.AtualizarStatus();
+
             var detalhesVacina = await _context.DetalhesVacinas.FirstOrDefaultAsync(d => d.Id == modelo.Id);
 
             if (detalhesVacina != null) {
@@ -205,6 +221,7 @@ namespace GestaoVacinas.Controllers {
                 detalhesVacina.DataValidade = modelo.DataValidade;
                 detalhesVacina.Cnes = modelo.Cnes;
                 detalhesVacina.Observacoes = modelo.Observacoes;
+                detalhesVacina.Status = modelo.Status;
             } else {
                 _context.DetalhesVacinas.Add(modelo);
             }

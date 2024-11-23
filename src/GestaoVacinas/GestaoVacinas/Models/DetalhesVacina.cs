@@ -26,6 +26,10 @@ namespace GestaoVacinas.Models {
         [DataType(DataType.Date)]
         public DateTime? DataAplicacao { get; set; }
 
+        [Display(Name = "Data recomendada de aplicação")]
+        [DataType(DataType.Date)]
+        public DateTime? DataRecomendada { get; set; }
+
         [Display(Name = "Nome do vacinador")]
         [StringLength(50, ErrorMessage = "O {0} deve ter no máximo {1} caracteres.")]
         public string? NomeVacinador { get; set; }
@@ -52,9 +56,9 @@ namespace GestaoVacinas.Models {
         public DetalhesVacina() { }
 
         public void AtualizarStatus() {
-            if (Vacina?.DataRecomendada.HasValue == true) {
+            if (DataRecomendada.HasValue == true) {
                 var hoje = DateTime.Today;
-                var dataRecomendada = Vacina.DataRecomendada.Value.Date;
+                var dataRecomendada = DataRecomendada.Value.Date;
                 var umaSemanaAntes = dataRecomendada.AddDays(-7);
 
                 if (DataAplicacao.HasValue) {
