@@ -1,22 +1,30 @@
 cff-version: 1.0.1
-message: Sistema para planejamento de viagens
-title: Mochileiros
+message: Sistema para gestão da caderneta de vacinas.
+title: Imuniti
 authors:
-  - family-names: Menezes Matias da Silva
-    given-names: João Pedro
-  - family-names: Fonseca Amorim
-    given-names: Igor 
-  - family-names: Almeida Dias 
-    given-names: Luiz Fernando 
+  - family-names: Rodrigues de Souza
+    given-names: Alberto Mario
+  - family-names: Santos Félix
+    given-names: Carolina 
+  - family-names: Nicolau Ferreira
+    given-names: Felipe
+ - family-names: Rovina Gonçalves
+    given-names: Gilson Rodrigo
+ - family-names: Siqueira Ribeiro
+    given-names: Lucas
+ - family-names: Ramires de Araújo
+    given-names: Ryan
   - name-suffix: Professora
     affiliation: PUC Minas
     family-names: De Nardin
     given-names: Luciana
 keywords:
-  - viagens
-  - mochileiros
-  - gastos
-repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-mochileiros
+  - vacina
+  - saúde
+  - caderneta
+  - vacinação
+  - cartão de vacinas
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-06-26
