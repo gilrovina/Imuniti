@@ -107,7 +107,6 @@ namespace GestaoVacinas.Controllers
             {
                 membro.Apelido = viewModel.Apelido;
                 membro.NomeCompleto = viewModel.NomeCompleto;
-                membro.DataNascimento = viewModel.DataNascimento;
                 membro.Cpf = viewModel.Cpf;
                 membro.Cns = viewModel.Cns;
 
