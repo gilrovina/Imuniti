@@ -14,6 +14,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 **Registro de evidência:**
 
 
+https://github.com/user-attachments/assets/6aa0ccc7-2e03-4645-8b3f-0a0b686116fa
 
 
 <br><br>
@@ -24,6 +25,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 **Registro de evidência:**
 
 
+https://github.com/user-attachments/assets/9a042126-b446-42fc-b8ff-c6e7a6c824db
 
 
 <br><br>
@@ -108,6 +110,8 @@ https://github.com/user-attachments/assets/5c038c39-db9e-40e9-b245-9a2496802543
 <br><br>
 **Registro de evidência:**
 
+
+https://github.com/user-attachments/assets/326f4bc4-b1ca-4ec8-842c-ac0a6d17faf1
 
 
 <br><br>
