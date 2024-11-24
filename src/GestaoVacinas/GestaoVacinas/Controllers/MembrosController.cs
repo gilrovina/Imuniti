@@ -1,155 +1,112 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using GestaoVacinas.Data;
+﻿using GestaoVacinas.Data;
 using GestaoVacinas.Models;
+using GestaoVacinas.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestaoVacinas.Controllers
 {
     public class MembrosController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext context;
 
         public MembrosController(AppDbContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
-        // GET: Membros
-
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Membros.ToListAsync());
-        }
-
-        // GET: Membros/Details
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var membros = await _context.Membros
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (membros == null)
-            {
-                return NotFound();
-            }
-
-            return View(membros);
-        }
-
-        // GET: Membros/Create
-        public IActionResult Create()
+        [HttpGet]
+        public  IActionResult Add()
         {
             return View();
         }
 
-        // POST: Membros/Create
+        [HttpPost]
+        public async Task<IActionResult> Add(AddMembrosViewModel model)
+        {
+            var membro = new Membros
+            {
+                Apelido = model.Apelido,
+                NomeCompleto = model.NomeCompleto,
+                DataNascimento = model.DataNascimento,
+                Cpf = model.Cpf,
+                Cns = model.Cns
+            };
+
+
+            await context.Membros.AddAsync(membro);
+            await context.SaveChangesAsync();
+
+            var caderneta = new Caderneta {
+                MembroId = membro.Id
+            };
+
+			await context.Cadernetas.AddAsync(caderneta);
+			await context.SaveChangesAsync();
+
+			return RedirectToAction("List");
+
+			return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> List()
+        {
+            var membros = await context.Membros.ToListAsync();
+
+
+            return View(membros);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var membro = await context.Membros.FindAsync(id);
+            
+            if (membro is null)
+            {
+                return NotFound();
+            }
+
+
+            return View(membro);
+
+        }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Apelido,NomeCompleto,DataNascimento,Cpf,Cns")] Membros membros)
+        public async Task<IActionResult> Edit(Membros viewModel)
         {
-            if (ModelState.IsValid)
+            var membro = await context.Membros.FindAsync(viewModel.Id);
+            if (membro is not null)
             {
-                _context.Add(membros);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                membro.Apelido = viewModel.Apelido;
+                membro.NomeCompleto = viewModel.NomeCompleto;
+                membro.DataNascimento = viewModel.DataNascimento;
+                membro.Cpf = viewModel.Cpf;
+                membro.Cns = viewModel.Cns;
+
+                await context.SaveChangesAsync();
             }
-            return View(membros);
+
+            return RedirectToAction("List", "Membros");
+
         }
 
-        // GET: Membros/Edit
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Delete(Membros viewModel)
         {
-            if (id == null)
+            var membro = await context.Membros
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.Id == viewModel.Id);
+
+            if (membro is not null)
             {
-                return NotFound();
+                context.Membros.Attach(viewModel); // Anexa o viewModel ao contexto
+                context.Membros.Remove(viewModel); // Remove o viewModel
+                await context.SaveChangesAsync();
             }
 
-            var membros = await _context.Membros.FindAsync(id);
-            if (membros == null)
-            {
-                return NotFound();
-            }
-            return View(membros);
+            return RedirectToAction("List", "Membros");
         }
 
-        // POST: Membros/Edit
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Apelido,NomeCompleto,DataNascimento,Cpf,Cns")] Membros membros)
-        {
-            if (id != membros.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(membros);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MembrosExists(membros.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(membros);
-        }
-
-        // GET: Membros/Delete
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var membros = await _context.Membros
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (membros == null)
-            {
-                return NotFound();
-            }
-
-            return View(membros);
-        }
-
-        // POST: Membros/Delete
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var membros = await _context.Membros.FindAsync(id);
-            if (membros != null)
-            {
-                _context.Membros.Remove(membros);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool MembrosExists(int id)
-        {
-            return _context.Membros.Any(e => e.Id == id);
-        }
     }
 }

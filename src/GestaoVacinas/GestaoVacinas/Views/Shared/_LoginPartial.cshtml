@@ -1,30 +1,27 @@
 ﻿@using Microsoft.AspNetCore.Identity;
 @inject SignInManager<Users> SignInManager;
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<nav class="navbar navbar-expand-sm bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">IMUNITI</a>
-
-        <div class="d-flex justify-content-end flex-grow-1">
-            <ul class="navbar-nav">
-                @if (SignInManager.IsSignedIn(User))
-                {
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Sair</a>
-                    </li>
-                }
-                else
-                {
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Cadastrar</a>
-                    </li>
-                }
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
+    <ul class="navbar-nav ms-auto d-sm-flex">
+    @if (SignInManager.IsSignedIn(User))
+    {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Membros" asp-action="Add">Cadastrar Membro</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Membros" asp-action="List">Gerenciar Membros</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Sair</a>
+    </li>
+    }
+    else
+    {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Cadastre-se</a>
+    </li>
+    }
+</ul>

@@ -44,9 +44,9 @@
             transition: background-color 0.3s ease;
         }
 
-        .btn-success:hover {
-            background-color: #28b789; /* Cor ao passar o mouse */
-        }
+            .btn-success:hover {
+                background-color: #28b789; /* Cor ao passar o mouse */
+            }
 
         /* Centraliza a logo fora da caixa de login */
         .logo {
@@ -65,43 +65,58 @@
             color: #999;
             width: 100%;
             margin: 0;
-            position: relative;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
-<body>
-    <header>
-        <img src="/images/Imuniti Logo.svg" alt="Logo GestãoVacinas" class="logo">
-    </header>
 
+        <!-- Adicionando a logo -->
+        <img src="~/images/logo.svg" alt="Logo" class="logo" />
+
+<body>
+    <!-- Container principal para imagem e frase -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="~/images/cadmembro-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
+            </div>
+            <div class="col-md-6 text-md-start text-center mt-5">
+                <h1 class="mb-3 fw-bold" style="color: #587EFD;">Cadastre-se</h1>
+                <h3 class="mb-4 fs-6">Crie sua conta e desbloqueie um mundo de <br>possibilidades.</h3>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- Container para centralizar o formulário -->
     <div class="account-container">
         <div class="account-box">
-            <h2 class="text-center mb-4">Cadastre-se</h2>
             <form asp-action="Register" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="mb-3">
                     <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" />
+                    <input asp-for="Email" class="form-control" placeholder="nome@email.com" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="Senha" class="form-label"></label>
-                    <input asp-for="Senha" class="form-control" />
+                    <input asp-for="Senha" class="form-control" placeholder="senha" />
                     <span asp-validation-for="Senha" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="ConfirmarSenha" class="form-label"></label>
-                    <input asp-for="ConfirmarSenha" class="form-control" />
+                    <input asp-for="ConfirmarSenha" class="form-control" placeholder="senha" />
                     <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
                 </div>
 
-                <input type="submit" value="Fazer cadastro" class="btn btn-success w-100 p2" />
-
+                <div class="text-center mb-4">
+                    <input type="submit" value="Cadastrar" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;" />
+                </div>
                 <p class="text-center mt-2">
-                    Já possui cadastro? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Faça Login</a>
+                    Já tem uma conta? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Entrar</a>
                 </p>
 
                 <div class="text-center">
@@ -120,4 +135,3 @@
     }
 </body>
 </html>
-

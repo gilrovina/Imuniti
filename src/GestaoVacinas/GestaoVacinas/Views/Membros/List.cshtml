@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<GestaoVacinas.Models.Membros>
+
+
+<h1>Membros</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Apelido</th>
+        <th>Nome Completo</th>
+        <th>Data de Nascimento</th>
+        <th>CPF</th>
+        <th>Cartão Nacional de Saúde</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var membro in Model)
+    {
+        <tr>
+            <td>@membro.Apelido</td>
+            <td>@membro.NomeCompleto</td>
+            <td>@membro.DataNascimento</td>
+            <td>@membro.Cpf</td>
+            <td>@membro.Cns</td>
+            <td><a class="btn btn-primary" asp-controller="Membros" asp-action="Edit" asp-route-id="@membro.Id">Editar Membro</a></td>
+        </tr>
+    }   
+    </tbody>
+</table>

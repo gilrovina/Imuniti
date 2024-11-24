@@ -5,13 +5,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama de Classes
 
 <figure> 
-  <img src="/docs/img/Diagrama de classes.png">
+  <img src="/docs/img/Diagrama de classes_v2.png">
 </figure>
 
 ## Modelo ER (Projeto Conceitual)
 
 <figure> 
-  <img src="/docs/img/MER.png">
+  <img src="/docs/img/DIAG-MER.png">
 </figure>
 
 ## Projeto da Base de Dados
