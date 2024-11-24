@@ -6,22 +6,22 @@
     @if (SignInManager.IsSignedIn(User))
     {
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Membros" asp-action="Add">Cadastrar Membro</a>
+        <a class="nav-link text-dark link-hover" asp-controller="Membros" asp-action="Add">Cadastrar Membro</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-controller="Membros" asp-action="List">Gerenciar Membros</a>
+        <a class="nav-link text-dark link-hover" asp-area="" asp-controller="Membros" asp-action="List">Gerenciar Membros</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Sair</a>
+        <a class="nav-link text-dark link-hover-danger" asp-controller="Account" asp-action="Logout">Sair</a>
     </li>
     }
     else
     {
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+        <a class="nav-link text-dark link-hover" asp-controller="Account" asp-action="Login">Login</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Cadastre-se</a>
+        <a class="nav-link text-dark link-hover" asp-controller="Account" asp-action="Register">Cadastre-se</a>
     </li>
     }
 </ul>

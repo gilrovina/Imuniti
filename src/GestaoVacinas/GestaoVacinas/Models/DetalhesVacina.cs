@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace GestaoVacinas.Models {
 
@@ -11,15 +12,23 @@ namespace GestaoVacinas.Models {
 
         [Required]
         public int VacinaId { get; set; }
+
+        [ValidateNever]
         public virtual Vacina Vacina { get; set; }
 
         [Required]
         public int CadernetaId { get; set; }
+
+        [ValidateNever]
         public virtual Caderneta Caderneta { get; set; }
 
         [Display(Name = "Data de aplicação")]
         [DataType(DataType.Date)]
         public DateTime? DataAplicacao { get; set; }
+
+        [Display(Name = "Data recomendada de aplicação")]
+        [DataType(DataType.Date)]
+        public DateTime? DataRecomendada { get; set; }
 
         [Display(Name = "Nome do vacinador")]
         [StringLength(50, ErrorMessage = "O {0} deve ter no máximo {1} caracteres.")]
@@ -47,9 +56,9 @@ namespace GestaoVacinas.Models {
         public DetalhesVacina() { }
 
         public void AtualizarStatus() {
-            if (Vacina?.DataRecomendada.HasValue == true) {
+            if (DataRecomendada.HasValue == true) {
                 var hoje = DateTime.Today;
-                var dataRecomendada = Vacina.DataRecomendada.Value.Date;
+                var dataRecomendada = DataRecomendada.Value.Date;
                 var umaSemanaAntes = dataRecomendada.AddDays(-7);
 
                 if (DataAplicacao.HasValue) {

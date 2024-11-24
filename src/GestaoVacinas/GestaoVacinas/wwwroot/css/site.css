@@ -29,6 +29,7 @@ body {
     --verde-escuro: #28b451;
     --azul: #587efd;
     --azul-claro: #d3e8fb;
+    
     /*Cores Secund�rias*/
     --preto: #000000;
     --cinza: #f5f7f8;
@@ -55,6 +56,26 @@ body {
     line-height: 22px;
     color: var(--azul-marinho) !important;
     text-decoration: none;
+}
+
+.link-hover {
+    color: var(--azul-marinho) !important;
+    text-decoration: none !important;
+    transition: color .3s ease;
+}
+
+.link-hover:hover {
+    color: var(--ciano) !important;
+}
+
+.link-hover-danger {
+    color: var(--azul-marinho) !important;
+    text-decoration: none !important;
+    transition: color .3s ease;
+}
+
+.link-hover-danger:hover {
+    color: var(--vermelho) !important;
 }
 
 .margem-coluna {
@@ -91,7 +112,6 @@ body {
     font-weight: 500;
     font-family: Open Sans, sans-serif !important;
     margin-bottom: 200px;
-;
     
 }
 
@@ -99,6 +119,86 @@ body {
     color: var(--azul-marinho) !important;
 }
 
+.box {
+    background-color: #f5f7f8;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    left: 50%; 
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    justify-content: center;
+}
+
+
+    .table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Arredondar bordas */
+    overflow: hidden; /* Evitar que conteúdo saia dos cantos aredondados */
+}
+
+.table thead tr {
+    background-color: #587EFD;
+    color: white;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Adiciona borda nas células */
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 15px; 
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 15px; 
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px; 
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px; 
+}
+
+ /* Alinhamento centralizado da coluna de ações */
+.table td.text-center {
+    text-align: center;
+}
+
+/* Estilo para o ícone de três pontinhos */
+.action-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #34D6A0;
+}
+
+.action-icon:hover {
+     color: #587EFD; /* Cor ao passar o mouse */
+ }
+
+.dropdown-menu {
+    min-width: 150px;
+}
+
+.bg-success, .bg-warning, .bg-danger, .bg-secondary {
+    border-radius: 100px; /* Arredondar os cantos */
+    width: 141px;
+    height: 27px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
 
 
 .footer {

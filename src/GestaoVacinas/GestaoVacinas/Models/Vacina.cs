@@ -42,25 +42,5 @@ namespace GestaoVacinas.Models {
             IdadeEmMeses = idadeEmMeses;
             IsVacinaPadrao = isVacinaPadrao;
         }
-
-        public void CalcularDataRecomendada(DateTime dataNascimento) {
-            if (IsVacinaPadrao && IdadeEmMeses.HasValue) {
-                DataRecomendada = dataNascimento.AddMonths(IdadeEmMeses.Value);
-            } else if (IsVacinaPadrao) {
-                throw new InvalidOperationException("A data de nascimento deve ser definida para calcular a data recomendada.");
-            }
-        }
-
-        public void AlterarDataManual(DateTime? novaData) {
-            if (!IsVacinaPadrao) {
-                if (novaData.HasValue) {
-                    DataRecomendada = novaData;
-                } else {
-                    throw new ArgumentNullException(nameof(novaData), "A data deve ser válida.");
-                }
-            } else {
-                throw new InvalidOperationException("A data recomendada das vacinas não podem ser alteradas.");
-            }
-        }
     }
 }

@@ -41,12 +41,38 @@ namespace GestaoVacinas.Controllers
                 MembroId = membro.Id
             };
 
-			await context.Cadernetas.AddAsync(caderneta);
-			await context.SaveChangesAsync();
+            await context.Cadernetas.AddAsync(caderneta);
+            await context.SaveChangesAsync();
 
-			return RedirectToAction("List");
+            var vacinasPadrao = await context.Vacinas
+                .Where(v => v.IsVacinaPadrao)
+              .ToListAsync();
 
-			return View(model);
+            var detalhesVacinas = vacinasPadrao.Select(vacina =>
+            {
+                var detalheVacina = new DetalhesVacina {
+                    CadernetaId = caderneta.Id,
+                    VacinaId = vacina.Id
+                };
+
+                if (membro.DataNascimento.HasValue) {
+                    var dataNascimento = membro.DataNascimento.Value;
+
+                    if (vacina.IsVacinaPadrao && vacina.IdadeEmMeses.HasValue) {
+                        detalheVacina.DataRecomendada = dataNascimento.AddMonths(vacina.IdadeEmMeses.Value);
+                    }
+                };
+
+                return detalheVacina;
+            }).ToList();
+
+            await context.DetalhesVacinas.AddRangeAsync(detalhesVacinas);
+
+            await context.SaveChangesAsync();
+
+            return RedirectToAction("List");
+
+			//return View(model);
         }
 
         [HttpGet]
@@ -81,11 +107,17 @@ namespace GestaoVacinas.Controllers
             {
                 membro.Apelido = viewModel.Apelido;
                 membro.NomeCompleto = viewModel.NomeCompleto;
-                membro.DataNascimento = viewModel.DataNascimento;
                 membro.Cpf = viewModel.Cpf;
                 membro.Cns = viewModel.Cns;
 
                 await context.SaveChangesAsync();
+
+                var caderneta = await context.Cadernetas
+                    .FirstOrDefaultAsync(c => c.MembroId == membro.Id);
+
+                if (caderneta != null) {
+                    return RedirectToAction("Details", "Cadernetas", new { id = caderneta.Id });
+                }
             }
 
             return RedirectToAction("List", "Membros");

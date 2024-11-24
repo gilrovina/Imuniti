@@ -33,9 +33,18 @@ namespace GestaoVacinas.Controllers {
                 .Include(c => c.Vacinas)
                     .ThenInclude(v => v.Detalhes)
                 .FirstOrDefaultAsync(m => m.Id == id);
+            
             if (caderneta == null) {
                 return NotFound();
             }
+
+            var detalhes = await _context.DetalhesVacinas.Where(d => d.CadernetaId == caderneta.Id).ToListAsync();
+
+            foreach (var detalhe in detalhes) {
+                detalhe.AtualizarStatus();
+            }
+
+            await _context.SaveChangesAsync();
 
             ViewBag.VacinasPadrao = await _context.Vacinas
                 .Where(v => v.IsVacinaPadrao)
@@ -45,6 +54,11 @@ namespace GestaoVacinas.Controllers {
             ViewBag.VacinasDisponiveis = await _context.Vacinas
                 .Where(v => !v.IsVacinaPadrao)
                 .Include(v => v.Detalhes)
+                .ToListAsync();
+
+            ViewBag.DetalhesVacinasPadrao = await _context.DetalhesVacinas
+                .Include(d => d.Vacina)
+                .Where(d => d.CadernetaId == id && d.Vacina.IsVacinaPadrao)
                 .ToListAsync();
 
             ViewBag.DetalhesVacinasComplementares = await _context.DetalhesVacinas
@@ -133,14 +147,32 @@ namespace GestaoVacinas.Controllers {
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id) {
-            var caderneta = await _context.Cadernetas.FindAsync(id);
-            if (caderneta != null) {
-                _context.Cadernetas.Remove(caderneta);
+            var caderneta = await _context.Cadernetas
+        .Include(c => c.Membro)
+        .Include(c => c.DetalhesVacinas)
+        .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (caderneta == null) {
+                TempData["Error"] = "Caderneta não encontrada.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            var detalhesVacinas = caderneta.DetalhesVacinas.ToList();
+            _context.DetalhesVacinas.RemoveRange(detalhesVacinas);
+
+            _context.Cadernetas.Remove(caderneta);
+
+            if (caderneta.Membro != null) {
+                _context.Membros.Remove(caderneta.Membro);
             }
 
             await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Este membro e sua caderneta de vacinas foram excluídos com sucesso.";
             return RedirectToAction(nameof(Index));
         }
+
+        // Método AdicionarVacinaComplementar
         public async Task<IActionResult> AdicionarVacinaComplementar(int id, int vacinaId) {
 
             var caderneta = await _context.Cadernetas.FindAsync(id);
@@ -170,16 +202,17 @@ namespace GestaoVacinas.Controllers {
                 return RedirectToAction("Details", new { id = modelo.CadernetaId });
             }
 
-            var vacina = await _context.Vacinas.FindAsync(modelo.VacinaId);
-            var caderneta = await _context.Cadernetas.FindAsync(modelo.CadernetaId);
+            var vacina = await _context.Vacinas.FirstOrDefaultAsync(v => v.Id == modelo.VacinaId);
+            var caderneta = await _context.Cadernetas.FirstOrDefaultAsync(c => c.Id == modelo.CadernetaId);
 
             if (vacina == null || caderneta == null) {
                 Console.WriteLine("Vacina ou Caderneta não encontrada.");
                 return RedirectToAction("Details", new { id = modelo.CadernetaId });
             }
 
-            var detalhesVacina = await _context.DetalhesVacinas
-                .FirstOrDefaultAsync(d => d.VacinaId == modelo.VacinaId && d.CadernetaId == modelo.CadernetaId);
+            modelo.AtualizarStatus();
+
+            var detalhesVacina = await _context.DetalhesVacinas.FirstOrDefaultAsync(d => d.Id == modelo.Id);
 
             if (detalhesVacina != null) {
                 detalhesVacina.DataAplicacao = modelo.DataAplicacao;
@@ -188,6 +221,7 @@ namespace GestaoVacinas.Controllers {
                 detalhesVacina.DataValidade = modelo.DataValidade;
                 detalhesVacina.Cnes = modelo.Cnes;
                 detalhesVacina.Observacoes = modelo.Observacoes;
+                detalhesVacina.Status = modelo.Status;
             } else {
                 _context.DetalhesVacinas.Add(modelo);
             }

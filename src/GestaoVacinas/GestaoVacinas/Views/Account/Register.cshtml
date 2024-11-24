@@ -3,7 +3,7 @@
 
 @{
     ViewData["Title"] = "Cadastre-se";
-    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    Layout = "_Layout";
 }
 
 <!DOCTYPE html>
@@ -13,73 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - GestãoVacinas</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Estilo Inline -->
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        /* Estilos para os campos de formulário */
-        .form-control {
-            border: 2px solid #587EFD; /* Contorno dos campos */
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 16px;
-            width: 100%;
-        }
-
-        .form-label {
-            font-weight: bold;
-        }
-
-        /* Estilo do botão de cadastro */
-        .btn-success {
-            background-color: #34D6A0; /* Cor personalizada do botão */
-            border-color: #34D6A0;
-            color: white;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-            .btn-success:hover {
-                background-color: #28b789; /* Cor ao passar o mouse */
-            }
-
-        /* Centraliza a logo fora da caixa de login */
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 120px; /* Tamanho da logo */
-        }
-
-        /* Estilo do rodapé */
-        footer {
-            background-color: #D3E8FB;
-            padding: 3px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #999;
-            width: 100%;
-            margin: 0;
-            position: fixed;
-            bottom: 0;
-        }
-    </style>
 </head>
-
-        <!-- Adicionando a logo -->
-        <img src="~/images/logo.svg" alt="Logo" class="logo" />
 
 <body>
     <!-- Container principal para imagem e frase -->
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
-                <img src="~/images/cadmembro-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
+                <img src="~/images/cadastrar-img.svg" alt="Cadastro de Usuario" class="img-fluid cadastrar-img">
             </div>
             <div class="col-md-6 text-md-start text-center mt-5">
                 <h1 class="mb-3 fw-bold" style="color: #587EFD;">Cadastre-se</h1>
@@ -88,47 +29,48 @@
         </div>
     </div>
     <br />
-    <!-- Container para centralizar o formulário -->
-    <div class="account-container">
-        <div class="account-box">
-            <form asp-action="Register" method="post">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <!-- Container do box cinza -->
+    <div class="box mt-5">
+        <!-- Container para centralizar o formulário -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+             <div class="col-md-6">
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <div class="mb-3">
-                    <label asp-for="Email" class="form-label"></label>
-                    <input asp-for="Email" class="form-control" placeholder="nome@email.com" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control border border-primary" placeholder="nome@email.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
 
-                <div class="mb-3">
-                    <label asp-for="Senha" class="form-label"></label>
-                    <input asp-for="Senha" class="form-control" placeholder="senha" />
-                    <span asp-validation-for="Senha" class="text-danger"></span>
-                </div>
+                    <div class="mb-3">
+                        <label asp-for="Senha" class="form-label"></label>
+                        <input asp-for="Senha" class="form-control border border-primary" placeholder="senha" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
 
-                <div class="mb-3">
-                    <label asp-for="ConfirmarSenha" class="form-label"></label>
-                    <input asp-for="ConfirmarSenha" class="form-control" placeholder="senha" />
-                    <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
-                </div>
+                    <div class="mb-3">
+                        <label asp-for="ConfirmarSenha" class="form-label"></label>
+                        <input asp-for="ConfirmarSenha" class="form-control border border-primary" placeholder="senha" />
+                        <span asp-validation-for="ConfirmarSenha" class="text-danger"></span>
+                    </div>
 
-                <div class="text-center mb-4">
-                    <input type="submit" value="Cadastrar" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;" />
-                </div>
-                <p class="text-center mt-2">
-                    Já tem uma conta? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Entrar</a>
-                </p>
+                    <div class="text-center mb-4">
+                        <input type="submit" value="Cadastrar" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;" />
+                    </div>
+                    <p class="text-center mt-2">
+                        Já tem uma conta? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Entrar</a>
+                    </p>
 
-                <div class="text-center">
-                    <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
-                </div>
-            </form>
+                    <div class="text-center">
+                        <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
     </div>
-
-    <footer>
-        &copy; 2024 GestãoVacinas. All rights reserved.
-    </footer>
 
     @section Scripts {
         @await Html.PartialAsync("_ValidationScriptsPartial")

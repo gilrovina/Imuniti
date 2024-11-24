@@ -13,18 +13,24 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-md navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 text-center">
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="/images/logo.svg" class="nav-logo"  alt="Logo Home"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>  
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="/images/logo.svg" class="nav-logo justify-content-end" alt="Logo Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav flex-grow-1">
-
-                    <partial name="_LoginPartial"></partial>
+                    <li class="nav-item">
+                        @* <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
+                    </li>
                 </ul>
+                <div class="d-flex">
+                    <partial name="_LoginPartial" />
+                </div>
             </div>
         </div>
     </nav>
@@ -36,7 +42,7 @@
 </div>
 
 <footer class="footer text-muted">
-    <div class="container align-content-center text-center">
+    <div class="container text-center">
         &copy; 2024 - Imuniti, All rights reserved
     </div>
 </footer>

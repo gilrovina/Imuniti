@@ -74,6 +74,9 @@ namespace GestaoVacinas.Migrations
                     b.Property<DateTime?>("DataAplicacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DataRecomendada")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime?>("DataValidade")
                         .HasColumnType("datetime2");
 

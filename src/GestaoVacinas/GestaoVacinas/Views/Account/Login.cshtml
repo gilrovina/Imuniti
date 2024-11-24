@@ -3,60 +3,11 @@
 
 @{
     ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    Layout = "_Layout";
 }
 
 <!-- Link para a fonte Open Sans -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-<!-- Estilo Inline para aplicar as mudanças solicitadas -->
-<style>
-    body {
-        font-family: 'Open Sans', sans-serif; /* Define a fonte Open Sans */
-    }
-
-    .btn-success {
-        background-color: #34D6A0; /* Cor personalizada para o botão Login */
-        border-color: #34D6A0;        
-    }
-
-    .btn-success:hover {
-        background-color: #28b389; /* Cor mais escura ao passar o mouse */
-    }
-
-    .form-control {
-        border: 2px solid #587EFD; /* Bordas com cor #587EFD */
-        border-radius: 4px;
-    }
-
-    .form-control:focus {
-        box-shadow: 0 0 5px rgba(88, 126, 253, 0.5); /* Efeito ao focar no campo */
-        border-color: #587EFD;
-    }
-
-    footer {
-        background-color: #D3E8FB;
-        padding: 3px 0;
-        text-align: center;
-        font-size: 14px;
-        color: #999;
-        width: 100%; /* Altera a largura para ocupar toda a tela */
-        margin: 0; /* Remove o margin para evitar o espaçamento */
-        position: fixed;
-        bottom: 0;
-    }
-
-    /* Estilo da logo no canto superior esquerdo */
-    .logo {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 120px;
-    }
-</style>
-
-<!-- Adicionando a logo -->
-<img src="~/images/logo.svg" alt="Logo" class="logo" />
 
 
 <body style="font-family: 'Open Sans', sans-serif;">
@@ -64,7 +15,7 @@
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
-            <img src="~/images/cadmembro-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
+            <img src="~/images/login-img.svg" alt="Login" class="img-fluid login-img">
             </div>
             <div class="col-md-6 text-md-start text-center mt-5">
             <h1 class="mb-3 fw-bold" style="color: #587EFD;">Faça seu login</h1>
@@ -73,57 +24,56 @@
         </div>
     </div>
     <br />
-    <!-- Container para centralizar o formulário -->
-    <div class="account-container">
-        <div class="account-box">
-        <form asp-action="Login" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <!-- Container do box cinza -->
+    <div class="box mt-5">
+    <!-- Container para centralizar os formulários-->
+     <div class="container mt-5">
+            <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="mb-3">
-                <label asp-for="Email" class="form-label">Email</label>
-                    <input asp-for="Email" class="form-control" placeholder="nome@email.com" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control border border-primary" placeholder="nome@email.com" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
 
-            <div class="mb-3">
-                <label asp-for="Senha" class="form-label">Senha</label>
-                <input asp-for="Senha" class="form-control" type="password" placeholder="senha" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
+                    <div class="mb-3">
+                        <label asp-for="Senha" class="form-label">Senha</label>
+                        <input asp-for="Senha" class="form-control border border-primary" type="password" placeholder="senha" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
 
-            <div class="float-end">
-                <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none">
-                    Esqueci minha senha
-                </a>
-            </div>
+                    <div class="float-end">
+                        <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none">
+                            Esqueci minha senha
+                        </a>
+                    </div>
 
-            <div class="form-check mb-3">
-                <label class="form-check-label">
-                    <input asp-for="RememberMe" class="form-check-input" />
-                    @Html.DisplayNameFor(m => m.RememberMe)
-                </label>
-            </div>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <input asp-for="RememberMe" class="form-check-input" />
+                            @Html.DisplayNameFor(m => m.RememberMe)
+                        </label>
+                    </div>
 
-            <div class="text-center mb-4">
-                <input type="submit" value="Entrar" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;"/>
+                    <div class="text-center mb-4">
+                        <input type="submit" value="Entrar" class="btn btn-primary rounded-4" style="background-color:#587EFD; border-radius: 100px; width: 50%;"/>
+                   </div>
+
+                    <p class="text-center mt-2">
+                        Não possui uma conta? <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Cadastre-se</a>
+                    </p>
+
+                    <div class="text-center">
+                        <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
+                    </div>
+                </form>
            </div>
-
-            <p class="text-center mt-2">
-                Não possui uma conta? <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Cadastre-se</a>
-            </p>
-
-            <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Voltar</a>
-            </div>
-        </form>
-         </div>
-    </div>
+        </div>
+     </div>
 </body>
-
-<!-- Rodapé -->
-<footer>
-    &copy; 2024 GestãoVacinas. All rights reserved.
-</footer>
 
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
