@@ -235,5 +235,46 @@ namespace GestaoVacinas.Controllers {
         private bool CadernetaExists(int id) {
             return _context.Cadernetas.Any(e => e.Id == id);
         }
-    }
+
+        // Redefinir Vacina Padrão
+        [HttpPost]
+        public async Task<IActionResult> RedefinirVacinaPadrao(int detalheId) {
+            var detalhe = await _context.DetalhesVacinas
+                .Include(d => d.Vacina)
+                .FirstOrDefaultAsync(d => d.Id == detalheId);
+
+            if (detalhe == null || !detalhe.Vacina.IsVacinaPadrao) {
+                return NotFound("Detalhe ou vacina padrão não encontrado.");
+            }
+
+            detalhe.DataAplicacao = null;
+            detalhe.NomeVacinador = null;
+            detalhe.Lote = null;
+            detalhe.DataValidade = null;
+            detalhe.Cnes = null;
+            detalhe.Observacoes = null;
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Details", new { id = detalhe.CadernetaId });
+        }
+
+		// Excluir Vacina Complementar
+		[HttpPost]
+		public async Task<IActionResult> ExcluirVacinaComplementar(int detalheId) {
+			var detalhe = await _context.DetalhesVacinas
+				.Include(d => d.Vacina)
+				.FirstOrDefaultAsync(d => d.Id == detalheId);
+
+			if (detalhe == null || detalhe.Vacina.IsVacinaPadrao) {
+				return NotFound("Detalhe ou vacina complementar não encontrado.");
+			}
+
+			// Apenas removemos os detalhes associados à vacina
+			_context.DetalhesVacinas.Remove(detalhe);
+
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction("Details", new { id = detalhe.CadernetaId });
+		}
+	}
 }
