@@ -74,7 +74,13 @@
 		</div>
 	</div>
 
-	<button type="submit" class="btn btn-primary rounded-4 shadow" style="background-color: #587EFD; border-radius: 100px; max-width: 100%; width: 207px; height: 54px; border: none; margin-right: 20px; margin-top: -80px;">Imprimir caderneta</button>
+		<form asp-action="ImprimirVacinas" asp-route-id="@Model.Id" method="get" style="display: inline;">
+		<button type="submit" class="btn btn-primary rounded-4 shadow"
+				style="background-color: #587EFD; border-radius: 100px; max-width: 100%; width: 207px; height: 54px; border: none; margin-right: 20px; margin-top: -80px;">
+			Imprimir caderneta
+		</button>
+	</form>
+
 	<br />
 	<br />
 

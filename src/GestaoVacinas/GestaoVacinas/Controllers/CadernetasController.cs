@@ -7,6 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GestaoVacinas.Data;
 using GestaoVacinas.Models;
+using iText.IO.Font.Constants;
+using iText.Kernel.Font;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using iText.IO.Image;
 
 namespace GestaoVacinas.Controllers {
     public class CadernetasController : Controller {
@@ -275,6 +282,71 @@ namespace GestaoVacinas.Controllers {
 			await _context.SaveChangesAsync();
 
 			return RedirectToAction("Details", new { id = detalhe.CadernetaId });
+		}
+
+        // Imprimir Vacina
+		[HttpGet]
+		public async Task<IActionResult> ImprimirVacinas(int id) {
+			var caderneta = await _context.Cadernetas
+	            .Include(c => c.Membro)
+	            .Include(c => c.DetalhesVacinas)
+		            .ThenInclude(d => d.Vacina)
+	            .FirstOrDefaultAsync(c => c.Id == id);
+
+			if (caderneta == null) {
+				return NotFound("Caderneta não encontrada.");
+			}
+
+			var vacinasAplicadas = caderneta.DetalhesVacinas
+				.Where(d => d.Status == StatusVacina.Aplicada)
+				.ToList();
+
+			using (var stream = new MemoryStream()) {
+				var writer = new PdfWriter(stream);
+				var pdf = new PdfDocument(writer);
+				var document = new Document(pdf);
+				
+				var boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
+
+				var logo = ImageDataFactory.Create("wwwroot/images/logo-impressao.png");
+				var logoImage = new iText.Layout.Element.Image(logo).SetWidth(100).SetHorizontalAlignment(HorizontalAlignment.CENTER);
+				document.Add(logoImage);
+
+				document.Add(new Paragraph("Caderneta de vacina digital")
+					.SetTextAlignment(TextAlignment.CENTER)
+					.SetFontSize(18)
+					.SetFont(boldFont));
+
+				var tabelaMembro = new Table(UnitValue.CreatePercentArray(new float[] { 1 })).UseAllAvailableWidth();
+				tabelaMembro.AddCell(new Cell()
+					.Add(new Paragraph($"Nome: {caderneta.Membro.NomeCompleto}\n" +
+									   $"Data de Nascimento: {caderneta.Membro.DataNascimento?.ToString("dd/MM/yyyy")}\n" +
+									   $"CPF: {caderneta.Membro.Cpf}\n" +
+									   $"CNS: {caderneta.Membro.Cns}"))
+					.SetTextAlignment(TextAlignment.LEFT)
+					.SetFontSize(10));
+				document.Add(tabelaMembro);
+
+				var table = new iText.Layout.Element.Table(4).UseAllAvailableWidth();
+				table.AddHeaderCell("Vacina");
+				table.AddHeaderCell("Data de Aplicação");
+				table.AddHeaderCell("Lote");
+				table.AddHeaderCell("CNES");
+
+				foreach (var detalhe in vacinasAplicadas) {
+					table.AddCell(detalhe.Vacina.Nome);
+					table.AddCell(detalhe.DataAplicacao?.ToString("dd/MM/yyyy") ?? "Não informada");
+					table.AddCell(detalhe.Lote ?? "Não informado");
+					table.AddCell(detalhe.Cnes ?? "Não informado");
+				}
+
+				document.Add(table);
+
+				document.Close();
+
+				Response.Headers.Append("Content-Disposition", "inline; filename=CadernetaDeVacinaDigital.pdf");
+				return File(stream.ToArray(), "application/pdf");
+			}
 		}
 	}
 }
