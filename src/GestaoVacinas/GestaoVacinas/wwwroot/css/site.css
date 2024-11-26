@@ -190,16 +190,26 @@ body {
 
 .dropdown-menu {
     min-width: 150px;
+    border-radius: 10px !important;
+    text-align: center;
 }
 
+
 .bg-success, .bg-warning, .bg-danger, .bg-secondary {
-    border-radius: 100px; /* Arredondar os cantos */
+    border-radius: 100px; /* Arredondar os cantos dos status */
     width: 141px;
     height: 27px;
     padding: 7px 10px;
     font-size: 15px;
 }
 
+.modal-content {
+    border-radius: 20px !important; /* Arredondar bordar modal */
+}
+
+.list-group {
+    border-radius: 20px !important;
+}
 
 .footer {
     border-top: none !important;

@@ -15,7 +15,7 @@
             <div class="col-md-6 text-left">
                 <h1 class="mb-3 fw-bold" style="color: #587EFD;">A melhor solução para<br /> gerenciar suas vacinas<br /> em poucos cliques!</h1><br />
                 <p class="mb-4 fs-6">Facilitamos o controle de suas vacinas para que você cuide<br /> do que mais importa: sua saúde</p><br />
-                <button type="button" class="btn btn-primary btn-cadastro" data-bs-toggle="modal" data-bs-target="#selecionarMembroModal">
+                <button type="button" class="btn btn-primary btn-cadastro"  data-bs-toggle="modal" data-bs-target="#selecionarMembroModal">
                     Selecionar Membro
                 </button>
             </div>
@@ -36,7 +36,7 @@
                             @foreach (var membro in membros) {
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                     @membro.Apelido
-                                    <a href="@Url.Action("Details", "Cadernetas", new { id = membro.Caderneta.Id })" class="btn btn-primary">
+                                    <a href="@Url.Action("Details", "Cadernetas", new { id = membro.Caderneta.Id })" class="btn btn-primary rounded-4" style="background-color: #587EFD; border-radius: 100px; border: none;">
                                         Ver caderneta
                                     </a>
                                 </li>
@@ -58,7 +58,7 @@ else
                 <h1 class="mb-3 fw-bold" style="color: #587EFD;">Facilidade e segurança para garantir a imunidade de quem você ama.</h1><br/>
                 <p class="mb-4 fs-6">Imunidade reforçada é uma questão de cuidado. Crie sua conta e comece a gerenciar todas as vacinas em um só lugar de forma rápida e eficiente.</p><br/>
                 <a href="@Url.Action("Register", "Account")" class="btn btn-primary rounded-4" style="background-color: #587EFD; border-radius: 100px; width: 207px;">Criar conta</a>
-                <p class="mt-3">Já possui conta? <a href="@Url.Action("Login", "Account")" class="text-decoration-underline">Entrar.</a></p>
+                <p class="mt-3">Já possui conta? <a href="@Url.Action("Login", "Account")" class="text-decoration-underline">Entrar</a></p>
             </div>
             <div class="col-md-6 text-center mt-5">
                 <img src="~/images/img-index.svg" alt="Ilustração index" class="img-fluid">
