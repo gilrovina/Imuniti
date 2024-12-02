@@ -297,9 +297,10 @@ namespace GestaoVacinas.Controllers {
 				return NotFound("Caderneta não encontrada.");
 			}
 
-			var vacinasAplicadas = caderneta.DetalhesVacinas
-				.Where(d => d.Status == StatusVacina.Aplicada)
-				.ToList();
+			var vacinasExibidas = caderneta.DetalhesVacinas.ToList();
+			//var vacinasAplicadas = caderneta.DetalhesVacinas
+			//	.Where(d => d.Status == StatusVacina.Aplicada)
+			//	.ToList();
 
 			using (var stream = new MemoryStream()) {
 				var writer = new PdfWriter(stream);
@@ -333,11 +334,11 @@ namespace GestaoVacinas.Controllers {
 				table.AddHeaderCell("Lote");
 				table.AddHeaderCell("CNES");
 
-				foreach (var detalhe in vacinasAplicadas) {
+				foreach (var detalhe in vacinasExibidas) {
 					table.AddCell(detalhe.Vacina.Nome);
-					table.AddCell(detalhe.DataAplicacao?.ToString("dd/MM/yyyy") ?? "Não informada");
-					table.AddCell(detalhe.Lote ?? "Não informado");
-					table.AddCell(detalhe.Cnes ?? "Não informado");
+					table.AddCell(detalhe.DataAplicacao?.ToString("dd/MM/yyyy") ?? "");
+					table.AddCell(detalhe.Lote ?? "");
+					table.AddCell(detalhe.Cnes ?? "");
 				}
 
 				document.Add(table);
