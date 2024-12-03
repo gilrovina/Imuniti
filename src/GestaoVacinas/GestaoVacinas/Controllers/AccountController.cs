@@ -105,6 +105,81 @@ namespace GestaoVacinas.Controllers
 
             return View(model);
         }
+        
+        public IActionResult EditUser()
+        {
+            return View(new EditUserViewModel());
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> UpdateUser(EditUserViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("EditUser", model);
+            }
+
+            var user = await userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Usuário não encontrado.");
+                return View("EditUser", model);
+            }
+            
+            if (!string.IsNullOrEmpty(model.Email) && model.Email != user.Email)
+            {
+                var emailResult = await userManager.SetEmailAsync(user, model.Email);
+                if (!emailResult.Succeeded)
+                {
+                    foreach (var error in emailResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View("EditUser", model);
+                }
+
+                var userNameResult = await userManager.SetUserNameAsync(user, model.Email);
+                if (!userNameResult.Succeeded)
+                {
+                    foreach (var error in userNameResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View("EditUser", model);
+                }
+            }
+            
+            if (!string.IsNullOrEmpty(model.Senha))
+            {
+                var isPasswordCorrect = await userManager.CheckPasswordAsync(user, model.SenhaAtual);
+                if (!isPasswordCorrect)
+                {
+                    ModelState.AddModelError("", "A senha atual está incorreta.");
+                    return View("EditUser", model);
+                }
+
+                var passwordResult = await userManager.ChangePasswordAsync(user, model.SenhaAtual, model.Senha);
+                if (!passwordResult.Succeeded)
+                {
+                    foreach (var error in passwordResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View("EditUser", model);
+                }
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        
+        
+        
+
+
+
+
+
 
         public IActionResult ChangePassword(string username)
         {

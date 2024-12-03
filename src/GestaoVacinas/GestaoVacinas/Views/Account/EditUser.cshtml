@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model GestaoVacinas.ViewModels.EditUserViewModel
+
+<form asp-action="UpdateUser" method="post">
+    <div>
+        <label>Email:</label>
+        <input asp-for="Email" type="email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div>
+        <label>Senha Atual:</label>
+        <input asp-for="SenhaAtual" type="password" />
+        <span asp-validation-for="SenhaAtual"></span>
+    </div>
+
+    <div>
+        <label>Nova Senha:</label>
+        <input asp-for="Senha" type="password" />
+        <span asp-validation-for="Senha"></span>
+    </div>
+
+    <div>
+        <label>Confirmar Nova Senha:</label>
+        <input asp-for="ConfirmarSenha" type="password" />
+        <span asp-validation-for="ConfirmarSenha"></span>
+    </div>
+
+    <button type="submit">Atualizar</button>
+</form>
