@@ -4,32 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<!-- Container principal para imagem e frase -->
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+            <img src="~/images/excluir-img.svg" alt="Cadastro de Membro" class="img-fluid cadastro-membro-img">
+        </div>
+        <div class="col-md-6 text-md-start text-center mt-5">
+            <h1 class="mb-3 fw-bold" style="color: #587EFD;">Caderneta excluída.</h1>
+        </div>
+    </div>
+</div><br /><br />
+    <div class="d-flex justify-content-center mt-3">
+        <a asp-controller="Home" asp-action="Index" class="text-black text-decoration-underline">Voltar para a página principal</a>
+    </div>
+  
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Membro)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Membro.Apelido)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
