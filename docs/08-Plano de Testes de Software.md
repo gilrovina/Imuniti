@@ -1,78 +1,148 @@
-# Plano de Testes de Software
+# Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Segue apresentação os cenários de testes utilizados na realização dos testes da sua aplicação. Os cenários demonstram os requisitos sendo satisfeitos.
 
+A aplicação foi totalmente desenvolvida, englobando o front-end e o back-end, e demonstrou excelente desempenho durante os testes de software, sem apresentar erros nas funcionalidades em geral. Esse sucesso foi alcançado graças ao comprometimento do grupo desde o início até a conclusão do projeto.
+
+
+## Caso de Teste 01 – Cadastrar perfil
+**Requisito associado:**  RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados.
+<br><br>
+**Registro de evidência:**
+
+
+
+
+https://github.com/user-attachments/assets/dff5a017-f63c-4af2-b21e-e71ac52ee00b
+
+
+
+<br><br>
+
+## Caso de Teste 02 – Efetuar login
+**Requisito associado:**  RF-002 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados.
+<br><br>
+**Registro de evidência:**
+
+
+
+https://github.com/user-attachments/assets/f8f8a43e-66ec-4c20-8d31-2c11b4caa371
+
+
+
+
+<br><br>
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar em "Crie sua conta" <br> - Preencher os campos obrigatórios (e-mail, senha, confirmação de senha) <br> - Clicar em "Cadastrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-002	- A aplicação deve permitir que o usuário faça login utilizando suas credenciais cadastradas. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-03 – Criar e gerenciar membros	|
-|Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie membros. |
-| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar membros. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar membro"  |
-|Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
-|  	|  	|
-| Caso de Teste 	| CT-04 – Registrar, gerenciar, alterar e excluir registros de vacinas	|
-|Requisito Associado | RF-004	- A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais. |
-| Objetivo do Teste 	| Verificar se o usuário consegue registra e gerenciar as vacinas além de alterar e excluir registros. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Gerenciar Cadastro" <br> - Clicar em "Selecionar membro" <br> - Clicar em um card de vacina - <br> Inserir, editar ou excluir as informações dos campos: "Data de aplicação", "Nome do vacinador", "Lote", "Data de validade", "CNES" e "Observações" - Clicar em "Salvar"  |
-|Critério de Êxito | - Informações registradas/excluídas/ alteradas com sucesso |
-|  	|  	|
-| Caso de Teste 	| CT-05 – Anexar vacinas adicionais	|
-|Requisito Associado | RF-005	- A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais. |
-| Objetivo do Teste 	| Verificar se o usuário consegue anexar vacinas adicionais. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Clicar em "adicionar vacina complementar" <br> - Inserir os dados:  "Data de aplicação", "Nome do vacinador", "Lote", "Data de validade", "CNES" e "Observações" - Clicar em "Salvar"  |
-|Critério de Êxito | <br> - Novo vacina anexada com sucesso |
-|  	|  	|
-| Caso de Teste 	| CT-06 – Busca de	Unidade Básica de Saúde (UBS) mais próxima |
-|Requisito Associado | RF-006	- A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual ou endereço informado, exibindo detalhes como nome, endereço. |
-| Objetivo do Teste 	| Verificar se o usuário consegue localizar a UBS mais próxima. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no mapa ao final da tela <br> - Permitir uso de localização <br> - Localizar UBS mais próxima do endereço informado <br> |
-|Critério de Êxito | - UBS mais próximas localizadas |
-|  	|  	|
-| Caso de Teste 	| CT-07 – Imprimir caderneta de vacinação em formato PDF	|
-|Requisito Associado | RF-007	- A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF. |
-| Objetivo do Teste 	| Verificar se o usuário consegue imprimir caderneta de vacinação em formato PDF. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Selecionar membro desejado <br> - Clicar em "Imprimir caderneta" ao final da tela - <br> Clicar novamente em "Imprimir caderneta" |
-|Critério de Êxito | - Imprimir/salvar caderneta em formato PDF |
-|  	|  	|
-| Caso de Teste 	| CT-08 – Visualizar calendário vacinal	|
-|Requisito Associado | RF-008	- A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas. |
-| Objetivo do Teste 	| Verificar se o usuário consegue visualizar o calendário vacinal. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Selecionar membro desejado <br> - Visualizar calendário vacinal  |
-|Critério de Êxito | - Tela mostrando o calendário vacinal |
-|  	|  	|
-| Caso de Teste 	| CT-09 – Recuperar Senha	|
-|Requisito Associado | RF-009	- A aplicação deve permitir que o usuário consiga recuperar sua senha. |
-| Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar perfis. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Clicar no botão "Esqueceu sua senha? Clique aqui" <br> - Preencher o campo do e-mail <br> - Clicar em "Recuperar Senha" <br> - Inserir nova senha nos campos "Informe sua nova senha" e "Confirme sua nova senha" <br> - Clicar em "Salvar nova senha"  |
-|Critério de Êxito | - Nova senha cadastrada com sucesso |
-|  	|  	|
-| Caso de Teste 	| CT-10 – Exibir situações das vacinas através de tags coloridas	|
-|Requisito Associado | RF-010	- A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras. |
-| Objetivo do Teste 	| Verificar se as tags coloridas indicam o status das vacinas|
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Clicar no membro desejado <br> - Visualizar caderneta, e observar se as tags (verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras) estão condizentes |
-|Critério de Êxito | - Usuário consegue visualizar os status das vacinas corretaemnte, através de tags coloridas |
-|  	|  	|
+## Caso de Teste 03 – Criar e gerenciar membros
+**Requisito associado:**  RF-003 - A aplicação deve permitir que o usuário crie e gerencie membros.
+<br><br>
+**Registro de evidência:**
 
 
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
+
+
+https://github.com/user-attachments/assets/60c6ff41-3b86-435a-9720-c604254d1ffb
+
+
+
+
+<br><br>
+
+
+## Caso de Teste 04 – Registrar, gerenciar, alterar e excluir registros de vacinas
+**Requisito associado:** RF-004	- A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais.
+<br><br>
+**Registro de evidência:**
+
+
+
+
+
+https://github.com/user-attachments/assets/5323730d-c724-4e0b-9bb4-b5058a569cbc
+
+
+
+
+<br><br>
+
+## Caso de Teste 05 – Anexar vacinas complementar
+**Requisito associado:** RF-005 - A aplicação deve permitir que o usuário personalize a cardeneta de vacinação conforme necessidade específica, podendo anexar vacinas adicionais.
+<br><br>
+**Registro de evidência:**
+
+
+
+
+https://github.com/user-attachments/assets/7f07bfad-9bc3-4ca7-b4b7-b8eaf1dc1e00
+
+
+
+
+
+<br><br>
+
+## Caso de Teste 06 – Busca de Unidade Básica de Saúde (UBS) mais próxima
+**Requisito associado:** RF-006 - A aplicação deve permitir que o usuário localize a Unidade Básica de Saúde (UBS) mais próxima, com base em sua localização atual exibindo detalhes como nome, endereço.
+<br><br>
+**Registro de evidência:**
+
+
+
+https://github.com/user-attachments/assets/d050b542-357c-43ea-81db-3bf444650402
+
+
+
+<br><br>
+
+## Caso de Teste 07 –  Imprimir caderneta de vacinação em formato PDF
+**Requisito associado:** RF-007 - A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF.
+<br><br>
+**Registro de evidência:**
+
+
+
+https://github.com/user-attachments/assets/d1fdb119-b0f4-43d0-a113-067503f257e3
+
+
+
+<br><br>
+
+## Caso de Teste 08 – Visualizar calendário vacinal
+**Requisito associado:** RF-008 - A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas.
+<br><br>
+**Registro de evidência:**
+
+
+
+
+
+https://github.com/user-attachments/assets/dc68b39f-7abb-4530-9f82-ea6d2ec8c157
+
+
+
+
+<br><br>
+
+## Caso de Teste 09 – Recuperar Senha
+**Requisito associado:** RF-009 - A aplicação deve permitir que o usuário consiga recuperar sua senha.
+<br><br>
+**Registro de evidência:**
+
+
+
+https://github.com/user-attachments/assets/850f160e-76f5-4a2e-b67f-d08e3950c136
+
+
+
+<br><br>
+
+
+
+## Avaliação
+
+Os testes de software apresentaram resultados amplamente satisfatórios, demonstrando o sucesso na implementação dos requisitos funcionais e não funcionais. Todo o design e o back-end da aplicação estão concluídos, garantindo que as principais funcionalidades já estejam plenamente operacionais. Já integramos as UBS localizadas em Belo Horizonte e estamos trabalhando na expansão para todas as UBS do território nacional através da API. Nosso foco permanece em entregar uma solução robusta e eficiente, alinhada à proposta inicial de gerenciar uma caderneta vacinal com excelência. A etapa final, referente à integração do mapa, está em andamento para alcançar 100% de cobertura e funcionamento da aplicação.
+
+### Conclusão
+
+A aplicação foi completamente desenvolvida, incluindo o design e o back-end, e apresentou excelente desempenho durante os testes de software, sem registros de erros nas funcionalidades disponíveis. Todas as funções implementadas estão operando corretamente. No momento, o único ajuste pendente é a adição das marcações das UBS de outras regiões do país, já que as de Belo Horizonte foram integradas com sucesso. A equipe segue comprometida em finalizar essa etapa e continuar aprimorando a aplicação para garantir seu pleno desempenho e relevância no mercado.
