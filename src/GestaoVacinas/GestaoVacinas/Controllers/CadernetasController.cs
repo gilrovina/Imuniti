@@ -176,8 +176,8 @@ namespace GestaoVacinas.Controllers {
             await _context.SaveChangesAsync();
 
             TempData["Success"] = "Este membro e sua caderneta de vacinas foram excluídos com sucesso.";
-            return RedirectToAction(nameof(Index));
-        }
+            return RedirectToAction("Index", "Home");
+		}
 
         // Método AdicionarVacinaComplementar
         public async Task<IActionResult> AdicionarVacinaComplementar(int id, int vacinaId) {

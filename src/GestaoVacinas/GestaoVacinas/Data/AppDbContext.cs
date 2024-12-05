@@ -36,5 +36,11 @@ public class AppDbContext : IdentityDbContext<Users> {
                 "CadernetaVacina",
                 j => j.HasOne<Vacina>().WithMany().HasForeignKey("VacinaId"),
                 j => j.HasOne<Caderneta>().WithMany().HasForeignKey("CadernetaId"));
-    }
+
+		modelBuilder.Entity<Membros>()
+			.HasOne(m => m.Usuario)
+			.WithMany()
+			.HasForeignKey(m => m.UserId)
+			.OnDelete(DeleteBehavior.Cascade);
+	}
 }

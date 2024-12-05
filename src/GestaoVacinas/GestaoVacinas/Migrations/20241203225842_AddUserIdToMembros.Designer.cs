@@ -4,6 +4,7 @@ using GestaoVacinas.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestaoVacinas.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241203225842_AddUserIdToMembros")]
+    partial class AddUserIdToMembros
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +37,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasIndex("VacinaId");
 
-                    b.ToTable("CadernetaVacina", (string)null);
+                    b.ToTable("CadernetaVacina");
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Caderneta", b =>
@@ -53,7 +56,7 @@ namespace GestaoVacinas.Migrations
                     b.HasIndex("MembroId")
                         .IsUnique();
 
-                    b.ToTable("Cadernetas", (string)null);
+                    b.ToTable("Cadernetas");
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.DetalhesVacina", b =>
@@ -104,7 +107,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasIndex("VacinaId");
 
-                    b.ToTable("DetalhesVacinas", (string)null);
+                    b.ToTable("DetalhesVacinas");
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Membros", b =>
@@ -146,7 +149,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Membros", (string)null);
+                    b.ToTable("Membros");
                 });
 
             modelBuilder.Entity("GestaoVacinas.Models.Users", b =>
@@ -243,7 +246,7 @@ namespace GestaoVacinas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Vacinas", (string)null);
+                    b.ToTable("Vacinas");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

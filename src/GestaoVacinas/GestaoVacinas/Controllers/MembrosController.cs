@@ -3,6 +3,7 @@ using GestaoVacinas.Models;
 using GestaoVacinas.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace GestaoVacinas.Controllers
 {
@@ -24,14 +25,17 @@ namespace GestaoVacinas.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(AddMembrosViewModel model)
         {
-            var membro = new Membros
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+			var membro = new Membros
             {
                 Apelido = model.Apelido,
                 NomeCompleto = model.NomeCompleto,
                 DataNascimento = model.DataNascimento,
                 Cpf = model.Cpf,
-                Cns = model.Cns
-            };
+                Cns = model.Cns,
+				UserId = userId
+			};
 
 
             await context.Membros.AddAsync(membro);
@@ -78,26 +82,37 @@ namespace GestaoVacinas.Controllers
         [HttpGet]
         public async Task<IActionResult> List()
         {
-            var membros = await context.Membros.ToListAsync();
+			
+            if (!User.Identity.IsAuthenticated) {
+				Console.WriteLine("Usuário não autenticado.");
+				return RedirectToAction("Login", "Account");
+			}
 
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+			Console.WriteLine($"User ID logado: {userId}");
 
-            return View(membros);
-        }
+			var membros = await context.Membros
+				.Where(m => m.UserId == userId)
+				.ToListAsync();
+
+			return View(membros);
+		}
 
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var membro = await context.Membros.FindAsync(id);
-            
-            if (membro is null)
-            {
-                return NotFound();
-            }
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+			var membro = await context.Membros
+				.Where(m => m.Id == id && m.UserId == userId)
+				.FirstOrDefaultAsync();
 
+			if (membro is null) {
+				return NotFound();
+			}
 
-            return View(membro);
+			return View(membro);
 
-        }
+		}
 
         [HttpPost]
         public async Task<IActionResult> Edit(Membros viewModel)
@@ -126,19 +141,18 @@ namespace GestaoVacinas.Controllers
 
         public async Task<IActionResult> Delete(Membros viewModel)
         {
-            var membro = await context.Membros
-                .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.Id == viewModel.Id);
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+			var membro = await context.Membros
+				.Where(m => m.Id == viewModel.Id && m.UserId == userId)
+		        .FirstOrDefaultAsync();
 
-            if (membro is not null)
-            {
-                context.Membros.Attach(viewModel); // Anexa o viewModel ao contexto
-                context.Membros.Remove(viewModel); // Remove o viewModel
-                await context.SaveChangesAsync();
-            }
+			if (membro is not null) {
+				context.Membros.Remove(membro);
+				await context.SaveChangesAsync();
+			}
 
-            return RedirectToAction("List", "Membros");
-        }
+			return RedirectToAction("List");
+		}
 
     }
 }

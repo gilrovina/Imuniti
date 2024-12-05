@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using GestaoVacinas.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace GestaoVacinas.Controllers
 {
@@ -18,14 +19,16 @@ namespace GestaoVacinas.Controllers
         }
 
         public async Task<IActionResult> Index() {
-            var membros = await _context.Membros
-                .Include(m => m.Caderneta)
-                .ToListAsync();
+			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+			var membros = await _context.Membros
+				.Where(m => m.UserId == userId)
+				.Include(m => m.Caderneta)
+				.ToListAsync();
 
-            ViewBag.Membros = membros;
+			ViewBag.Membros = membros;
 
-            return View();
-        }
+			return View();
+		}
 
         [Authorize]
         public IActionResult Privacy()

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestaoVacinas.Models;
@@ -38,4 +39,10 @@ public class Membros
     public string? Cns { get; set; }
 
 	public virtual Caderneta Caderneta { get; set; }
+
+	[ForeignKey("Usuario")]
+	public string UserId { get; set; }
+
+	[ValidateNever]
+	public virtual Users Usuario { get; set; }
 }
