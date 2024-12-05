@@ -1,13 +1,8 @@
-
 # Registro de Testes de Software
 
 
 
-
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
-
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
-
+Relatório com as evidências dos testes de software realizados no sistema pela equipe, seguindo o plano de testes previamente definido.
 
 ## Caso de Teste 01 – Cadastrar perfil
 **Requisito associado:**  RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados.
@@ -15,7 +10,10 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 **Registro de evidência:**
 
 
-https://github.com/user-attachments/assets/6aa0ccc7-2e03-4645-8b3f-0a0b686116fa
+
+
+https://github.com/user-attachments/assets/dff5a017-f63c-4af2-b21e-e71ac52ee00b
+
 
 
 <br><br>
@@ -26,7 +24,10 @@ https://github.com/user-attachments/assets/6aa0ccc7-2e03-4645-8b3f-0a0b686116fa
 **Registro de evidência:**
 
 
-https://github.com/user-attachments/assets/9a042126-b446-42fc-b8ff-c6e7a6c824db
+
+https://github.com/user-attachments/assets/f8f8a43e-66ec-4c20-8d31-2c11b4caa371
+
+
 
 
 <br><br>
@@ -38,7 +39,10 @@ https://github.com/user-attachments/assets/9a042126-b446-42fc-b8ff-c6e7a6c824db
 
 
 
-https://github.com/user-attachments/assets/2410fe51-e27c-4b3d-8b7e-2efe2652cf40
+
+
+https://github.com/user-attachments/assets/60c6ff41-3b86-435a-9720-c604254d1ffb
+
 
 
 
@@ -52,7 +56,10 @@ https://github.com/user-attachments/assets/2410fe51-e27c-4b3d-8b7e-2efe2652cf40
 
 
 
-https://github.com/user-attachments/assets/b413b61b-4aa1-468a-96c5-49f61d84a566
+
+
+https://github.com/user-attachments/assets/5323730d-c724-4e0b-9bb4-b5058a569cbc
+
 
 
 
@@ -65,7 +72,10 @@ https://github.com/user-attachments/assets/b413b61b-4aa1-468a-96c5-49f61d84a566
 
 
 
-https://github.com/user-attachments/assets/258c3da5-43fe-4c7d-a7d5-f477e014868b
+
+https://github.com/user-attachments/assets/7f07bfad-9bc3-4ca7-b4b7-b8eaf1dc1e00
+
+
 
 
 
@@ -89,7 +99,11 @@ https://github.com/user-attachments/assets/d050b542-357c-43ea-81db-3bf444650402
 <br><br>
 **Registro de evidência:**
 
-Ainda não implementado*
+
+
+https://github.com/user-attachments/assets/d1fdb119-b0f4-43d0-a113-067503f257e3
+
+
 
 <br><br>
 
@@ -100,7 +114,10 @@ Ainda não implementado*
 
 
 
-https://github.com/user-attachments/assets/5c038c39-db9e-40e9-b245-9a2496802543
+
+
+https://github.com/user-attachments/assets/dc68b39f-7abb-4530-9f82-ea6d2ec8c157
+
 
 
 
@@ -112,17 +129,26 @@ https://github.com/user-attachments/assets/5c038c39-db9e-40e9-b245-9a2496802543
 **Registro de evidência:**
 
 
-https://github.com/user-attachments/assets/326f4bc4-b1ca-4ec8-842c-ac0a6d17faf1
+
+https://github.com/user-attachments/assets/850f160e-76f5-4a2e-b67f-d08e3950c136
+
 
 
 <br><br>
 
+## Relatório de Testes de Software
 
+O caso de teste CT-06 não abrange todo o território nacional devido à complexidade de adicionar manualmente todas as unidades básicas de saúde (UBS). Entretanto, as UBS localizadas em Belo Horizonte - MG estão operacionais e são exibidas no mapa, desde que o usuário autorize o acesso à sua localização.
+
+**Possíveis pontos de correção:**
+  
+Como possíveis pontos de melhoria, sugerimos as seguintes ações:
+- Expandir a visualização de todas as unidades básicas de saúde para abranger todo o território nacional.
 
 ## Avaliação
 
-Os casos de teste apresentaram boa funcionalidade. Embora o sistema ainda esteja em desenvolvimento, a equipe está trabalhando constantemente para finalizar a entrega conforme o planejado. Algumas funcionalidades, como o desenvolvimento da barra de navegação (navbar), a implementação de mensagens de feedback e a finalização do layout, estão em progresso e serão incorporadas em breve para melhorar ainda mais a aplicação.
+Os testes de software realizados confirmaram que os requisitos funcionais e não funcionais foram implementados com sucesso, refletindo a solidez do design e do back-end da aplicação. As principais funcionalidades estão operacionais e atendem às expectativas estabelecidas. A integração das UBS localizadas em Belo Horizonte já foi concluída, oferecendo uma amostra prática do funcionamento do sistema. Atualmente, a equipe está concentrada na expansão para contemplar as UBS de todo o território nacional, utilizando uma API para garantir a escalabilidade do sistema. O processo de integração do mapa segue em andamento e representa o passo final para atingir a cobertura total da aplicação.
 
-### Conclusão
+## Conclusão
 
-Durante a execução dos testes de software, a aplicação mostrou-se estável, sem apresentar erros nas funcionalidades disponíveis. Embora o desenvolvimento ainda não esteja totalmente concluído, as funcionalidades implementadas estão operando corretamente. A equipe permanece dedicada ao aprimoramento contínuo da aplicação, planejando implementar as melhorias identificadas para elevar o desempenho da solução no mercado.
+Com o design e o back-end concluídos, a aplicação apresentou desempenho consistente e eficiente nos testes de software, sem registro de falhas nas funcionalidades implementadas. A integração das UBS de Belo Horizonte já foi realizada, e o processo de expansão para as demais regiões do país está em curso. A equipe permanece dedicada a concluir essa etapa e aprimorar continuamente a aplicação. Esses avanços reforçam a relevância do sistema no mercado, posicionando-o como uma solução robusta e inovadora para o gerenciamento de cadernetas vacinais, com potencial para atender às demandas de um público amplo e diversificado.
