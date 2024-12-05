@@ -68,22 +68,6 @@ link: https://forms.gle/q4eDiuyQeSPjAF2WA
 | RNF-009 | A aplicação deve garantir um bom nível de contraste entre os elementos da tela.     |
 
 
-## Cadastro e Login:
-
-https://github.com/user-attachments/assets/ed4c1e17-016a-4d8d-8cb4-f5149e6e924d
-
-## Recuperação de Senha: 
-
-https://github.com/user-attachments/assets/214ac5e1-77c0-46f8-aac8-65401663f002
-
-## Cadastro, edição e exclusão de membro, visualizar e editar detalhes de vacina e adição e edição de vacina complementar:
-
-https://github.com/user-attachments/assets/6fd0c7dd-9359-46ee-ac81-ada326fe2c7f
-
-## Navegação em diversos browsers:
-
-https://github.com/user-attachments/assets/4fa881fa-9675-4f40-922b-43151f6ea3d2
-
 
 ## **Participante 2:**.
 
@@ -121,6 +105,115 @@ O participante demonstrou alta satisfação com a solução, destacando a facili
 
 De forma geral, o usuário avaliou positivamente a solução, considerando-a eficiente, fácil de usar e intuitiva, o que reflete na nota de satisfação máxima e na alta probabilidade de recomendação a terceiros. A usabilidade e a simplicidade para cadastrar membros e gerenciar informações, como as vacinas, foram os aspectos mais apreciados. A implementação de medidas adicionais de segurança, especialmente no processo de recuperação de senha, pode ajudar a aprimorar a experiência e fortalecer a confiança do usuário. Essa avaliação confirma a eficácia da aplicação em proporcionar uma experiência satisfatória e amigável ao usuário intermediário.
 
+
+## **Participante 3:**.
+
+### Perfil geral:
+
+Delimitação de notas para avaliação: 1 (muito fácil) à 5 (muito difícil).
+
+
+* Nível de experiência com ferramentas digitais: iniciante.
+* Faixa etária: mais de 55 anos.
+* Dispositivo usado durante o teste: Smarthphone.
+* Em uma escala de 1 a 5, quão difícil foi se cadastrar no sistema? 2/5
+* Em uma escala de 1 a 5, quão fácil e intuitivo foi o processo de login no sistema? 1/5
+* Em uma escala de 1 a 5, quão fácil foi a realização de cadastro de membros em sistema? 3/5
+
+### Eficiência na execução de tarefas:
+
+* Encontrou algum erro durante sua utilização do sistema: Não.
+* Tempo necessário para realização do cadastro: Entre 2 e 5 minutos.
+* Navegação das telas foi fluída: sim.
+
+### Satisfação geral:
+
+* Em uma escala de 1 a 10, quão satisfeito você está com a experiência geral de uso da aplicação: 8.
+* Em uma escala de 1 a 10, qual seria a probabilidade de você recomendar a utilização da aplicação a outra pessoa: 8.
+* Descreva o que mais gostou durante o uso da aplicação: Saber quais as próximas vacinas que tenho que tomar.
+* O que acha que pode ser melhorado: Outras pessoas mais velhas podem precisar de auxílio, senti falta de de um vídeo ou texto explicando como navegar. 
+* Sentiu falta de alguma funcionalidade durante o uso da aplicação? Não.
+
+## Avaliação
+
+O sistema apresentou bom desempenho, sendo considerado intuitivo em processos iniciais como login (1/5) e cadastro (2/5). Embora o cadastro de membros tenha sido avaliado como moderadamente difícil (3/5), a ausência de erros e a fluidez na navegação reforçam sua eficiência. Sugere-se aprimorar recursos de suporte, como guias explicativos, para atender melhor ao público mais velho.
+
+## Conclusão
+
+Com boa satisfação geral (8/10), a aplicação demonstrou potencial para atender usuários iniciantes em tecnologia, mas melhorias no suporte interativo podem elevar a experiência. Sua recomendação (8/10) reflete confiabilidade e relevância percebidas.
+
+## **Participante 4:**.
+
+### Perfil geral:
+
+Delimitação de notas para avaliação: 1 (muito fácil) à 5 (muito difícil).
+
+
+* Nível de experiência com ferramentas digitais: Avançado.
+* Faixa etária: menos de 18 anos.
+* Dispositivo usado durante o teste: Tablet.
+* Em uma escala de 1 a 5, quão difícil foi se cadastrar no sistema? 1/5
+* Em uma escala de 1 a 5, quão fácil e intuitivo foi o processo de login no sistema? 1/5
+* Em uma escala de 1 a 5, quão fácil foi a realização de cadastro de membros em sistema? 1/5
+
+### Eficiência na execução de tarefas:
+
+* Encontrou algum erro durante sua utilização do sistema: Não.
+* Tempo necessário para realização do cadastro: Entre 1 e 2 minutos.
+* Navegação das telas foi fluída: sim.
+
+### Satisfação geral:
+
+* Em uma escala de 1 a 10, quão satisfeito você está com a experiência geral de uso da aplicação: 9.
+* Em uma escala de 1 a 10, qual seria a probabilidade de você recomendar a utilização da aplicação a outra pessoa: 7.
+* Descreva o que mais gostou durante o uso da aplicação: Design clean da página, não há excesso de informações.
+* O que acha que pode ser melhorado: Não percebi nenhum ponto de melhoria.
+* Sentiu falta de alguma funcionalidade durante o uso da aplicação? Não.
+
+## Avaliação
+
+O sistema foi avaliado como extremamente fácil de usar por um usuário avançado (1/5 em todas as etapas) e demonstrou alta eficiência, sem erros e com navegação fluida. A realização de tarefas foi rápida (1-2 minutos), refletindo um design funcional e bem estruturado.
+
+## Conclusão
+
+Com alta satisfação geral (9/10) e boa probabilidade de recomendação (7/10), o sistema atende bem a usuários experientes. O design clean foi destacado positivamente, sem apontamentos de melhoria, sugerindo uma experiência otimizada para esse público.
+
+
+## **Participante 5:**.
+
+### Perfil geral:
+
+Delimitação de notas para avaliação: 1 (muito fácil) à 5 (muito difícil).
+
+
+* Nível de experiência com ferramentas digitais: intermediário.
+* Faixa etária: 35 - 55 anos.
+* Dispositivo usado durante o teste: computador pessoal.
+* Em uma escala de 1 a 5, quão difícil foi se cadastrar no sistema? 1/5
+* Em uma escala de 1 a 5, quão fácil e intuitivo foi o processo de login no sistema? 1/5
+* Em uma escala de 1 a 5, quão fácil foi a realização de cadastro de membros em sistema? 2/5
+
+### Eficiência na execução de tarefas:
+
+* Encontrou algum erro durante sua utilização do sistema: Não.
+* Tempo necessário para realização do cadastro: Entre 1 e 2 minutos.
+* Navegação das telas foi fluída: sim.
+
+### Satisfação geral:
+
+* Em uma escala de 1 a 10, quão satisfeito você está com a experiência geral de uso da aplicação: 8.
+* Em uma escala de 1 a 10, qual seria a probabilidade de você recomendar a utilização da aplicação a outra pessoa: 8.
+* Descreva o que mais gostou durante o uso da aplicação: A facilidade para visualizar, editar as vacinas e cadastrar membros..
+* O que acha que pode ser melhorado: Suporte para deficientes visuais/auditivos. 
+* Sentiu falta de alguma funcionalidade durante o uso da aplicação? Não.
+
+## Avaliação
+
+O sistema demonstrou facilidade no cadastro e login (1/5) e leve desafio na inclusão de membros (2/5), atendendo bem a um usuário intermediário. Sem erros e com navegação fluida, as tarefas foram concluídas rapidamente (1-2 minutos). A organização para gerenciar vacinas e membros foi destacada positivamente.
+
+## Conclusão
+
+Com alta satisfação (8/10) e probabilidade de recomendação (8/10), o sistema é funcional e bem adaptado a um público adulto com experiência intermediária. Sugere-se a inclusão de recursos para acessibilidade, ampliando sua usabilidade para públicos com necessidades específicas.
 
 
 
