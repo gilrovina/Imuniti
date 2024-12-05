@@ -1,10 +1,8 @@
-
 # Registro de Testes de Software
 
 
 
-A aplicação foi totalmente desenvolvida, englobando o front-end e o back-end, e demonstrou excelente desempenho durante os testes de software, sem apresentar erros nas funcionalidades em geral. Esse sucesso foi alcançado graças ao comprometimento do grupo desde o início até a conclusão do projeto.
-
+Relatório com as evidências dos testes de software realizados no sistema pela equipe, seguindo o plano de testes previamente definido.
 
 ## Caso de Teste 01 – Cadastrar perfil
 **Requisito associado:**  RF-001 - A aplicação deve permitir que o usuário faça o autocadastro e gerencie seus dados.
@@ -138,12 +136,20 @@ https://github.com/user-attachments/assets/850f160e-76f5-4a2e-b67f-d08e3950c136
 
 <br><br>
 
+## Relatório de Testes de Software
 
+O caso de teste CT-06 não abrange todo o território nacional devido à complexidade de adicionar manualmente todas as unidades básicas de saúde (UBS). Entretanto, as UBS localizadas em Belo Horizonte - MG estão operacionais e são exibidas no mapa, desde que o usuário autorize o acesso à sua localização.
+
+**Possíveis pontos de correção:**
+  
+Como possíveis pontos de melhoria, sugerimos as seguintes ações:
+- Expandir a visualização de todas as unidades básicas de saúde para abranger todo o território nacional.
 
 ## Avaliação
 
-Os testes de software apresentaram resultados amplamente satisfatórios, demonstrando o sucesso na implementação dos requisitos funcionais e não funcionais. Todo o design e o back-end da aplicação estão concluídos, garantindo que as principais funcionalidades já estejam plenamente operacionais. Já integramos as UBS localizadas em Belo Horizonte e estamos trabalhando na expansão para todas as UBS do território nacional através da API. Nosso foco permanece em entregar uma solução robusta e eficiente, alinhada à proposta inicial de gerenciar uma caderneta vacinal com excelência. A etapa final, referente à integração do mapa, está em andamento para alcançar 100% de cobertura e funcionamento da aplicação.
+Os testes de software realizados confirmaram que os requisitos funcionais e não funcionais foram implementados com sucesso, refletindo a solidez do design e do back-end da aplicação. As principais funcionalidades estão operacionais e atendem às expectativas estabelecidas. A integração das UBS localizadas em Belo Horizonte já foi concluída, oferecendo uma amostra prática do funcionamento do sistema. Atualmente, a equipe está concentrada na expansão para contemplar as UBS de todo o território nacional, utilizando uma API para garantir a escalabilidade do sistema. O processo de integração do mapa segue em andamento e representa o passo final para atingir a cobertura total da aplicação.
 
-### Conclusão
+## Conclusão
 
+Com o design e o back-end concluídos, a aplicação apresentou desempenho consistente e eficiente nos testes de software, sem registro de falhas nas funcionalidades implementadas. A integração das UBS de Belo Horizonte já foi realizada, e o processo de expansão para as demais regiões do país está em curso. A equipe permanece dedicada a concluir essa etapa e aprimorar continuamente a aplicação. Esses avanços reforçam a relevância do sistema no mercado, posicionando-o como uma solução robusta e inovadora para o gerenciamento de cadernetas vacinais, com potencial para atender às demandas de um público amplo e diversificado.
 A aplicação foi completamente desenvolvida, incluindo o design e o back-end, e apresentou excelente desempenho durante os testes de software, sem registros de erros nas funcionalidades disponíveis. Todas as funções implementadas estão operando corretamente. No momento, o único ajuste pendente é a adição das marcações das UBS de outras regiões do país, já que as de Belo Horizonte foram integradas com sucesso. A equipe segue comprometida em finalizar essa etapa e continuar aprimorando a aplicação para garantir seu pleno desempenho e relevância no mercado.
