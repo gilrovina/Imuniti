@@ -11,7 +11,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Modelo ER (Projeto Conceitual)
 
 <figure> 
-  <img src="/docs/img/MER_v2.png">
+  <img src="/docs/img/MER_v3.png">
 </figure>
 
 ## Projeto da Base de Dados
