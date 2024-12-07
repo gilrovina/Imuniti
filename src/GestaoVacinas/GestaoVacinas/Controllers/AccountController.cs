@@ -6,8 +6,6 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace GestaoVacinas.Controllers
 {
-
-
     public class AccountController : Controller
     {
         private readonly SignInManager<Users> signInManager;
@@ -58,7 +56,6 @@ namespace GestaoVacinas.Controllers
                 {
                     Email = model.Email,
                     UserName = model.Email
-
                 };
                 var result = await userManager.CreateAsync(users, model.Senha);
                 if (result.Succeeded)
@@ -74,8 +71,6 @@ namespace GestaoVacinas.Controllers
 
                     return View(model);
                 }
-
-
             }
 
             return View(model);
@@ -105,12 +100,13 @@ namespace GestaoVacinas.Controllers
 
             return View(model);
         }
-        
+
+        [HttpGet]
         public IActionResult EditUser()
         {
-            return View(new EditUserViewModel());
+            return View();
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> UpdateUser(EditUserViewModel model)
         {
@@ -122,63 +118,62 @@ namespace GestaoVacinas.Controllers
             var user = await userManager.GetUserAsync(User);
             if (user == null)
             {
-                ModelState.AddModelError("", "Usuário não encontrado.");
+                ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
                 return View("EditUser", model);
             }
-            
+
             if (!string.IsNullOrEmpty(model.Email) && model.Email != user.Email)
             {
                 var emailResult = await userManager.SetEmailAsync(user, model.Email);
                 if (!emailResult.Succeeded)
                 {
-                    foreach (var error in emailResult.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
+                    AddErrors(emailResult.Errors);
                     return View("EditUser", model);
                 }
 
                 var userNameResult = await userManager.SetUserNameAsync(user, model.Email);
                 if (!userNameResult.Succeeded)
                 {
-                    foreach (var error in userNameResult.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
+                    AddErrors(userNameResult.Errors);
                     return View("EditUser", model);
                 }
             }
-            
+
             if (!string.IsNullOrEmpty(model.Senha))
             {
                 var isPasswordCorrect = await userManager.CheckPasswordAsync(user, model.SenhaAtual);
                 if (!isPasswordCorrect)
                 {
-                    ModelState.AddModelError("", "A senha atual está incorreta.");
+                    ModelState.AddModelError(string.Empty, "A senha atual está incorreta.");
                     return View("EditUser", model);
                 }
 
                 var passwordResult = await userManager.ChangePasswordAsync(user, model.SenhaAtual, model.Senha);
                 if (!passwordResult.Succeeded)
                 {
-                    foreach (var error in passwordResult.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
+                    AddErrors(passwordResult.Errors);
                     return View("EditUser", model);
                 }
+            }
+
+            var updateResult = await userManager.UpdateAsync(user);
+            if (!updateResult.Succeeded)
+            {
+                AddErrors(updateResult.Errors);
+                return View("EditUser", model);
             }
 
             return RedirectToAction("Index", "Home");
         }
 
-        
-        
-        
-
-
-
-
+// Método para adicionar erros ao ModelState
+        private void AddErrors(IEnumerable<IdentityError> errors)
+        {
+            foreach (var error in errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+        }
 
 
         public IActionResult ChangePassword(string username)
@@ -215,13 +210,11 @@ namespace GestaoVacinas.Controllers
 
                         return View(model);
                     }
-
                 }
                 else
                 {
                     ModelState.AddModelError("", "Email não encontrado!");
                     return View(model);
-
                 }
             }
             else
@@ -229,7 +222,6 @@ namespace GestaoVacinas.Controllers
                 ModelState.AddModelError("", "Algo deu errado! Tente novamente.");
                 return View(model);
             }
-
         }
 
         public async Task<IActionResult> Logout()

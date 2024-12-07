@@ -25,6 +25,11 @@ namespace GestaoVacinas.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(AddMembrosViewModel model)
         {
+	        if (!ModelState.IsValid) 
+	        {
+		        return View(model);  
+	        }
+	        
 			var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 			var membro = new Membros

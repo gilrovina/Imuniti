@@ -5,6 +5,7 @@ namespace GestaoVacinas.ViewModels;
 public class EditUserViewModel
 {
     [Required(ErrorMessage = "É obrigatório informar um email válido.")]
+    [StringLength(100, ErrorMessage = "O email pode ter no máximo 100 caracteres.")]
     [EmailAddress(ErrorMessage = "Email inválido!")]
     public string Email { get; set; }
 
@@ -16,6 +17,7 @@ public class EditUserViewModel
     [Required(ErrorMessage = "É obrigatório informar uma nova senha.")]
     [StringLength(40, MinimumLength = 8, ErrorMessage = "A senha deve conter no mínimo 8 caracteres e no máximo 40.")]
     [DataType(DataType.Password)]
+    [Display(Name = "Nova Senha")]
     public string Senha { get; set; }
 
     [Required(ErrorMessage = "É obrigatório confirmar a nova senha.")]
