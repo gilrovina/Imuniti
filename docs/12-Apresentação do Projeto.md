@@ -10,7 +10,7 @@ Para visualizar [clique aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-
 
 ## Vídeo de apresentação
 
-Para visualizar [clique aqui]('link').
+Para visualizar [clique aqui](https://github.com/user-attachments/assets/795cc0ef-ba53-4544-99db-17aa664e040a).
 
 ## Identidade Visual (Marca, Design)
 ### Cores Primárias
