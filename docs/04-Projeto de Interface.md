@@ -7,7 +7,7 @@ O projeto de interface foi elaborado para ilustrar a interação do usuário com
 O diagrama ilustra o fluxo de interação do usuário com o sistema interativo. Para sua criação, foi utilizada a
 ferramenta [Canva](https://www.canva.com/).
 
-![Diagrama de fluxo](https://github.com/user-attachments/assets/12357c12-0fd0-4704-93b7-969d6fbf2622)
+![diagrama-fluxo](https://github.com/user-attachments/assets/1c39d2e9-3d0c-44de-b030-4d9a728a6c36)
 
 ## Wireframes
 

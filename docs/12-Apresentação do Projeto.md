@@ -1,27 +1,38 @@
-# Apresentação
+# Apresentação do projeto
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+## Título 
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+Imuniti
 
-## Título do Projeto
+## Conjunto de Slides 
 
-Nome e marca do projeto
+Para visualizar [clique aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas/blob/dev/presentation/slide.pdf/Imuniti.pdf).
+
+## Vídeo de apresentação
+
+Para visualizar [clique aqui](https://github.com/user-attachments/assets/795cc0ef-ba53-4544-99db-17aa664e040a).
 
 ## Identidade Visual (Marca, Design)
+### Cores Primárias
+As cores principais foram escolhidas para transmitir confiança e segurança, ideais para o setor de saúde. O azul e o verde reforçam essa sensação, além de trazerem uma atmosfera de bem-estar.
+<figure> 
+  <img src="/docs/img/Cores_primarias.png">
+</figure>
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+### Cores Secundárias
+As cores secundárias trazem harmonia e equilíbrio, complementando as cores principais e garantindo que a navegação seja clara e agradável para o usuário.
+<figure> 
+  <img src="/docs/img/Cores_secundarias.png">
+</figure>
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+## Tipografia
 
-## Conjunto de Slides (Estrutura)
+A fonte Questrial foi usada no logotipo da Imuniti por seu estilo limpo e moderno, que combina com a proposta da marca. Para o site, escolhemos Open Sans pela sua ótima legibilidade, garantindo que o conteúdo seja fácil de ler em qualquer dispositivo.
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+## Logo
+
+<figure> 
+  <img src="/docs/img/Logo_Apresentacao.png">
+</figure>
+O nome Imuniti vem da junção de "imunização" e "TI", refletindo o encontro entre saúde e tecnologia de forma prática. O logotipo, com a cruz estilizada, remete ao cuidado com a saúde e segue um padrão internacional de reconhecimento. As cores azul e verde foram escolhidas para transmitir confiança e bem-estar. Tudo foi projetado para ser prático e flexível, garantindo uma identidade visual forte em qualquer plataforma.
+O logotipo é exibido em sua versão padrão, e ícone colorido, além de versões monocromáticas, que asseguram flexibilidade e consistência em diferentes contextos e mídias.

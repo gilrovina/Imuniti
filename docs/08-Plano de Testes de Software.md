@@ -21,13 +21,13 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 | Caso de Teste 	| CT-03 – Criar e gerenciar membros	|
 |Requisito Associado | RF-003	- A aplicação deve permitir que o usuário crie e gerencie membros. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar e gerenciar membros. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> Clicar em "Gerenciar cadastro" <br> - Clicar em "Selecionar membro"  |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar membro" <br> - Preencher os campos obrigatórios (Apelido, nome completo, Data de nascimento, CPF, CNS) <br> - Clicar em "Cadastrar membro" - <br> - Clicar em "Selecionar membro"  |
 |Critério de Êxito | - Novo membro cadastrado com sucesso e visualização do novo membro |
 |  	|  	|
 | Caso de Teste 	| CT-04 – Registrar, gerenciar, alterar e excluir registros de vacinas	|
 |Requisito Associado | RF-004	- A aplicação deve permitir que o usuário registre e gerencie as vacinas tomadas, possibilitando a modificação ou exclusão dos registros, se necessário, e incluir detalhes como nome da vacina, data de aplicação, lote, validade, local, responsável pela aplicação e anotações importantes, como possíveis efeitos colaterais. |
 | Objetivo do Teste 	| Verificar se o usuário consegue registra e gerenciar as vacinas além de alterar e excluir registros. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Gerenciar Cadastro" <br> - Clicar em "Selecionar membro" <br> - Clicar em um card de vacina - <br> Inserir, editar ou excluir as informações dos campos: "Data de aplicação", "Nome do vacinador", "Lote", "Data de validade", "CNES" e "Observações" - Clicar em "Salvar"  |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Gerenciar Cadastro" <br> - Clicar em "Selecionar membro" <br> - Clicar em um card de vacina - <br> Inserir, editar ou excluir as informações dos campos: "Data de aplicação", "Nome do vacinador", "Lote", "Data de validade", "CNES" e "Observações" - Clicar em "Salvar" ou "Redefinir padrão"  |
 |Critério de Êxito | - Informações registradas/excluídas/ alteradas com sucesso |
 |  	|  	|
 | Caso de Teste 	| CT-05 – Anexar vacinas adicionais	|
@@ -45,8 +45,8 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 | Caso de Teste 	| CT-07 – Imprimir caderneta de vacinação em formato PDF	|
 |Requisito Associado | RF-007	- A aplicação deve permitir que o usuário faça a impressão da caderneta de vacinação no formato PDF. |
 | Objetivo do Teste 	| Verificar se o usuário consegue imprimir caderneta de vacinação em formato PDF. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Selecionar membro desejado <br> - Clicar em "Imprimir caderneta" ao final da tela - <br> Clicar novamente em "Imprimir caderneta" |
-|Critério de Êxito | - Imprimir/salvar caderneta em formato PDF |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Selecionar membro desejado <br> - Clicar em "Imprimir caderneta" - <br> |
+|Critério de Êxito | - abrirá um PDF permitindo Imprimir/salvar caderneta |
 |  	|  	|
 | Caso de Teste 	| CT-08 – Visualizar calendário vacinal	|
 |Requisito Associado | RF-008	- A aplicação deve permitir que o usuário visualize o calendário vacinal com base na idade e histórico de vacinas. |
@@ -64,15 +64,5 @@ Segue apresentação os cenários de testes utilizados na realização dos teste
 |Requisito Associado | RF-010	- A aplicação deve exibir de forma dinâmica a situação das vacinas: verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras. |
 | Objetivo do Teste 	| Verificar se as tags coloridas indicam o status das vacinas|
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://imuniti... - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Entrar" <br> - Clicar em "Selecionar membro" <br> - Clicar no membro desejado <br> - Visualizar caderneta, e observar se as tags (verde para aplicada, amarelo para próxima do prazo, vermelho as atrasadas e cinza para futuras) estão condizentes |
-|Critério de Êxito | - Usuário consegue visualizar os status das vacinas corretaemnte, através de tags coloridas |
+|Critério de Êxito | - Usuário consegue visualizar os status das vacinas corretamente, através de tags coloridas |
 |  	|  	|
-
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
