@@ -31,7 +31,7 @@ Projeto Web desenvolvido para o controle de caderneta vacinal de crianças, adol
 
 URL de acesso:
 
-[Link](app-imuniti-main-cjbfczh7d9ahf7h0.brazilsouth-01.azurewebsites.net)
+[Link](https://app-imuniti-main-cjbfczh7d9ahf7h0.brazilsouth-01.azurewebsites.net/)
 
 Usuario de Teste
 Email: teste@teste.com Senha: 12345678
