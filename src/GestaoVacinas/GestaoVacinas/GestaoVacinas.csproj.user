@@ -15,7 +15,7 @@
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
     <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
-    <NameOfLastUsedPublishProfile>C:\Users\gilro\source\repos\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\src\GestaoVacinas\GestaoVacinas\Properties\PublishProfiles\App-Imuniti-Main - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\gilro\source\repos\pmv-ads-2024-2-e2-proj-int-t5-gestao_vacinas\src\GestaoVacinas\GestaoVacinas\Properties\PublishProfiles\App-Imuniti-Dev - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
